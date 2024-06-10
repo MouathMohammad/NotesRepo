@@ -40,12 +40,15 @@ git config --global user.email "<add email>"
 11) Github Public Key
 ssh-keygen -t rsa -b 4096 -C "m.mohammad@oasissys.com"
 type %USERPROFILE%\.ssh\id_rsa.pub
-
+file details :
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCh9xviGZap6yCkGcJL6ikhr9Fa3h9mkTCvFmtDMkcXFyQbOVfw9aoNDth0slAZ5ShbYw2HVyximYVbqLRkTKSr8cd6sE/7RVDblPn8wDr4CqfCGnNrYERVEQ7PMTbj4YWg3GA2O8Lcvnw+zjfuLSf4aPeZc7UVbirdlKKZug77OYJ3r0RoaMVN+Ucl/0bUcjsHJgW7/usU1Buub+wWFo2j9sPqLEi18PvN6E+iK0LSnl/8POhTqCq55+Vdiv1v61yNAz1SHvpM70kPrbXPnocZcFBBqJqaB8Yp5l2DWI3XkJTPFIS+xoo85Aj+rrhoqn8Ne8JBoNB2W5rubV8p3R+YwqfYb/aza8a8XD00lop1g40wyHKV7QxnrgrRldKraumguwblpAI0PqNJ32sGq8Rw1OnDAdB7dm81/Yoe/WSvl16KSQPnrjrjtyAKboJEd0J/ndVqInlre56Rz8vGy5+1nPPaXUjqIv9uXvDs76xugkcQBIi1lvyDpID2BrZOGFSP08p0BMlC8VTpEUTc8bV2jnAXYRQmxodRgw/Do4hseOEc4LOf2DC83v8OfXw05rnr1/ZT4rUWO2Q8CK9cCxVovIVF4ejvFsntCX6G8CQmZMlv1eY1Ocs0O75YYDGfaoy5Bj3mxFicvun/1D8dTc5OK6/9EZC7dLqk8tPrCDVNQw== m.mohammad@oasissys.comtest:
+ssh -T git@github.com
 12) Initalized empty Git Repo
 git init
 
 13) Add folders to new Repo
-git remote add <remote_name> git@github.com:<UserName>/<FolderNmae (Git Repo name)>.git
+git branch -M main
+git remote add <remote_name> git@github.com:<UserName>/<Remot Repo name>.git
 
 _________Git Configration____________________
 
