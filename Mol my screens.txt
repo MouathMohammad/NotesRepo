@@ -1,0 +1,173 @@
+**MOLBackendApp**
+
+
+ManageEstablishmentServices       اضافة خدمة لمنشأة معينة
+
+ApplicationsInquiry                    الاستعلام عن الطلبات
+
+----------------------------------------------------------------------------
+**MOLSharedEservices**
+
+
+GetEstablishment            طلب اصدار موافقة استقدام عمالة خاصة => بيانات المنشأة
+
+UploadedAttachmens          المرفقات
+
+----------------------------------------------------------------------------
+**MOLSharedAPIs**
+
+
+VPRJobWsaBean          قائمة المهن
+
+----------------------------------------------------------------------------
+
+
+MOL-Sprint 5-Service 35 & Service 40 (LWP)  Awpaprv
+
+
+ترخيص عمل اعارة كلي او جزئي خارج اوقات العمل       35
+تجديد ترخيص عمل اعارة كلي او جزئي خارج اوقات         40
+
+
+MOL-Sprint 6-Service 19 (WCN) Backend
+
+حجز مواعيد التدريب ومتابعتها للجان المشتركة
+ادخال دورة تدريبية جديدة والاعلان عنها
+
+
+MOL-Sprint 7-Service 19 (CRC)
+
+تسجيل قرار التنفيذ لدعوى - لجان فض المنازعات 
+
+
+MOL-Sprint 9-Service 16 & Service 15 (LLC)
+
+التظلم على تصنيف مستوى التزام المنشأت بقانون العمل
+تصنيف مستوى التزام المنشأت بقانون العمل
+
+
+MOL-Sprint 10-Service 47 (WSA) RenewRecruitmentApproval "WSA_VWSP_TRX_VP_RECRUITMENT_APRV"
+
+طلب تجديد موافقة استقدام عمالية
+
+MOL-Sprint 11-Service 51 (LWP) >> RSWP // RenewSpecialWorkPermit
+
+طلب تجديد ترخيص عمل خاص  – كفالة ذويهم, مواطن خليجي, دبلوماسي, اقامة دائمة, مستثمر , أخرى 
+
+
+MOL-Sprint 12-Service 53 & Service 59 (SRS)
+
+طلب رفع حظر مقدم من صاحب العمل
+استثناء  منشأة من ايقاف خدمة  (نتيجة حظر)
+
+MOL-Sprint 13-Service 60 (CEN)  "Just BPM" // AdvanceWaiverNoticePeriodRequest
+
+التنازل المسبق عن فترة الاخطار
+
+MOL-Sprint 14-Service 63 (WPS)
+
+تدقيق ملف الاجور
+
+MOL-Sprint 15-Service 70 (WRI) >> FIOCRT
+
+اصدار أمر تفتيش عمالي بناءا على طلب داخلي
+
+MOL-Sprint 16-Service 74 (HSI) >> WIINSO // 
+
+طلب تفتيش بناء على اصابة عمل
+
+MOL-Sprint 18-Service 77 (HSI) >> SIOBEIR // Occupational safety inspection order based on an external request or an internal system
+
+امر تفتيش سلامة مهنية بناء على طلب خارجي او نظام داخلي
+
+MOL-Sprint 18-Service 84 (CEN) >> AERF // Authentication of establishment rules and fines
+
+تصديق لوائح تنظيم العمل والجزاءات
+
+MOL-Sprint 19-Service 86 (LRO) >> ALROAO // Assignment of the license of a recruitment office to another owner
+
+تنازل عن ترخيص مكتب استقدام لمالك اخر
+
+MOL-Sprint 19-Service 87 (LRO) >> CROL // Cancellation of a recruitment office license
+
+الغاء رخصة مكتب استقدام
+
+MOL-Sprint 19-Service 89 (EWR) >> REWS // Register establishment work sites
+
+تسجيل مواقع عمل
+
+MOL-Sprint 19-Service 90 (EWR) >> REHL // Register establishment housing locations
+
+تسجيل مواقع سكن
+
+MOL-Sprint 20-Service 93 (EWR) >> EOTA "Just BPM" // Establishment ownership transfer approval
+
+طلب اعتماد نقل ملكية منشأة – بيع شركات
+
+MOL-Sprint 20-Service 94 (EWR) >> RAEC // Request to approve an establishment   closure
+
+طلب طلب اعتماد شطب منشأة
+
+MOL-Sprint 21-Service 97 (WSA) >> EXPRECAPR // Exceptional Recruitment Approval Request
+
+تقديم طلب موافقة استقدام استثنائية
+
+
+
+---------------------------------------------------------------------------
+// حجز موعد انتخابات للجان المشتركة    
+18
+تقرير اعلان فتح باب الترشح لعضوية اللجنة المشتركة   // MembershipJointCommitteesReport
+
+
+ترخيص عمل اعارة كلي او جزئي خارج اوقات العمل 
+35 + 40
+
+تقرير بطاقة تصريح عمل اعارة جزئي     // PartialLoanWorkPermitReport
+
+
+ تعديل موقع رخصة مكتب استقدام       // 
+   37
+تقرير ترخيص مزاولة مهنة استقدام عمال من الخارج لحساب الغير // RecruitmentOfficeLicenseReport
+
+نـمـوذج عـقـد عـمـل لـلـمـسـتـخـدمـيـن فـي الـمـنـازل
+ 38
+ 
+إحصائيات الموافقات
+ 
+ 44 + 47 + 48
+
+
+__________________________________________Production________________________________________________________________
+
+
+تجديد صلاحية موافقة استقدام عمالية		47	WSA
+طلب ترخيص عمل خاص  – كفالة ذويهم, مواطن خليجي, دبلوماسي, اقامة دائمة, مستثمر , أخرى 	50	LWP
+حجز موعد انتخابات للجان المشتركة	18	WCN
+
+
+
+
+
+
+
+74 
+تسجيل طلب تفتيش بناء على اصابة عمل  
+تفتيش الصحة و السلامة 
+المنشأة / المشرف 
+@Moath Mohammad
+77 
+امر تفتيش سلامة مهنية بناء على طلب خارجي او نظام داخلي 
+تفتيش الصحة و السلامة 
+مستخدمي الوزارة 
+@Moath Mohammad
+62 
+استقبال ملفات الاجور وتدقيقها بشكل يومي 
+حماية الأجور 
+مدقق الأجور 
+@Moath Mohammad
+63 
+تدقيق ملف الاجور 
+حماية الأجور 
+مدقق الأجور 
+@Moath Mohammad

@@ -1,0 +1,2665 @@
+Mouath1234M0785525277 Oracil
+
+mouathahmad@itc.hu.edu.jo   Mouath_1434323 office
+
+m.mohammad@mscmena.com M0785525277/Mouath_1434323
+
+m.mohammad@mscmena.com Moaad_1434323      office ( work )
+
+amigoscode :
+mouathahmad@itc.hu.edu.jo
+M0785525277
+
+
+1632647@std.hu.edu.jo
+
+
+Safwa User Name :
+
+MOUATH SAADAH
+
+
+Tax # 90765036
+pass : @Mouath_Saadah_1434323
+
+HOST :
+
+Local HOST : C:\Windows\System32\drivers\etc
+
+
+___________________________________BALSAM_______________________________________________________
+
+##DataBase :
+____________
+
+Env           Host        Port   Service Name | UserName
+_______|________________|______|______________|____________
+Dev    | 192.168.55.223  | 1521  | dvlpnrl    |  OASIS  
+
+
+##Eviroment :
+_____________
+
+Dev Env :
+
+https://jordan.oasisapp.services/dvlp/faces/Login.jsf           user : oasisman / password : oasisman
+
+
+Web Logic IP : 192.168.55.145
+port : 7001
+http://192.168.55.145:7101/console
+
+
+##Tooles :
+___________
+1- Jdeveloper 12.2.1.2
+2- Toad 
+3- GitHub
+4- GitBucket
+5- Apache ant
+6- Jira
+7- Registry Editor
+
+##Accounts :
+____________
+
+1 / google email : m.mohammad@oasissys.com
+2 / office 365 : mouathahmad@itc.hu.edu.jo
+3 / widows user
+4 / Chat GPT
+5 / GitBucket : https://jedbucket.oasisapp.services/login
+6 / Jira : https://jordan.oasisapp.services/dvlp/faces/Login.jsf
+7 / Github
+____________          ____________          ____________
+1 / mouaths123
+2 / Mouath_1434323
+3 / 9961023646
+4 / Moaad_1434323
+5 / user name : mouath  |  pass : 9961023646
+6 / user name : m.mohammad@oasissys.com |  pass : 12345678
+7 / user name : m.mohammad@oasissys.com |  pass : mouaths123
+
+
+##FUNCTION
+
+#To add a new TaskFlow : [ MAPS001 , MAPS017 ]
+exec Add_New_Task_Flow('TESTTF','Test Task Flow','/WEB-INF/oasis/test/flows/TestTF.xml#TestTF','Y');
+
+#To add a new error message : [ MAPS015 , MAPS016 ]
+DECLARE
+v_error_no NUMBER;
+BEGIN
+oasis.set_hospital_id(1);
+v_error_no :=Add_Error_Msg('V','Test Message','خطأ رسالة;('
+dbms_output.put_line('v_error_no='||v_error_no);
+END;
+
+Adding Resource Key : [ MAPS021 ]
+exec Add_Resource_Key('TESTRESOURCEKEY','TEST','تجربة','/WEB-INF/oasis/test/flows/TestTF.xml#TestTF');
+
+Adding a static Key [ MAPS022 ]
+exec Add_Static_Maps022('MALE','Male','ذكر';
+
+
+##GROOVY :
+__________
+
+***GROOVY EXPRESSION IN COMMON PROJECT***
+
+
+adf.userSession.userData.userGCId	                                          refrenced in document by  G_GL_C_ID	                                                        bigDecimal
+adf.userSession.userData.userCId	                                          refrenced in document by  G_C_ID	                                                            bigDecimal
+adf.userSession.userData.userId	                                              Used To Get user Id 	                                                                        bigDecimal
+adf.userSession.userData.staffId	                                          Used to get login user staff Id 	                                                            String
+adf.userSession.userData.languageId	                                          Used to get login user language Id 	                                                        bigDecimal
+adf.userSession.userData.workEntityId	                                      Used to get login user work entity Id	                                                        bigDecimal
+adf.userSession.userData.facilityId	                                          Used to get user facility id	                                                                bigDecimal
+adf.userSession.userData.hospitalId	                                          Used to get user hospital Id 	                                                                bigDecimal
+adf.userSession.userData.fullMedRec	                                          used to get full medical paramters  refrenced in document by  P_FULL_MED_REC                  bigDecimal
+adf.userSession.userData.diagDivision	                                      used to get full medical paramters  refrenced in document by  P_DIAG_DIVISION	                bigDecimal
+adf.userSession.userData.signDivision	                                      used to get full medical paramters  refrenced in document by  P_SIGN_DIVISION	                bigDecimal
+adf.userSession.userData.icdActiveVersion        	                          used to get full medical paramters  refrenced in document by  P_ICD_ACTIVE_VERSION	        bigDecimal
+adf.userSession.userData.procDivision	                                      used to get full medical paramters  refrenced in document by  P_PROC_DIVISION	                bigDecimal
+adf.userSession.userData.rules.getRuleValue( [Rule_Name] , [default_value] )  [This used get rule value ] -- Need to skip validation in the expression	                    String
+adf.userSession.userData.oasisUtils.[Method name ]	                          [used to access methods in OasisModelUtils ] --Need to skip validation in the expression 	    *
+adf.userSession.userData.hospPrivateFlag	                                  find work entity private flag	                                                                String
+adf.userSession.userData.oasisCodes.[Method name ]	                          [This used call methods in OasisCodesSingleton ] --Need to skip validation in the expression	
+
+
+
+
+________________________________________________________
+
+
+Work from Home
+
+
+windows / microsoft key :
+
+XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99
+XG4C3-TJXXB-9BYJJ-VQJBF-VR96J
+
+__________________________________________________________________________
+jdbc/mol_shc_att
+
+est id = 172101, 15819 ==> 
+
+ExecuteBindQSService :
+"192.168.31.83:8005"
+CommonUtil.getOSBUrl()
+  
+url :
+
+http://ohs.mol.gov.qa:7777/wsa/rtf/rtfquery
+
+My IPv4 Address. . . . . . . . . . . : 192.168.31.125
+\\192.168.31.10
+
+
+
+
+____________________________Report Jasper__________________________________________
+
+new File($P{pImageBase},$P{pBackIcon})
+
+parameters name :
+
+ProcTrxId (BigDecimal)
+
+ProcessId (bigDecimal)
+
+PkCode1 (BigDecimal)
+
+PkCode2 (BigDecimal)
+
+ProductId (BigDecimal)
+
+requestedBy (String)
+
+languageCode (String)
+
+
+
+$F{VISA_NO}
+.replaceAll("0", "\\\u0660").replaceAll("1", "\\\u0661").replaceAll("2", "\\\u0662") .replaceAll("3", "\\\u0663").replaceAll("4", "\\\u0664").replaceAll("5", "\\\u0665") .replaceAll("6", "\\\u0666").replaceAll("7", "\\\u0667").replaceAll("8", "\\\u0668") .replaceAll("9", "\\\u0669")
+___________________________________SQL___________________________________________
+
+Log in Procedure :
+
+p_o_message_body := 'Error code ' || SQLCODE || ': ' || SQLERRM || '   LineNumber:' || DBMS_UTILITY.format_error_backtrace;
+dbms_output.put_line(v_paramters_string);
+
+
+
+
+
+DB MOL Project :
+
+**add screen to menu**
+SEC_VWSP_TASKFLOWS
+SEC_VWSP_MENUS
+SEC_VWSP_DUTY_GROUPS
+SEC_VWSP_DUTY_JOB_ROLES
+
+**get manager for user**
+UTL_PROC_BPM_EMPLOYMENT_CHAIN
+PRC_MBV_PKG.GET_PARENT_USER_LIST
+
+**BPM stage** 
+PRC_VWSC_BPM_STAGES_SETUP
+PRC_VWSC_BPM_STAGE_ACTIONS
+
+**Message**
+PRC_VWSP_NOTIFICATION_INFO
+PRC_VWSP_NOTIFY_TEMPLATES
+
+**Reports**
+REP_VWSC_REPORTS_LIST
+REP_VWSC_PROCESS_REPORTS_MAP
+REP_VWSC_PEPORTS_TEMPLATES
+
+
+Grant :
+
+
+grant select on PRC_VRSC_GEN_PARAMETERS to bm_lro;
+
+
+
+
+CASE :p_locale WHEN 'en' THEN PRC_VRSC_ENTITIES_TYPES.ENTITY_DESCRIPTION_EN  ELSE PRC_VRSC_ENTITIES_TYPES.ENTITY_DESCRIPTION_AR END ENTITY_NAME,
+
+
+to_char( ,'dd/mm/yyyy') AS ,
+
+( SELECT par_ar FROM "SYS_GENERAL_LOOKUPS_DTL" WHERE M_id = 208 and 
+);
+
+(SELECT DESCRIPTION FROM UTL_JOB WHERE JOB_ID = v.job_id ) AS JOB_ID, --المهنة
+(SELECT NAME_AR FROM UTL_COUNTRIES WHERE COUNTRY_ID = NATIONALITY_ID ) AS NATIONALITY_ID 
+(SELECT NAME_AR FROM UTL_COUNTRIES WHERE COUNTRY_ID = MPM_LABOR_PROFILE.PLACE_OF_BIRTH ) AS PLACE_OF_BIRTH 
+UTL_GENERAL.GET_NATIONALITY_NAME ( I.NATIONALITY_ID , 'AR' ) AS NATIONALITY_DES, -- الجنسية
+UTL_GENERAL.GET_QUALIFICATIONS_NAME ( MPM_LABOR_PROFILE.QUALIFICATIONS_ID , 'AR' )QUALIFICATIONS_ID
+UTL_GENERAL.GET_ECONOMIC_ACT_NAME(ECONOMIC_ACTIVITY_ID,'ar') as ECONOMIC_ACTIVITY_ID_NAME  -- وصف النشاط 
+SYS_PKG.GET_LOOKUP_NAME (2,U.GOVERNORATE_ID) -- المحافظة
+SYS_PKG.GET_LOOKUP_NAME (4,LICN.LICN_TYPE_ID) -- نوع الترخيص
+SYS_PKG.GET_LOOKUP_NAME (32,P.gender_id) AS GENDER_ID, -- الجنس
+SYS_PKG.GET_LOOKUP_NAME (198,SALARY_TYPE) AS SALARY_TYPE,-- نوع الراتب
+SYS_PKG.GET_LOOKUP_NAME (200,PERIOD) AS PERIOD,-- فترة الدوام
+SYS_PKG.GET_LOOKUP_NAME (185,PERIOD) AS PERIOD,-- نوع المركبة
+CASE WHEN LICN_STATUS = 1 THEN 'فعال' ELSE 'ملغي' END AS STATUS , -- الحالة
+CASE WHEN HOUSING_ALLOWANCE = 1 THEN 'نعم' ELSE 'لا' END AS HOUSING_ALLOWANCE
+CASE WHEN INCLUDE_CONTRACT = 1 THEN 'يشمل' ELSE 'لا يشمل' END AS INCLUDE_CONTRACT 
+CASE WHEN IV.IS_SUSPEND = 1 THEN 'موقوف' ELSE 'غير موقوف' END AS IV.IS_SUSPEND
+
+CASE WHEN HOUSING_ALLOWANCE = 1 THEN 'نعم' ELSE 'لا' END AS HOUSING_ALLOWANCE
+CASE WHEN IV.IS_SUSPEND = 1 THEN 'موقوف' ELSE 'غير موقوف' END AS IV.IS_SUSPEND
+
+    IV.IS_SUSPEND -- 1 موقوف | 0 غير موقوف
+ 
+ 
+ 
+ SELECT REPORT_NAME_AR
+FROM UTL_SERVICE
+WHERE SERVICE_ID =: P_SERVICE_ID
+
+
+//UNLOCK HR 
+
+ALTER USER HR IDENTIFIED BY HR ACCOUNT UNLOCK;
+
+@ C:\app\Dell\product\21c\dbhomeXE\demo\schema\human_resources\hr_main.sql
+
+1 pass hr : hr
+2 : users
+3 : temp
+4 pass sys : 123
+5 : $ORACLE_HOME/demo/schema/log
+6 : localhost:1521/XEPDB1
+
+@ D:\WorkPC\db-sample-schemas-19.2\human_resources\hr_cre.sql
+
+@ D:\WorkPC\db-sample-schemas-19.2\human_resources\hr_popul.sql
+
+@ D:\WorkPC\db-sample-schemas-19.2\human_resources\hr_idx.sql
+
+@ D:\WorkPC\db-sample-schemas-19.2\human_resources\hr_code.sql
+
+@ D:\WorkPC\db-sample-schemas-19.2\human_resources\hr_comnt.sql
+
+@ D:\WorkPC\db-sample-schemas-19.2\human_resources\hr_analz.sql
+
+
+SELECT I.PARENT_TRANS_ID  AS TRANS_ID
+FROM SYS_TRAN_REQ_MAPPING I, PAM_REQ_PORTAL.REQ_REQUESTS II
+WHERE I.REQUEST_ID = II.REQUEST_ID AND II.REQUEST_CODE = '1210000008223';
+
+
+
+
+
+CREATE TABLE "SALES_INORMATION"      
+   (	"ID" NUMBER NOT NULL ENABLE, 
+	"USER_NAME" NVARCHAR2(100),      
+	"FIRST_NAME" VARCHAR2(50 BYTE),  
+	"LAST_NAME" VARCHAR2(50 BYTE),   
+	"FIRST_QUARTER" FLOAT(126),      
+	"SECOND_QUARTER" FLOAT(126),     
+	"THIRD__QUARTER" FLOAT(126),     
+	"FOURTH_QUARTER" FLOAT(126),     
+	"OUTCOME" FLOAT(126),            
+	 CONSTRAINT "SALES_INORMATION_PK" PRIMARY KEY ("ID"));
+
+
+/*First :Run this command on Adf_summit */
+
+ALTER TABLE S_CUSTOMER add  REGION_ID NUMBER;
+
+------------------------------------------------------------        
+/*Second :Run this command on Adf_summit */
+
+update S_CUSTOMER set REGION_ID=1 where COUNTRY_ID in (4,9,14) ;    
+update S_CUSTOMER set REGION_ID=2 where COUNTRY_ID in  (1,10) ;     
+update S_CUSTOMER set REGION_ID=3 where COUNTRY_ID in  (7,12) ;     
+update S_CUSTOMER set REGION_ID=4 where COUNTRY_ID in  (3,2,5) ;    
+update S_CUSTOMER set REGION_ID=5 where COUNTRY_ID in  (6,8,11,13) ;
+commit;
+
+____procedure____
+
+@1@
+create or replace procedure number_2_text (n in number,txt out varchar2)
+is
+begin
+if n=0 then
+txt:='one';
+end if;
+if n=2 then
+txt:='two';
+end if;
+end;
+/
+
+
+ create or replace procedure INSERTR
+    (id IN NUMBER,  name IN VARCHAR2,idr IN NUMBER)  
+    is  
+    begin  
+    insert into S_COUNTRIES(id,country,region_id) values(id,name,idr);  
+    end;  
+    /  
+
+	
+____function_____
+
+
+CREATE OR REPLACE FUNCTION EmployeeName 
+( PARAM1 IN number,PARAM2 OUT VARCHAR2 ) RETURN NUMBER AS EMPLOYEE_ID NUMBER;
+BEGIN
+SELECT EMPLOYEE_ID,FIRST_NAME||' '||LAST_NAME into EMPLOYEE_ID,PARAM2 from employees
+where employee_id=PARAM1;
+  RETURN EMPLOYEE_ID;
+END EmployeeName;
+
+DECLARE
+  retval Number;
+  outval VARCHAR2(20);
+FUNCTION EmployeeName 
+( PARAM1 IN number,PARAM2 OUT VARCHAR2 ) RETURN NUMBER AS EMPLOYEE_ID NUMBER;
+BEGIN
+SELECT EMPLOYEE_ID,FIRST_NAME||' '||LAST_NAME into EMPLOYEE_ID,PARAM2 from employees
+where employee_id=PARAM1;
+  RETURN EMPLOYEE_ID;
+END EmployeeName;
+BEGIN
+  retval := EmployeeName(100,outval);
+  DBMS_OUTPUT.put_line(outval);
+  DBMS_OUTPUT.put_line(retval);
+END;
+   
+   
+   
+Creat Table and View and seqRequestId
+_______________________________________
+
+CREATE TABLE GEN_ESTABLISHMENT_INQUIRIES_LOG 
+(
+  LOG_ID NUMBER NOT NULL 
+, CREATED_DATE DATE 
+, USER_ID VARCHAR2(200) 
+, INQUERY_CONDITION VARCHAR2(4000) 
+, CONSTRAINT GEN_ESTABLISHMENT_INQUIRIES_LOG_PK PRIMARY KEY 
+  (
+    LOG_ID 
+  )
+  ENABLE 
+);
+ 
+ALTER TABLE GEN_ESTABLISHMENT_INQUIRIES_LOG 
+ADD (ACTION_TYPE VARCHAR2(200) );
+ 
+CREATE SEQUENCE PK_GEN_ESTABLISHMENT_INQUIRIES_LOG INCREMENT BY 1 START WITH 1 MAXVALUE 9999999999999999999999999999999999999999999999999999 MINVALUE 1 NOCACHE;
+ 
+ 
+    
+    CREATE OR REPLACE VIEW GEN_VWSP_GEN_EST_INQUIRIES_LOG
+    AS
+    SELECT LOG_ID,
+       CREATED_DATE,
+       USER_ID,
+       INQUERY_CONDITION,
+       ACTION_TYPE
+FROM GEN_ESTABLISHMENT_INQUIRIES_LOG;
+
+    begin
+execute immediate 'create or replace trigger PK_GEN_ESTABLISHMENT_INQUIRIES_LOG  '||chr(10)||
+	'   before insert on "BM_GEN"."GEN_ESTABLISHMENT_INQUIRIES_LOG" '||chr(10)||
+	'   for each row '||chr(10)||
+	'begin  '||chr(10)||
+	'   if inserting then '||chr(10)||
+	'      if :NEW."LOG_ID" is null then '||chr(10)||
+	'         select PK_GEN_ESTABLISHMENT_INQUIRIES_LOG.nextval into :NEW."LOG_ID" from dual; '||chr(10)||
+	'      end if; '||chr(10)||
+	'   end if; '||chr(10)||
+	'end;'||chr(10);
+	end;
+	
+create tigger based sequance :
+
+
+CREATE OR REPLACE TRIGGER EMPLOYEES_SEQ_TRIGGER
+BEFORE INSERT ON EMPLOYEES
+FOR EACH ROW
+BEGIN
+	IF :new.EMPLOYEE_ID IS NULL THEN
+		SELECT EMPLOYEES_SEQ.nextval INTO :new.EMPLOYEE_ID FROM DUAL;
+	END IF;
+END;
+
+	
+_____________________________________JDeveloper___________________________________
+
+target :
+
+
+   <af:target execute="@this" render="@this"/>
+   
+
+
+TextEditor :
+
+ <af:richTextEditor value="#{bindings.RegulationTextDetails.inputValue}" simple="true"
+ columns="#{bindings.RegulationTextDetails.hints.displayWidth}"
+ shortDesc="#{bindings.RegulationTextDetails.hints.tooltip}" id="it2" label=" "
+ converter="oracle.genericDomain" layout="legacy" autoSubmit="true"/>
+
+
+
+Dawnload :
+
+/ide.conf 
+
+AddVMOption -Xms2048M
+AddVMOption -Xmx4096M
+
+
+/jdev.conf 
+
+AddVMOption -DMainWindow.MemoryMonitorOn=true
+cd "C:\Program Files\Java\jdk1.8.0_191\bin"
+java.exe -jar D:\WorkPC\Jdev12.2.1.4\fmw_12.2.1.4.0_bpm_quickstart.jar
+// apply the patches, execute the following commands one by one:  
+"C:\Program Files\Java\jdk1.8.0_191\bin\java.exe" -jar C:\Jdev_Patches\6880880\opatch_generic.jar oracle_home=C:\Oracle12214\Middleware\Oracle_Home
+after that a wizard wil be shown to you just click next  (ACCEPT defaults) to the end of the wizard.
+
+set ORACLE_HOME=C:\Oracle\Middleware\Oracle_Home
+set MW_HOME=C:\Oracle\Middleware
+cd C:\Jdev_Patches\32842810
+C:\Oracle\Middleware\Oracle_Home\OPatch\opatch apply
+cd C:\Jdev_Patches\32363659
+C:\Oracle\Middleware\Oracle_Home\OPatch\opatch apply
+cd C:\Jdev_Patches\30482761
+C:\Oracle\Middleware\Oracle_Home\OPatch\opatch apply
+
+BPM Page def :
+
+#{bindings.procTrxId.inputValue}
+#{bindings.processId.inputValue}
+#{bindings.stageId.inputValue}	
+#{bindings.recordId.inputValue}
+
+
+deck component :
+
+#{empty pageFlowScope.showPG ?  "mainPG" :  pageFlowScope.showPG}
+
+
+violationDeck = (RichDeck) JSFUtils.findComponentInRoot("d2");
+AdfUtil.setEL("#{viewScope.violation}", "violationPB2");
+AdfUtil.setEL("#{viewScope.law}", "lawsPG");
+AdfFacesContext adfFacesContext = AdfFacesContext.getCurrentInstance();
+adfFacesContext.addPartialTarget(violationDeck.getParent());
+adfFacesContext.addPartialTarget(violationDeck);
+adfFacesContext.addPartialTarget(JSFUtils.findComponentInRoot("violationPB1").getParent());
+adfFacesContext.addPartialTarget(JSFUtils.findComponentInRoot("violationPB1"));
+adfFacesContext.addPartialTarget(JSFUtils.findComponentInRoot("violationPB2").getParent());
+adfFacesContext.addPartialTarget(JSFUtils.findComponentInRoot("violationPB2"));
+		
+		
+JavaImp
+		
+design :
+
+width:220px !important
+AFStretchWidth
+margin:10px; font-size:large;  font-weight:bold;
+
+
+get user name :
+
+ADFContext.getCurrent().getSecurityContext().getUserName())
+JSFUtils.resolveExpression("#{sessionScope.userName}");
+
+Component :
+
+panel accordion >> show detail item
+panel splitter
+panel stretch layout
+Panel Form Layout
+Facet Definition=Facet Ref // Template
+Panel Tabbed  >> show detail item
+panel header
+Decorative Box layout
+setActionListene
+Navigation
+Breadcrumbs
+
+Regular Expression :
+		  
+^[0-9]{1,20}$
+^[A-Z a-z]{2}[0-9]{1,20}$
+[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}
+^[A-Z   a-z ء-ي]+[A-Z  a-z 0-9 ء-ي]*$     
+^[A-Za-zء-ي]+[A-Za-z ء-ي]+[A-Za-z \\n ء-ي]*$ 
+^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
+^[&amp;amp+#|&amp;lt>.^*%@$/_()-/\\0-9A-Za-zء-ي]+[A-Za-z ء-ي]+[&amp;amp+#|&amp;lt>.^*%@$/_()-/\\0-9A-Za-z \\n ء-ي]*$
+attern="[&amp;amp+#|&amp;lt>.^*/_()-/\\A-Za-z 0-9ء-ي]*[A-Za-zء-ي]+[&amp;amp+#|&amp;lt>.^*/_()-/\\A-Za-z 0-9ء-ي]*"
+^null|$
+https:\\/\\/www\\.google\\.com\\/maps\\/.*@[0-9]{2}\\.[0-9]+,[0-9]{2}\\.[0-9]+.*
+
+
+MSG :
+
+String noData_msg =JSFUtils.getValueFromResourceBundle(BUNDLE_PATH, "RFLE001_CMMISSIONER_DATA_TITLE");
+JSFUtils.Validate(noData_msg, 4);
+
+
+comment bean :
+
+    /**
+    * @author Mouath
+    * @date Wednesday, Jan 09, 2019.
+    * @desc GET trans code randomly                                           
+    * @param P_SERVICE_ID NUMBER, P_TRANS_TYPE NUMBER
+    * @return TRANS_CODE VARCHAR             
+    * @exception which exceptions is thrown by the method.     
+    **/ 
+	
+Upload Attachment :
+
+**max size**
+
+web.xml
+
+  <context-param><!-- Maximum file size per request (in bytes) By Moaath-->
+  <param-name>org.apache.myfaces.trinidad.UPLOAD_MAX_FILE_SIZE</param-name>
+  <!-- Use 10 MB --><param-value>10240000</param-value>
+  </context-param>
+<context-param>   	
+<param-name>org.apache.myfaces.trinidad.UPLOAD_MAX_DISK_SPACE</param-name>   	
+<param-value>10240000</param-value>	<!-- Use 10 MB -->
+</context-param>
+
+ADF lib Beans :
+
+BindingContext
+BindingContainer
+DCBindingContainer
+FacesContext
+Expiration language
+//ADFUtils
+     findOperation(String name)
+     findIterator(iteratorName)
+     getApplicationModuleForDataControl(String dataControlName)
+     selectItemsForIterator(String iteratorName, String valueAttrName,String displayAttrName)
+	 selectItemsForIterator(String iteratorName, String valueAttrName,String displayAttrName, String descriptionAttrName)
+	 attributesListForIterator(DCIteratorBinding iter, String[] attrNames)
+	 attributeListForIterator(String iteratorName, String[] attrNames)
+	 keyAttrListForIterator(String iteratorName, String keyAttrName)
+	 getSelectedRows(RichTable table)
+	 printRow(Row row)
+	 
+//JSFUtils
+     addFacesInformationMessage(String msg)
+	 addFacesErrorMessage(String msg)
+	 addFacesErrorMessage(String attrName, String msg)
+	 invokePopup(String popupId, String align,String alignId)
+	 getValueFromResourceBundle(String resourceBundleName,String key, Object... params  )
+	 resolveValidator(String validatorName)
+	 resolveValueChangeListener(String validatorName)
+	 ***findComponentInRoot(String id)
+	 
+ Design comments :
+1.	Page Tables “af:table” should reside in a Panel Collection “af:panelCollection”, that’s because it has some nice features for exploring tables. Make sure it does not cause any problem with responsive layout.
+2.	Popups “af:popup” should hold directly a dialog “af:dialog”, i.e. in the first level. Dialog’s “modal” property default values is “true”, this means that when the dialog or popup is visible, it blocks user input to all other windows in the program.
+3.	The “closeIconVisible” property of the dialog should be set to false, This will prevent the user to close the popup without doing an action either confirm or cancel.
+4.	When using “af:table” Make sure to change “rowBandingInterval” property to “1” instead of “0”. This will make table has two colors for row instead of one .
+5.	Make sure that you don’t add any custom styles to any component.
+
+
+
+
+
+________Bean_____
+
+Current Date :
+
+new Timestamp(new java.util.Date().getTime())
+
+Operation :
+
+OperationBinding oper = AdfUtil.findOperation("getRegistrationEco");
+oper.getParamsMap().put("pCourseId", courseId);
+oper.execute();
+			
+
+    public String submitRetrievingRequest() {
+        // Add event code here...
+
+        UpdateTaskRequest request = new UpdateTaskRequest();
+        request.setLocale("ar");
+        request.setUsername("est_portal_admin");
+        request.setOutcome("RETURN");
+        EwcVwspTrxWorkerContractUVORowImpl row =
+            (EwcVwspTrxWorkerContractUVORowImpl) AdfUtil.getCurrentRowByIterator("EwcVwspTrxWorkerContractUVO1Iterator");
+
+        request.setTaskNumber(row.getTaskNumber().intValue());
+        UpdateTaskResponse response = WebServiceClient.updateTaskOutcome(request);
+        System.out.println("UpdateTaskResponse " + response.getResultCode());
+        System.out.println("UpdateTaskResponse " + response.getResultMessage());
+        if (response.getResultCode() == 200) {
+            JSFUtils.addNotifyInfoMessage("\u062a\u0645 \u0627\u0633\u062a\u0631\u062c\u0627\u0639 \u0627\u0644\u0637\u0644\u0628 \u0628\u0646\u062c\u0627\u062d");
+            return "retrievingRequest";
+        } else {
+            JSFUtils.addNotifyErrorMessage("\u0644\u0627 \u064a\u0645\u0643\u0646 \u0627\u0633\u062a\u0631\u062c\u0627\u0639 \u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0637\u0644\u0628 \u062d\u0627\u0644\u064a\u0627\u064b\u060c \u064a\u0631\u062c\u0649 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u062f\u0639\u0645 \u0627\u0644\u0641\u0646\u064a \u0644\u0644\u062a\u0641\u0627\u0635\u064a\u0644");
+        }
+
+
+        return null;
+    }
+
+
+
+Build manuale VC :
+
+
+
+public void search(ActionEvent actionEvent) {
+        // Add event code here...
+        try{
+            
+            RichInputText estCodeIt = (RichInputText) JSFUtils.findComponentInRoot("oEstCodeIt");
+            RichSelectOneChoice munSoc = (RichSelectOneChoice) JSFUtils.findComponentInRoot("munSoc");
+            RichSelectOneChoice zoneSoc = (RichSelectOneChoice) JSFUtils.findComponentInRoot("oZoneSoc");
+            RichInputText fromLaoberNo = (RichInputText) JSFUtils.findComponentInRoot("fromLaoberNo");
+            RichInputText toLaoberNo = (RichInputText) JSFUtils.findComponentInRoot("toLaoberNo");
+            RichInputText managerQid = (RichInputText) JSFUtils.findComponentInRoot("managerQid");
+            
+            ViewObject getAllEstROV= AdfUtil.findIterator("GetAllEstablishmentRVO1Iterator").getViewObject();
+            ViewCriteriaManager vcm = getAllEstROV.getViewCriteriaManager();
+            ViewCriteria vc = vcm.getViewCriteria("GetAllEstablishmentVC");
+            VariableValueManager vvm = vc.ensureVariableManager();
+            
+            vvm.setVariableValue("pEstCode",estCodeIt.getValue());
+            vvm.setVariableValue("pGreater",fromLaoberNo.getValue());
+            vvm.setVariableValue("pLess",toLaoberNo.getValue());
+            vvm.setVariableValue("pManagerQid",managerQid.getValue());
+            vvm.setVariableValue("pMunicipalityCode",munSoc.getValue()); 
+            vvm.setVariableValue("pZoneCode",zoneSoc.getValue()); 
+            
+            System.out.println("pEstCode == "+estCodeIt.getValue());
+            System.out.println("pCreatedDateFrom = "+fromLaoberNo.getValue());
+            System.out.println("pCreatedDateTo = "+toLaoberNo.getValue());
+            
+            getAllEstROV.applyViewCriteria(vc);
+            getAllEstROV.executeQuery();
+
+        }
+        catch(Exception e){
+           e.printStackTrace(); 
+        }
+    }
+
+    public void reset(ActionEvent actionEvent) {
+        // Add event code here...
+        try{
+            
+            RichInputText estCodeIt = (RichInputText) JSFUtils.findComponentInRoot("oEstCodeIt");
+            RichSelectOneChoice munSoc = (RichSelectOneChoice) JSFUtils.findComponentInRoot("munSoc");
+            RichSelectOneChoice zoneSoc = (RichSelectOneChoice) JSFUtils.findComponentInRoot("oZoneSoc");
+            RichInputText fromLaoberNo = (RichInputText) JSFUtils.findComponentInRoot("fromLaoberNo");
+            RichInputText toLaoberNo = (RichInputText) JSFUtils.findComponentInRoot("toLaoberNo");
+            RichInputText managerQid = (RichInputText) JSFUtils.findComponentInRoot("managerQid");
+            
+            estCodeIt.setValue("");
+            fromLaoberNo.setValue("");
+            toLaoberNo.setValue("");
+            managerQid.setValue("");
+            munSoc.setValue("");
+            zoneSoc.setValue("");
+            
+            
+           ViewObject getAllEstROV= AdfUtil.findIterator("GetAllEstablishmentRVO1Iterator").getViewObject();
+           ViewCriteriaManager vcm = getAllEstROV.getViewCriteriaManager();
+           vcm.removeApplyViewCriteriaName("GetAllEstablishmentVC");
+           ViewCriteria vc = vcm.getViewCriteria("GetAllEstablishmentVC");
+           getAllEstROV.applyViewCriteria(vc);
+           getAllEstROV.executeQuery();
+
+            AdfFacesContext.getCurrentInstance().addPartialTarget(JSFUtils.findComponentInRoot("oSearchPgl"));
+            
+            
+        }
+        catch(Exception e){
+           e.printStackTrace(); 
+        }
+    }
+    
+    
+    public void municipalVCL(ValueChangeEvent valueChangeEvent) {
+        // Add event code here...
+        try{
+        
+            
+          System.out.println("pMunicipality = "+valueChangeEvent.getNewValue()); 
+          OperationBinding ZonesEWP=  AdfUtil.findOperation("FilterZone");
+          ZonesEWP.getParamsMap().put("pMunicipality", valueChangeEvent.getNewValue());
+          ZonesEWP.execute();
+        }
+        catch(Exception e){
+           e.printStackTrace(); 
+        }
+    }
+    
+
+
+
+call Function & Procedure  :
+
+
+//call function IN Parameter 
+
+Public String Test(int Param1 , String Param2){
+
+CallableStatement callUpdate=null;
+String result = null ;
+String sqlCode = "BEGIN ? := TestSchema.TestPackage.Test(?,?); end;";
+
+try{
+
+callUpdate=getDBTransaction().createCallableStatement(sqlCode,DBTransaction.DEFAULT);
+
+callUpdate.registerOutParameter(1,Types.VARCHAR);
+
+callUpdate.setInt(2,Parm1);
+callUpdate.setString(3,Parm2);
+
+callUpdate.executeQuery();
+
+result=callUpdate.getString(1);
+
+return (result);
+
+
+} catch (Exception e) { 
+    throw new JboException(e);
+	} finally {
+	    if(callUpdate != null) {
+		   try {
+		       callUpdate.close();
+		   }  catch (SQLException e) {
+		         e.printStackTrace();
+				 throw new JboException(e);
+             }
+		 }
+    }
+
+}
+
+
+//call function IN & OUT Parameter 
+
+Public Map Test2(int Param1 , String Param2){
+
+CallableStatement callUpdate=null;
+Map result = null ;
+String sqlCode = "BEGIN ? := TestSchema.TestPackage.Test2(?,?,?); end;";
+
+try{
+
+callUpdate=getDBTransaction().createCallableStatement(sqlCode,DBTransaction.DEFAULT);
+
+callUpdate.registerOutParameter(1,Types.VARCHAR);
+callUpdate.registerOutParameter(4,Types.VARCHAR);
+
+callUpdate.setInt(2,Parm1);
+callUpdate.setString(3,Parm2);
+
+callUpdate.executeQuery();
+
+result.put("FirstParamOut",callUpdate.getString(1));
+result.put("SecParamOut",callUpdate.getString(1));
+
+return (result);
+
+
+} catch (Exception e) { 
+    throw new JboException(e);
+	} finally {
+	    if(callUpdate != null) {
+		   try {
+		       callUpdate.close();
+		   }  catch (SQLException e) {
+		         e.printStackTrace();
+				 throw new JboException(e);
+             }
+		 }
+    }
+
+}
+
+//call procedure IN & OUT Parameter 
+
+
+Public String Test2(int Param1 , String Param2){
+
+CallableStatement callUpdate=null;
+String result = null ;
+String sqlCode = "BEGIN TestSchema.TestPackage.Test2(?,?,?); end;";
+
+try{
+
+callUpdate=getDBTransaction().createCallableStatement(sqlCode,DBTransaction.DEFAULT);
+
+callUpdate.registerOutParameter(3,Types.VARCHAR);
+
+callUpdate.setInt(1,Parm1);
+callUpdate.setString(2,Parm2);
+
+callUpdate.executeQuery();
+
+result=callUpdate.getString(3);
+
+return (result);
+
+
+} catch (Exception e) { 
+    throw new JboException(e);
+	} finally {
+	    if(callUpdate != null) {
+		   try {
+		       callUpdate.close();
+		   }  catch (SQLException e) {
+		         e.printStackTrace();
+				 throw new JboException(e);
+             }
+		 }
+    }
+
+}
+
+
+//call function in beans
+
+
+    public String callFunctionGetTransCode() {
+        
+        try {
+            String transCode = null;
+            OperationBinding getTransCodeOperation = (OperationBinding) ADFUtils.findOperation("getTransCode");
+            getTransCodeOperation.getParamsMap().put("pServiceId", 3);
+            getTransCodeOperation.getParamsMap().put("pTransType", 1);
+            getTransCodeOperation.execute();
+            if (getTransCodeOperation.getResult() != null) 
+                System.out.println("call function success, Bean: RFLE001Bean, Method: callFunctionGetTransCode, Table: ");
+             else
+                System.out.println("call function failure >> null value, Bean, RFLE001Bean, Method: callFunctionGetTransCode, Table: ");
+            transCode = getTransCodeOperation.getResult() + "";
+            return transCode;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+            System.out.println("call function failure, Bean: RFLE001Bean, Method: callFunctionGetTransCode, Table: ");
+        }
+        return "";
+    }
+	
+	
+__________________________________________Note_______________________________________
+
+Inspiron 5759
+connect C##summit_adf/summit_adf
+
+
+
+        ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
+        String host = externalContext.getRequestServerName();
+        Integer port = externalContext.getRequestServerPort();
+        String protocol = externalContext.getRequestScheme();
+        //String contextroot = externalContext.getRequestContextPath();
+
+
+
+
+Username: U01101093862588
+Password:12345678
+
+// active windows 
+SLMGR -REARM
+
+Frank Nimphius
+
+
+
+            ViewObject hsiVwspTrxInspectionOrderVO =
+                AdfUtil.findIterator("HsiVwspTrxInspectionOrderUVO1Iterator").getViewObject();
+
+            hsiVwspTrxInspectionOrderVO.setNamedWhereClauseParam("pProcessId",
+                                                                 JSFUtils.resolveExpression("#{pageFlowScope.pProcessId}"));
+            hsiVwspTrxInspectionOrderVO.setNamedWhereClauseParam("pProcTrxId",
+                                                                 JSFUtils.resolveExpression("#{pageFlowScope.pProcTrxId}"));
+            hsiVwspTrxInspectionOrderVO.executeQuery();
+            System.out.println("hsi row :" + hsiVwspTrxInspectionOrderVO.getEstimatedRowCount());
+
+
+Set Accessory Bind Variable 
+
+
+    /**
+     * Gets the attribute value for ATT_REJECT_ID using the alias name AttRejectId.
+     * @return the ATT_REJECT_ID
+     */
+    public BigDecimal getAttRejectId() {
+       // try {
+                RowSet rs = (RowSet) getAttributeInternal(MOLATTACHMENTAPPMODULE_GETATTVRSCREJECTRESONSLISTLOV1_1);
+                rs.setNamedWhereClauseParam("pAttachmentId", (BigDecimal) getAttributeInternal(ATTACHMENTID));
+                rs.setNamedWhereClauseParam("pProcessId", getProcessId());
+                rs.executeQuery();
+				
+				RowSet rs = (RowSet) getAttributeInternal();
+rs.setNamedWhereClauseParam()
+rs.excuteQuery();
+    //    } catch (Exception e) {
+    //    }
+        return (BigDecimal) getAttributeInternal(ATTREJECTID);
+    }
+
+
+
+Class/ Interface
+
+
+	 
+//Iterator 
+ViewObjectImpl
+   ViewObjectImpl vo = (ViewObjectImpl) bindings.findIteratorBinding("AllUsersIterator").getViewObject();
+                  /vo.setNamedWhereClauseParam("b_user", userName);
+				  /vo.executeQuery()
+				  vo.getEstimatedRowCount();
+				  vo.getCurrentRow().getAttribute("UserId").toString();
+DCIteratorBinding
+   DCIteratorBinding iterator = bindings.findIteratorBinding("UserRolesIterator");
+                     /for iterator.getAllRowsInRange()
+
+					 
+					 
+// checkbox 
+
+
+>Transient att > updateable :never > default value (sql) :DECODE(User.ACTIVE,1,1,0,0) >create VC Search
+
+
+// Comparator
+
+          Arrays.sort(b, new Comparator<Integer[]>(){
+
+              @Override
+              public int compare(Integer[] o1, Integer[] o2) {
+                Integer itemIdOne = o1[0];
+		Integer itemIdTwo = o2[0];
+               //   System.out.println(itemIdTwo);
+				// sort on item id
+		return itemIdOne.compareTo(itemIdTwo);
+              }
+          });
+
+
+// Binary Search
+
+    static int  binarySearch(Integer arr[], int l, int r, int x) 
+    { 
+        int mid = 0;
+        if (r >= l) { 
+            mid = l + (r - l) / 2; 
+  
+            // If the element is present at the 
+            // middle itself 
+            if (arr[mid] == x) 
+                return mid; 
+  
+            // If element is smaller than mid, then 
+            // it can only be present in left sub array 
+            if (arr[mid] > x) 
+                return binarySearch(arr, l, mid - 1, x); 
+  
+            // Else the element can only be present 
+            // in right sub array 
+            return binarySearch(arr, mid + 1, r, x); 
+        } 
+        
+  
+        // We reach here when element is not present 
+        // in array 
+
+        return -1; 
+    }
+
+
+Java Proxy :
+
+
+//        BigDecimal pProcTrxId = new BigDecimal(265);
+//        BigDecimal pProcessId = new BigDecimal(999);
+//        String username="mol_rec_employee";
+//        String submittedById="mol_rec_employee";
+//        
+//        SubmitRequest request=new SubmitRequest();
+//        request.setProcTrxId(pProcTrxId);
+//        request.setProcessId(pProcessId);
+//        request.setSubmittedBy(username);
+//        request.setSubmittedById(submittedById);
+//        
+//        SubmitResponse response=executePtt.execute(request);
+//        JAXBElement<ResponseStatus> responseStatus=response.getResultStatus();
+//                
+//        System.out.println(responseStatus.getValue().getMessageAr().getValue());
+//        System.out.println(responseStatus.getValue().getMessageCode().getValue());
+//        System.out.println(responseStatus.getValue().getMessageEn().getValue());
+
+
+_____________________________________Private_________________________________________
+
+
+Quran : page-aya ==> 149 (152)
+
+
+
+( 10 + 5 )+ 5 + |2.5| + 3.5 + 3 = 30o
+
+//3
+370 - 200 - 25 - 77 >> 21d
+>>95 d5.5 55t __ 40f > 2 (1 +1.5) __ 1.90
+
+//4
+465 - 200 - 55 - 20p - 15f+o >> 22d
+>>125 d5.5 55t __ 70f > 2 (1 +1.5) __ 3.20
+
+//5
+ 370 - 200 - 25 "- 50">> 20d
+>>95 d3.75 56t __ 19f + 20o > 2.8 (1.4 +1.4) __ 1.00
+
+ //6
+ 370 - 100 - 25o -20c >> 18d
+"-50 mhmod -25 clothes -30 eid -25x -10 -10 momani" 
+>>75+25 d5.00 42t __ 48f + "10o " > 2.35 (0.95 +1.4) __ 2.65
+
+ //7
+  370 - 100 - 50o -20c >> 23d
+"-35 TV " #+50#
+>>100 d4.35 54t __ 46f > 2.30 (0.95 +1.35) __ 2.05
+
+ //8                                                           
+  370 - 100 - 50o -15c >> 17d "12f"                            
+"-35 eid mom&sys -20 mazin + al wafy " #+75#                   
+>>75 d5.00 (d3.00) +2.00 42t __ 31f > 2.45 (0.95 +1.50) __ 2.55
+
+ //9
+  370 - 100 - 50o -15c >> 22d
+>>105 d4.75 57t __ 48f > 2.60 (1.20 +1.40) __ 2.15
+
+ //10
+  370 - 100 - 50o -15c >> 23d
+>>105 d4.55 50.5t __ 54f > 2.10 (1.20 +0.90) __ 2.45
+"buy Note 10 + " #
+0# 
+
+
+ //12 
+  370 - 100 - 30o -15c >> 22d
+>>125 (-16 weekEnd d2.00) d4.95 41t __ 68f > 1.90 (1.20 +0.70) __ 3.05
+#0# 
+
+
+ //1 
+  370 - 100 - 30o -15c >> 12d
+>>125 (-20 weekEnd d2.00) d5.00 40t __ 65f > 1.90 (1.20 +0.70) __ 3.10
+#+100# 
+
+
+ //11
+  370 - 100 - 30o -15c >> 20d
+>>125 (-16 weekEnd d2.00) d5.45 37t __ 72f > 1.85 (1.20 +0.65) __ 3.60
+#+100# "-15 clothes"
+
+ * * * * * * * * * * * * * * * * * * * *
+ *         01> -1.10                   *
+ *         02> ? + ? + ?               *
+ *         03> ? + ? + ?               *
+ *         04> ? + ? + ?               *
+ *         05> ? + ? + ?               *
+ * * * * * * * * * * * * * * * * * * * *
+1.2 + 1.5 + .5 + .7
+
+
+
+ * * * * * * * * * * * * * * * * * * * *
+ *         01> ? + ? + ?               *
+ *         02> ? + ? + ?               *
+ *         03> ? + ? + ?               *
+ *         04> ? + ? + ?               *
+ *         05> ? + ? + ?               *
+ * * * * * * * * * * * * * * * * * * * *
+ 
+ 
+ 
+ 
+
+
+ 3.75 SST       
+
+
+/370 - 200 = 170
+20cl - 50 - 100 
+
+
+_2019_ >> 370    
+100 /5           
+100              
+100              
+100              
+100              
+100              
+100              
+100,//800        
+870 T             
+870 T             
+870 T/3 >3410     
+* -100 gold mom -35 TV -70 eid mom&sys - 300 Phone* // before 
+- 100 traveled - 200 my family -500 Phone -150 gold mom - 30 teeth 
+- 55 help pepole - 30 work amman - 100 mahmoud - 100 help ahmad f 
+-50 help home from corona -50 for mom instead of mahmoud> 1870 
+= #1540#         
+
+_________________
+
+total : 1540
+______________________
+
+
+(
+##9##
+/1435 - 750 = 635 
+360 food - 150 home + 44 lat month = ##169##
+
+##10##
+/1435 - (800-68) = 635
+150 home = (485+68) / 2.38 = 204 DK
+
+##11##
+/1293 - (753+3) = 540
+150 home = (390-3) / 2.38 = 164 DK
+
+##12##
+/370 - 100 = 270
+150 home = 93 DJ
+
+##1##
+/1151 - (600-13) = 564
+150 home = (401+13)/2.40 = 172.5
+
+##2##
+/938 - (550-7.5) = 388
+150 home = (234+7.5)/2.4 = 99
+
+##3##
+/370 - 100 = 270
+150 home = 120
+)
+
+_2020_ >> 370 + T
+700 /4
+700
+700
+700
+700
+650
+704
+656
+100,//5610
+587+800
+542
+100 /3 > 7639
+>>1_3  555 /200 
+*
+-20 game knkor -30 help people abeer - 50 om malik -20 mahmouad
+-200 aunt amal - 20 Internet - 125 Eid(5last) - 50 mahmoud
+- 50 for home update -50 for home "6"
+- 100 for home "7" - 10 help people lina 
+- 10 mom clothes - 10 mahmoud - 70 Eid(7last) -10 Internet
+- 40 mom phone - 50 help mahmoud - 24 back bag - 48 teeth - 64 shoes
+- 10 umnia phone - 20  new TV - 60 apartment - 50 protein - 14 Hair dryer
+- 30 help mahmoud - 15 adam - 5 internet home - 21 suitcase
+- 50 for home "12" - 10 Lina - 15 brother - 18 cards - 210 teeth 
+- 57 clothes - 60 classes - 37 arjellah - 16 others  - 40 clothes - 20 help mahmoud 
+- 10 bith date mom - 15 internet home _(1)_ - 50 malak - 150 phone mahmud
+_(2)_ - 10 internet home - 25 Mahmoud - 149 back home - 20 sopah - 20 office
+_(3)_ -100 refrigerator - 55 driver training & certification
+ > 2388 
+
+= #5251#
+
+______________________
+
+total : 6791
+______________________
+
+O 30(10 card + 2 card aunt +3 hair +15 o)
+
+(
+##4##
+/370 - (100+ 44) = 226
+150 home = 76
+
+##5##
+/370 - (100- 21) = 270
+100 home = 170-o 20 = 150
+
+##6##
+/370 - (100+10) = 260
+100 home = 160-o 30 = 130
+
+##7##
+/570 - (285-5) = 290
+100 home = 190-o 30 = 160
+
+##8##
+/570 - 285 = 285
+100 home = 185-o 30 = 155
+
+##9##
+/570 - (285-5) = 290
+100 home = (185+5)-o 35 = 155
+
+##10##
+/570 - 270 = 300
+100 home = 200-o 30 = 170
+
+##11##
+/570 - 270 = 300
+100 home = 200-o 30 = 170
+
+##12##
+/570 - 270 = 300
+100 home = 200-o 30 = 170
+)
+
+
+_2021_ >> 555
+144 /4
+79+350+108 
+100+10
+285-5
+285
+285-5
+270
+270
+270,//3051
+= 3051
+*
+_(4)_ - 50 help people 
+_(5)_ - 50 help dad - 26 Netflix - 35 Eid Saeed - 39 clothes
+- 220 visit aqabeh -11 ghazah - 20 for friends - 12 others
+_(6)_ - 50 help people ghazah - 21 help people University - 44 teeth
+_(7)_ - 20 zaid&ali - 100 sheep - 35  Eid Saeed - 10 card
+_(8)_ - 40 salameh&yousef&khahajah&saaed - 34 help people - 100 khalte amal - 40 parfum
+_(9)_ - 110 Laptop - 20 T_shert
+_(10)_ - 15 Nasser - 105 Grammarly - 20 Adem
+_(11)_ - 20 Adam - 10 Mosab - 18 Hosbital - 20 oil - 15 moom
+_(12)_ - 20 Adam 
+ > 1330
+
+= #1721#
+
+______________________
+
+total : 8512
+______________________
+
+O 30(10 card + 2 card aunt +3 hair +15 o)
+
+(
+##1##
+/555 - (255 + 26) = 274
+100 home = 174-o 30 = 144
+
+##2##
+/555 - (255 + 49) = 251
+100 home = 151-o 30 = 121
+
+##3##
+/555 - 255 = 300
+100 ho*me = 200-o 30 = 170
+
+##4##
+/555 - (255 + 15) = 285
+100 home = 185-o 30 = 155
+
+##5##
+/555 - (255 - 30) = 330
+100 home = 230-o 45 = 185
+
+##6##
+/555 - 255 = 300
+100 home = 200-o 30 = 170
+
+##7##
+/555 - (255 - 20) = 320
+100 home = 220-o 30 = 190
+
+##8##
+/555 - (255 - 22) = 322
+100 home = 222-o 40 = 192
+
+##9##
+/555 - 230 = 325
+100 home = 225-o 50 = 175
+
+##10##
+/555 - 230 = 325
+100 home = 225-o 50 = 175
+
+##11##
+/555 - 230 = 325
+100 home = 225-o 50 = 175
+wallet 1200
+##12##
+
+##12##
+/555 - 230 = 325
+100 home = 225-o 50 = 175
+wallet 1500
+)
+
+
+_2022_ >> 555
+255+26
+255+49
+255
+255+15
+255-30
+255,//1590
+255-20
+255-22
+230
+230
+230
+230  
+= 2978
+
+*
+_(1)_  - 25 Aunt - 20 abu Mohammad = 45
+_(3)_  - 20 Adam Teacher  - 45 Mom Phone + 24 Help People = 89
+_(4)_  - 20 Adam Teacher - 5 Adam glasses - 35 abu Mohammad = 60
+_(5)_  - 20 Adam Teacher - 35 Eid - 20 teeth - 12 phone = 87
+_(6)_  - 20 Adam Teacher - 10 Mahmoud - 150 Zaqah - 25 club - 45 Abu Mohammad = 250
+_(7)_  - 20 Adam Teacher - 23 Perfume - 130 Eid = 173
+_(8)_  - 15 Club - 30 Build Home - 20 Game - 18 Clothes - 25 Event = 108
+_(9)_  - 44 Car Training - 15 Club - 11 Game = 70
+_(10)_ - 20 Adam Teacher - 51 Clothes - 45 Car Training = 116
+_(11)_ - 20 Adam Teacher - 71 Clothes - 10 Help People = 101
+_(12)_ - 20 Adam Teacher - 20 Mahmoud - 10 Help Team - 20 Nasser - 15 Game = 85
+ > 1184
+
+= #1794#
+
+_________________________
+
+total : 10306 ==> 10,000
+_________________________
+
+salary : 555
+Other 50(11 card + 20 internet + 2 card aunt + 6 hair + 7 m3sl + 4 o)
+
+(
+##1##
+/555 - (235-5) = 325
+100 home = 225-o 50 = 175
+wallet 1600
+Bank  6200
+##2##
+/555 - (235+5) = 315
+100 home = 215-o 50 = 165
+wallet 800
+Bank  6400
+##3##
+/555 - (235-5) = 325
+100 home = 225-o 50 = 175
+wallet 750
+Bank  6616
+##4##
+/555 - 235 = 320
+100 home = 220-o 50 = 170
+wallet 600
+Bank  5750
+##5##
+/555 - 35 = 520
+100 home - 200 jm3eh = 220-o 50 = 170
+wallet 1700
+Bank  3753
+##6##
+/555 - 50 = 505
+100 home - 200 jm3eh = 205-o 35 = 170
+wallet 2300
+Bank  3150
+##7##
+/705 - (185-20) = 540
+100 home - 200 jm3eh = 240-o 50 = 170+20
+wallet 3400
+Bank  1913
+##8##
+/705 - 185 = 520
+100 home - 200 jm3eh = 220-o 50 = 170
+wallet 2650
+Bank  2850
+##9##
+/705 - 185 = 520
+100 home - 200 jm3eh = 220-o 50 = 170
+wallet | 3050
+Bank   | 1740
+##10##
+/705 - 185 = 520
+100 home - 200 jm3eh = 220-o 50 = 170
+wallet | 2450
+Bank   | 1970
+##11##
+/705 - 185 = 520
+100 home - 200 jm3eh = 220-o 45 = 175
+wallet | 2500
+Bank   | 2000
+##12##
+/705 - 185 = 520
+100 home - 200 jm3eh = 220-o 50 = 170
+wallet | 2000
+Bank   | 1650
+)
+
+_2023_ >> 705
+235-5
+235+5*-20*
+235-5
+235
+35
+50,//1000
+185-20
+185-45
+185-12+900feedback
+185
+185-10
+185
+= 2923
+
+*
+_(1)_  - 20 Adam Teacher - 30 Mahmoud - 50 Help People  = 100
+_(2)_  - 20 Game - 5 Mahmoud - 180 Zaqah - 70  Help People = 275
+_(3)_  - 20 Adam Teacher - 20 Lunch - 50 Home - 40 Perfume - 40 Other = 170
+_(4)_  - 20 Adam Teacher - 290 Help People - 20 Clothes + 40 Eid = 370
+_(5)_  - 20 Adam Teacher - 20 Radio - 200 Game = 240
+_(6)_  - 20 Adam Teacher - 30 Abu Mohammad - 45 Clothes - 135 Eid - 35 Perfume = 265  // 1420
+_(7)_  - 20 Adam Teacher - 40 Clothes - 10 Khallel - 20 Mahmoud =  90
+_(8)_  - 20 Home - 40 Mahmoud - 30 Tariq & Mohammad - 25 Clothes = 115
+_(9)_  - 50 Home - 10 Mohanad - 10 Help People - 35 Game - 32 Perfume = 137
+_(10)_ - 50 Home - 85 Glasses - 32 Games - 110 Clothes - 20 Teeth - 350 Lina = 647
+_(11)_ - 20 Adam Teacher - 15 Game - 90 Clothes - 700 Omra - 52 Perfume = 877
+_(12)_ - 20 Adam Teacher - 270 Omra = 290
+ > 3576
+
+= #-653#
+______________________
+
+total : 10391 ==> 10,000 - 653 = 9,347
+______________________
+
+salary : 0
+Other 50(11.5 card + 20 internet + 6 hair + 12.5 o)
+
+(
+##1##
+/694 - 200 = 494
+100 home -200 jm3eh= 194-o 50 = 144
+wallet 6.400
+Bank  3.140
+##2##
+/694 - 200 = 494
+100 home -200 jm3eh= 194-o 50 = 144
+wallet 600
+Bank  9.150
+##3##
+/0 - 0 = 0
+50 home - 0 jm3eh = -50 -o 50 -70 = -170
+wallet 1.200
+Bank  10.150
+##4##
+/0 - 0 = 0
+50 home - 200 jm3eh = -250 -o 50 -61 = -361
+wallet 800
+Bank  10.660
+##5##
+/0 - 0 = 0
+0 home - 200 jm3eh = -200 -o 40 -140 = -380
+wallet 500
+Bank  10.965
+##6##
+/1200 - 750 = 450
+50 home - 200 jm3eh = -250 -o 100 = 100
+wallet 900
+Bank  9.810
+##7##
+##8##
+##9##
+##10##
+##11##
+##12##
+)
+
+
+
+_2024_ >> 694 / 1200
+200 + 3.200 jm3eh = 3.400
+200 + 250 farewell + 456 vacation = 906
+-170 + 560 = 390
+-361 + 487 = 126
+-380
+750,//5.231
+500
+500
+500
+500
+500
+500
+= 8.231
+
+*
+_(1)_  - 20 Adam Teacher - 163 Car Training - 20 Help Peaple - 27 Medicine = 230
+_(2)_  - 73 Car Training  = 73
+_(3)_  - 20 Adam Teacher - 110 Car Training  = 130
+_(4)_  - 20 Adam Teacher = 20
+_(5)_  - 18 Adam Glasses - 20 Saeed - 70 Car Training - 30 Beef - 16.5 Mom Medicine 
+       - 80 Perfume - 90 Clothes - 30 Help Team = 335
+_(6)_  - 0  = 0  // 788
+_(7)_  - 0  = 0
+_(8)_  - 0  = 0
+_(9)_  - 0  = 0
+_(10)_  - 0  = 0
+_(11)_  - 0  = 0
+_(12)_  - 0  = 0
+ > 788
+
+= #7.704#
+
+______________________
+
+total : 9,347 ==> 17.51
+______________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_2020_ >> 509
+200 /4
+200
+200
+200
+200
+200
+200
+200
+200,//4480
+200
+200
+200 /3 > 5080
+11 - 3 694 /150
+= 3094
+
+
+
+
+_2021_ >> 648
+339 /4
+339
+339
+339
+339
+339
+339
+339
+339,//3051
+339
+339
+339 /3 >4068
+11 - 3 694 /150
+= 4762
+
+_2022_ >> 787
+478 /4
+478
+478
+478
+478
+478
+478
+478
+478,//4302
+478
+478
+478 /3 >5736
+11 - 3 694 /150
+= 6430
+
+
+_2023_ >> 925
+617 /4
+617
+617
+617
+617
+617
+617
+617
+617,//5553
+617
+617
+617 /3 >7404
+11 - 3 694 /150
+= 8089
+
+ *         06> ? + ? + ?               *
+ *         07> ? + ? + ?               *
+ *         08> ? + ? + ?               *
+ *         09> ? + ? + ?               *
+ *         10> ? + ? + ?               *
+ *         11> ? + ? + ?               *
+ *         12> ? + ? + ?               *
+ *         13> ? + ? + ?               *
+ *         14> ? + ? + ?               *
+ *         15> ? + ? + ?               *
+ *         16> ? + ? + ?               *
+ *         17> ? + ? + ?               *
+ *         18> ? + ? + ?               *
+ *         19> ? + ? + ?               *
+ *         20> ? + ? + ?               *
+ * * * * * * * * * * * * * * * * * * * *
+
+_______________________________________________JDeveloper__________________________________
+
+
+
+
+          //Print report
+            Map paramMap = new HashMap();
+            // paramMap.put("PkCode1", JSFUtils.resolveExpression("#{pageFlowScope.p_committee_Id}"));
+            paramMap.put("PkCode1", sessionsView.getSessionsId() + "");
+
+            BigDecimal productId = new BigDecimal(116);
+            String Lang = "AR";
+            CommonUtil.previewReport(productId, Lang, paramMap);
+				
+				
+				
+____________________________________________________________________________________________
+
+
+public void lock() {
+try {
+super.lock();
+} catch (RowInconsistentException e) {
+refresh(REFRESH_WITH_DB_ONLY_IF_UNCHANGED | REFRESH_CONTAINEES);
+super.lock();
+}
+}
+
+_____________________________________________________________________________________________
+
+Cascading LOV
+
+    // execute acsessor fro VORowImp
+    RowSet rs = (RowSet) getAttributeInternal(GETATTVRSCREJECTRESONSLISTLOV2);
+    rs.setNamedWhereClauseParam("pAttachmentId", (BigDecimal) getAttributeInternal(ATTACHMENTID));
+    rs.setNamedWhereClauseParam("pProcessId", getProcessId());
+    rs.executeQuery();
+
+
+
+___________________panelCollection___________________________________________________________
+
+FeaturesOff: 
+columnsMenuItem detach detachMenuItem detachToolbarItem formatMenu freeze freezeMenuItem freezeToolbarItem reorderColumnsMenuItem resizeColumnsMenuItem scrollToFirstMenuItem scrollToLastMenuItem showAsTopMenuItem showAsTopToolbarItem sortMenuItem statusBar viewMenu wrap wrapMenuItem wrapToolbarItem
+StyleClass: 
+AFStretchWidth		
+_____________________________________________________________________________________________
+
+// get vo from java class
+
+
+//         ApplicationModule molShcPrcAppModuleImpl =
+//             AdfUtil.getApplicationModuleForDataControl("MolShcPrcAppModuleDataControl");
+       //getReportPathRVOImpl getReportPath =  molShcPrcAppModuleImpl.getgetReportPathRVO1();
+        String amDef = "mol.eservices.shared.model.shcprc.am.MolShcPrcAppModule";
+        String config = "MolShcPrcAppModuleLocal";
+        am = Configuration.createRootApplicationModule(amDef, config);
+        // am.getTransaction().rollback();
+
+        ApplicationModuleImpl amImpl = (ApplicationModuleImpl)am;
+
+        getReportPathRVOImpl getReportPath = (getReportPathRVOImpl) amImpl.findViewObject("getReportPathRVO1");
+        RepVwscRequestsRegistryUVOImpl repVwscRequestsRegistryUVO = (RepVwscRequestsRegistryUVOImpl) amImpl.findViewObject("RepVwscRequestsRegistryUVO1");
+
+_________________________________________________________________________________________________
+		
+FacesContext.getCurrentInstance().getExternalContext().getRealPath("").toString().trim()
+ADFUtils.findIterator("ParentMenuIdLOV1Iterator").getEstimatedRowCount()
+        String parentMenuId=  iter.getViewCriteriaManager().getViewCriteria("SecMenusUVOSearchVCParentMenuId").getVariableManager().getVariableValue("pParentMunuId")+"";
+        
+        getSelectOneChoiceValue("parentMenuIdText").setValue(iter.getCurrentRow().getAttribute("ParentMenuId"));
+        getSelectOneChoiceValue("parentMenuIdText").setDisabled(true);
+        getInputTextValue("menuIdText").setDisabled(true);
+        getInputTextValue("menuIdText").setDisabled(true);
+  
+    public void setButtonDisable(String btnId, boolean res) {
+        RichButton btn = (RichButton) JSFUtils.findComponentInRoot(btnId);
+        btn.setDisabled(res);
+        AdfFacesContext.getCurrentInstance().addPartialTarget(btn);
+    }
+
+int estimatedLaborNum =Integer.parseInt(ADFUtils.getBoundAttributeValue("EstimatedLaborNum").toString());
+
+
+// Call Procural
+
+
+
+    /**
+     * @author Mouath
+     * @date Thuesday, October 01, 2019.
+     * @desc call procedure Liquidation_FINANCAL_GURANTEE  for liquidation requst FIG010
+     * @param P_GUARANTEE_ID NUMBER ,P_LIQUIDATION_VALUE NUMBER,p_NOTE VARCHAR2, p_created_by VARCHAR2 
+     * @return is_success NUMBER ,message VARCHAR2
+     * @exception which exceptions is thrown by the method.
+     **/
+    public String[] callLiquidationFinancalGurantee(int pGuaranteeId,int pLiquidationIValue,String pNote, String pCreatedBy) {
+        String MsgStatus[] = new String[2];
+        String sql = "{call PAM_DB.utl_financial_guarantee.Liquidation_FINANCAL_GURANTEE(?,?,?,?,?,?) }";
+        CallableStatement callProcedure = null;
+
+        try {
+            callProcedure = getDBTransaction().createCallableStatement(sql, DBTransaction.DEFAULT);
+            callProcedure.setInt(1, pGuaranteeId);
+            callProcedure.setInt(2, pLiquidationIValue);
+            callProcedure.setString(3, pCreatedBy);
+            callProcedure.setString(4, pCreatedBy);
+            callProcedure.registerOutParameter(5, OracleTypes.NUMBER);
+            callProcedure.registerOutParameter(6, oracle.jdbc.OracleTypes.VARCHAR);
+            callProcedure.execute();
+            MsgStatus[0] = callProcedure.getString(5);
+            MsgStatus[1] = callProcedure.getString(6);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return MsgStatus;
+    }
+
+
+
+
+
+______________reset all fields 
+
+    public static void reSetViewRoot(){
+    FacesContext fctx = FacesContext.getCurrentInstance();
+    String page = fctx.getViewRoot().getViewId();
+    ViewHandler ViewH = fctx.getApplication().getViewHandler();
+    UIViewRoot UIV = ViewH.createView(fctx, page);
+    UIV.setViewId(page);
+    fctx.setViewRoot(UIV);
+    }
+
+________________________findOperation______________________________________
+
+
+            OperationBinding oper = AdfUtil.findOperation("getRegistrationEco");
+            oper.getParamsMap().put("pCourseId", courseId);
+            oper.execute();
+			
+			
+		withoutUtils: 	
+	        OperationBinding op = getDCBindingContainer().getOperationBinding(name);
+        if (op == null) {
+            throw new RuntimeException("Operation '" + name + "' not found");
+        }		
+			op.getParamsMap().put("pCourseId", courseId);
+            op.execute();
+			
+			
+_________check date 
+
+
+            Date df=(Date)getFromDate().getValue();
+            Date dt=(Date)getToDate().getValue(); 
+                if(dt.compareTo(df)<1){
+                    String msg =  JSFUtils.getValueFromResourceBundle(BUNDLE_PATH, "RLICN007_DateValidate").toString();
+                //                        JSFUtils.addFacesErrorMessage("inpu");
+                    JSFUtils.ValidateItem(ToDate, "", msg, 2);
+                    return;
+     
+            }
+			
+			
+			//        //validate Letter Date 
+//        try{
+//        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+//                    Date currentDate = new Date();
+//                    String ss= dateFormat.format(currentDate)+ "";
+//                    Date currentDate2 =dateFormat.parse(ss);
+//                    Date dbook = (Date) getInputDate("letterDateText").getValue();
+//                    if(currentDate2.compareTo(dbook)>0){
+//                        try {
+//                            JSFUtils.addFacesErrorMessage(TalabtFilesMessages.RFLE037.sendLetterDate);
+//                            return "";
+//                        } catch (Exception e) {
+//                            _logger.warning("validation Letter Date Mss error, Bean: RFLE037Bean, Method: submitRequest, Table: ");
+//                            System.out.println(e.getMessage());
+//                            e.printStackTrace();
+//                        }
+//                    }
+//        }
+//        catch(Exception e){
+//            e.printStackTrace();
+//            _logger.warning("validate Letter Date  failure, Bean: RFLE037Bean, Method: submitReq, Table: ");
+//        }
+			
+__________
+
+
+    public String getSysDate() {
+
+        try {
+            DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            Date currentDate = new Date();
+            if (!currentDate.equals(null)) {
+                _logger.info("call current date success, Bean: RFLE001Bean, Method: getCratedDate, Table: ");
+                return dateFormat.format(currentDate) + "";
+            } else
+                _logger.info("call current date  failure >> null value, Bean: RFLE001Bean, Method: getCratedDate, Table: ");
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+            _logger.warning("call current date  failure, Bean: RFLE001Bean, Method: getCratedDate, Table: ");
+        }
+        return "";
+    }
+	
+____________
+
+//CheckLogIn
+
+
+    public String doLogin() {
+       
+        FacesContext context = FacesContext.getCurrentInstance();
+                
+                 DCBindingContainer bindingContainer = (DCBindingContainer)BindingContext.getCurrent().getCurrentBindingsEntry();
+                  ViewObjectImpl vo = ( ViewObjectImpl) bindingContainer.findIteratorBinding("LogInVOIterator").getViewObject();
+                         
+                         vo.setNamedWhereClauseParam("userbind", getName().getValue().toString());
+                         vo.setNamedWhereClauseParam("passwordbind",getPass().getValue().toString());
+                         vo.executeQuery();
+                         
+                         if(vo.getEstimatedRangePageCount()>0)
+                            return "login";   
+                        
+                          FacesMessage fm=new FacesMessage("Login Fail");
+                           fm.setSeverity(FacesMessage.SEVERITY_INFO);
+                           context.addMessage(null, fm);
+                        
+                         return "";
+}
+
+______________________________addPartialTarget_______________
+
+    public void addPartialTarget(String id) {
+        UIComponent componentName = JSFUtils.findComponentInRoot(id);
+        AdfFacesContext.getCurrentInstance().addPartialTarget(componentName);
+		        AdfFacesContext.getCurrentInstance().addPartialTarget(componentName);
+
+		
+    }
+
+
+_______________________convert to date ____________________________
+
+
+               Date date = (Date) trxVpRecrAprvLbr.first().getAttribute("VpExpiryDate");  
+                Calendar c = java.util.Calendar.getInstance();
+                           c.setTime(date);
+                           c.add(Calendar.MONTH,Integer.parseInt(trxVpRecrAprvLbr.first().getAttribute("ApprovalPeriod").toString()));
+                System.out.println(period);
+                Date finalDate =c.getTime();
+				
+				
+				
+______________validateEmpty___________
+
+
+        private boolean validateEmpty() {
+            // check  fields empty
+    
+            if (getLicnIssuerId().getValue() == null) {
+                try {
+                    JSFUtils.addFacesErrorMessage(TalabtFilesMessages.RFLE001.sendLicnIssuerIdEmpty);
+                    return false;
+                } catch (Exception e) {
+                    _logger.warning("validation LicnIssuerId error, Bean: RFLE001Bean, Method: validateEmpty, Table: ");
+                    System.out.println(e.getMessage());
+                    e.printStackTrace();
+                }
+            }
+            if (getLicnPaciId().getValue() == null) {
+                try {
+                    JSFUtils.addFacesErrorMessage(TalabtFilesMessages.RFLE001.sendLicnPaciIdEmpty);
+                    return false;
+                } catch (Exception e) {
+                    _logger.warning("validation LicnPaciId error, Bean: RFLE001Bean, Method: validateEmpty, Table: ");
+                    System.out.println(e.getMessage());
+                    e.printStackTrace();
+                }
+            }
+            if (getCivilAddress().getValue() == null && getLicnIssuerId().getValue().toString().equals("1")) {
+                try {
+                    JSFUtils.addFacesErrorMessage(TalabtFilesMessages.RFLE001.sendCivilNumberEmpty);
+                    return false;
+                } catch (Exception e) {
+                    _logger.warning("validation CivilAddress error, Bean: RFLE001Bean, Method: validateEmpty, Table: ");
+                    ;
+                    System.out.println(e.getMessage());
+                    e.printStackTrace();
+                }
+            }
+            if (getPhonNumber1().getValue() == null) {
+                try {
+                    JSFUtils.addFacesErrorMessage(TalabtFilesMessages.COMMON.sendPhoneNumberEmpty);
+                    return false;
+                } catch (Exception e) {
+                    _logger.warning("validation PhonNumber1 error, Bean: RFLE001Bean, Method: validateEmpty, Table: ");
+                    System.out.println(e.getMessage());
+                    e.printStackTrace();
+                }
+            }
+            if (getEmail1().getValue() == null) {
+                try {
+                    JSFUtils.addFacesErrorMessage(TalabtFilesMessages.COMMON.sendEMailEmpty);
+                    return false;
+                } catch (Exception e) {
+                    _logger.warning("validation Email1 error, Bean: RFLE001Bean, Method: validateEmpty, Table: ");
+                    System.out.println(e.getMessage());
+                    e.printStackTrace();
+                }
+            }
+            if (getGenderWorkers().getValue() == null) {
+                try {
+                    JSFUtils.addFacesErrorMessage(TalabtFilesMessages.RFLE001.sendGenderWorkersEmpty);
+                    return false;
+                } catch (Exception e) {
+                    _logger.warning("validation GenderWorkers error, Bean: RFLE001Bean, Method: validateEmpty, Table: ");
+                    System.out.println(e.getMessage());
+                    e.printStackTrace();
+                }
+            }
+            if (getCivilCommissioner().getValue() == null) {
+                try {
+                    JSFUtils.addFacesErrorMessage(TalabtFilesMessages.RFLE001.sendCivilNumberCommissionerEmpty);
+                    return false;
+                } catch (Exception e) {
+                    _logger.warning("validation CivilCommissioner error, Bean: RFLE001Bean, Method: validateEmpty, Table: ");
+                    System.out.println(e.getMessage());
+                    e.printStackTrace();
+                }
+            }
+            if (getAgencyNumber().getValue() == null) {
+                try {
+                    JSFUtils.addFacesErrorMessage(TalabtFilesMessages.RFLE001.sendAgencyNumberEmpty);
+                    return false;
+                } catch (Exception e) {
+                    _logger.warning("validation AgencyNumber error, Bean: RFLE001Bean, Method: validateEmpty, Table: ");
+                    System.out.println(e.getMessage());
+                    e.printStackTrace();
+                }
+            }
+            if (getPhonNumber2().getValue() == null) {
+                try {
+                    JSFUtils.addFacesErrorMessage(TalabtFilesMessages.COMMON.sendPhoneNumberEmpty);
+                    return false;
+                } catch (Exception e) {
+                    _logger.warning("validation PhonNumber2 error, Bean: RFLE001Bean, Method: validateEmpty, Table: ");
+                    System.out.println(e.getMessage());
+                    e.printStackTrace();
+                }
+            }
+            if (getEmail2().getValue() == null) {
+                try {
+                    JSFUtils.addFacesErrorMessage(TalabtFilesMessages.COMMON.sendEMailEmpty);
+                    return false;
+                } catch (Exception e) {
+                    _logger.warning("validation Email2 error, Bean: RFLE001Bean, Method: validateEmpty, Table: ");
+                    System.out.println(e.getMessage());
+                    e.printStackTrace();
+                }
+            }
+            if (!isCorrectCode()) {
+                try {
+                    JSFUtils.addFacesErrorMessage(TalabtFilesMessages.COMMON.sendCaptchaEmpty);
+                    return false;
+                } catch (Exception e) {
+                    _logger.warning("validation CorrectCode error, Bean: RFLE001Bean, Method: validateEmpty, Table: ");
+                    System.out.println(e.getMessage());
+                    e.printStackTrace();
+                }
+            }
+            return true;
+        }
+		check if fields etherized empty but we add signature image
+		
+		
+___________checkCommissionerData______________
+
+
+        public void checkCommissionerData(ValueChangeEvent valueChangeEvent) {
+            System.out.println(getPhonNumber2().getValue() != null);
+            System.out.println(getPhonNumber2().getValue() != "");
+            UIComponent authoSignIdComponent = JSFUtils.findComponentInRoot("email2Text");
+            AdfFacesContext.getCurrentInstance().addPartialTarget(authoSignIdComponent);
+            if((getPhonNumber2().getValue() != null && getPhonNumber2().getValue() != "")
+               || (getEmail2().getValue() != null && getEmail2().getValue() != "") || imgBlob !=null){
+                System.out.println("1test");
+                getEmail2().setRequired(true);
+                getPhonNumber2().setRequired(true);
+                getEmail2().setShowRequired(true);
+                getPhonNumber2().setShowRequired(true);
+    
+    
+        }
+            else {
+                getEmail2().setRequired(false);
+                getPhonNumber2().setRequired(false);
+                getEmail2().setShowRequired(false);
+                getPhonNumber2().setShowRequired(false);
+            }
+        }
+		
+		
+		
+		   public void orgTraineesAccWaitingCustomProcessQueryOperation(QueryOperationEvent queryOperationEvent) {
+        ViewObject orgTraineesAccWaitingVO =
+            IPAUtils.findIterator("OrgTraineesAccWaitingVVO1Iterator").getViewObject();
+        ViewCriteria orgTraineesAccWaitingVC =
+            orgTraineesAccWaitingVO.getViewCriteriaManager().getViewCriteria("OrgTraineesAccWaitingVC");
+
+ 
+
+        IPAJSFUtils.invokeMethodExpression("#{bindings.OrgTraineesAccWaitingVCQuery.processQueryOperation}", Object.class,
+                                       QueryOperationEvent.class, queryOperationEvent);
+
+ 
+
+        if (queryOperationEvent.getOperation().name().toUpperCase().equals("RESET")) {
+
+ 
+
+            orgTraineesAccWaitingVC.resetCriteria();
+            orgTraineesAccWaitingVO.executeEmptyRowSet();
+            orgTraineesAccWaitingVO.applyViewCriteria(orgTraineesAccWaitingVC);
+            IPAJSFUtils.refreshUIComponent(getOrgTraineesAccWaitingTable());
+        }
+        
+    }
+___________
+
+
+@1@
+// AppModule Call Procedure
+
+import java.sql.Types;
+
+    public String supell_out(int n){
+        String txt=null;
+        boolean result;
+        String sqlCode ="CALL supell_out(?,?)";
+        CallableStatement stat;
+        stat = null;
+        try{
+            stat =getDBTransaction().createCallableStatement(sqlCode,getDBTransaction().DEFAULT);
+            stat.setDouble(1,n);
+            stat.registerOutParameter(2, Types.CHAR);
+            result=stat.execute();
+            txt=stat.getString(2);
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }finally{
+            try {
+                stat.close();
+            }catch (Exception sqle){
+               sqle.printStackTrace();
+            }
+        }
+        return txt;
+
+}
+
+
+______
+
+
+//login function
+
+
+ public String checkLogIn(String user,String pass){
+     String success="N";
+     ViewObjectImpl userInfo=getLogIn();
+     userInfo.setNamedWhereClauseParam("userbind",user);
+     userInfo.setNamedWhereClauseParam("passwordbind",pass);
+     userInfo.executeQuery();
+     if(userInfo.first()!=null)
+         success="Y";
+     
+     return success;
+ }
+
+
+_____________________________________________
+
+//Shuttle Code
+
+    List AllRoles;
+    List SelectedRoles;
+    List selectValues;
+    public List getAllRoles() {
+        System.out.println("AllRoles");
+        DCIteratorBinding  UserRolesIterator=ADFUtils.findIterator("RolesVOIterator");
+        return ADFUtils.selectItemsForIterator(UserRolesIterator, "RoleId", "RoleName");
+    }
+
+    
+    public void setAllRoles(List AllRoles) {
+        this.AllRoles = AllRoles;
+    }
+    
+
+    public List getSelectedRoles() {
+        if (SelectedRoles==null) {
+            System.out.println("SelectedRoles");
+            DCIteratorBinding  UserRolesIterator=ADFUtils.findIterator("UserRolesVOIterator");
+       SelectedRoles= ADFUtils.attributeListForIterator(UserRolesIterator, "RoleId");
+           // ADFUtils
+        }
+  
+        return SelectedRoles;
+    }
+    
+
+
+    public void setSelectedRoles(List selectedValues) {
+        selectValues=selectedValues;
+        this.SelectedRoles=selectedValues;          
+    }
+
+
+    public void commit(DialogEvent dialogEvent) { 
+        Shuttle.setSelected(selectValues, "UserId",
+                    "UserRolesVOIterator","UserId",
+                    "RoleId", "Delete", "CreateInsert");
+        DialogEvent.Outcome outcome = dialogEvent.getOutcome();
+        if (outcome == DialogEvent.Outcome.OK)
+            ADFUtils.findOperation("Commit").execute();
+        else
+        ADFUtils.findOperation("Rollback").execute();
+    }
+	
+// Page Template
+
+<af:pageTemplate 
+viewId="/oracle/storefront/ui/pages/templates/CheckoutPag
+eTemplate.jspx"> 
+  <f:facet name="content"/> 
+  <f:attribute name="title"/> 
+</af:pageTemplate> 
+
+_____________________________________________
+
+//call sequence 
+
+  private PamTalabatFilesAMImpl getService() {
+    ApplicationModule app = ADFUtils.getApplicationModuleForDataControl("PamTalabatFilesAMDataControl");
+    PamTalabatFilesAMImpl service = (PamTalabatFilesAMImpl) app;
+    return service;
+    }
+
+SequenceImpl seqRequestId = new SequenceImpl("REQUEST_ID_SEQ",getService().getDBTransaction());
+
+
+
+
+
+#{viewScope.rfle015Bean.civilCommissioner.value == null  or viewScope.rfle015Bean.agencyNumber.value == null or  viewScope.rfle015Bean.phonNumber2.value == null or viewScope.rfle015Bean.email2.value == null}
+
+
+
+172.21.207.201
+
+
+	
+	
+	
+_________________installing jdev_________________________
+	
+	
+"C:\Program Files\Java\jdk1.8.0_191\bin\java" -jar C:\Users\moh_micro\Desktop\Jdev12.2.1.4\V983386-01_1of2.jar
+
+"C:\Program Files\Java\jdk1.8.0_191\bin\java.exe" -jar D:\Oracle\Middleware\Oracle_Home\Jdev_Patches\6880880\opatch_generic.jar oracle_home=D:\Oracle\Middleware\Oracle_Home
+
+
+set ORACLE_HOME=D:\Oracle\Middleware\Oracle_Home
+set MW_HOME=D:\Oracle\Middleware
+cd C:\12214Patches\32842810
+D:\Oracle\Middleware\Oracle_Home\OPatch\opatch apply
+cd C:\12214Patches\32363659
+D:\Oracle\Middleware\Oracle_Home\OPatch\opatch apply
+cd C:\12214Patches\30482761
+D:\Oracle\Middleware\Oracle_Home\OPatch\opatch apply
+
+	
+____________refreshPage_________________
+	
+	    protected void refreshPage() {
+          FacesContext fc = FacesContext.getCurrentInstance();
+          String refreshpage = fc.getViewRoot().getViewId();
+     ViewHandler ViewH =
+     fc.getApplication().getViewHandler();
+          UIViewRoot UIV = ViewH.createView(fc,refreshpage);
+          UIV.setViewId(refreshpage);
+          fc.setViewRoot(UIV);
+    }
+		
+
+sequence attribute
+Thursday
+
+
+	submit request
+_______________________________________________VIDEO__________________________________
+
+https://www.youtube.com/watch?v=oI3ZhaP4fF8                                               Stored procedure in ADF
+
+https://www.youtube.com/watch?v=cgYFxrJ2_cY&list=PLg6yy7rK4WNy4wfV6L8go-xoYfpcw8wBh       REPORT JASPER 
+
+https://www.youtube.com/watch?time_continue=279&v=_7LtzsPJXMo                             SHUTTLE Component 
+
+https://www.youtube.com/watch?v=WW-I3f9vmqk&list=PLp0ed20U4R4jXC_U-4hGTEQlT5C7liRFN       ADF BASIC
+
+https://www.youtube.com/watch?v=8vAZUMpyFYI&index=1&list=PLLivH60K7tSfQCD2-fycrBjmrdPIWzXLu  ADF Project
+
+https://www.youtube.com/watch?v=9vHUzHeq95k                                               ADF-Upload and Store BLOB
+
+_______________________________________________Note_______________________________
+
+https://www.branah.com/unicode-converter      Arabic Bundle |    program BabelPad
+
+https://blogs.oracle.com/marcelamende/jdeveloper-11g-low-memory-warning  Memory
+
+http://prabhat-java.blogspot.com/2015/07/how-to-use-of-captcha-in-adf-application.html  captcha code
+
+https://technology.amis.nl/2015/12/13/dynamic-table-adf-12c/                            dynamic table
+
+______________________________Work_______________  
+
+http://webmail.mscmena.com/Mondo/lang/sys/login.aspx                                                                         webmail
+
+http://192.168.31.5:8089/redmine/                                                                                            redmine/
+
+https://docs.google.com/spreadsheets/d/15ZbOAvFrZZvm23LWHlEsGxMkBZ2zZLR4oDr1FUt81lM/edit#gid=0                               DB exil
+
+http://192.168.31.31:8001/PamTalabatPortal/faces/Pages/index.jsf;jsessionid=ObGTOkYQOHLQ0TrIHwQBXzOyjg3J9bTjjRu4l9RgSQ9KLBje9KOl!565594000     test talabat
+
+http://192.168.31.31:8001/PampBackendTest/login.jsp       U01101093862588   12345678                                   ashal
+
+http://172.21.218.63:8023/PampBackendTest/login.jsp
+
+https://www.callicoder.com/generate-qr-code-in-java-using-zxing/                                      QR CODE
+_____________________________________________
+
+m.tarawneh@mscmena.com
+s.jaradat@mscmena.com
+
+GTS
+BCI
+Leaders Center
+smartbuy
+citycenter
+Diamon star
+
+
+
+معادلة ميفلين سانت جيور، وهي كالآتي:
+
+W = 78
+H = 1.81
+A = 26
+للذكور: BMR = 10*W + 6.25*H - 5*A + 5
+
+الزكاة : 18 رجب
+
+
+
+
+
+
+
+
+
+
+
+ الوشاح في فوائد النكاح
+ نواضر الأيك في معرفة النيك
+
+
+
+Dear Abd Alrahman
+
+in the SRS screen RFLE037 "open new small project file" we still store Authorized Signatory data in table "FLE_FILES_REQ"
+I want to make sure it's a mistake and we store Authorized Signatory data just in table "FLE_AUTHORIZED_SIGNATORY_REQ"  
+
+Best Regards,
+
+
+Now works correctly
+now is done
+in progress
+
+
+
+
+
+
+
+
+
+
+Kindly Mahmoud Tarawneh    Salah Saad
+I need deploy for this app
+
+ 
+
+
+	
+PamReportll (Dev & Prod & Ashal)
+	
+	Abdelrahman Almomani   Abdelhadi Al Qudah
+	I finished the changed
+
+
+
+
+
+
+
+Dear Tarawneh
+
+I need a personal vacation day please on Tuesday, 2019/Feb/05
+
+Best Regards,
+Mouath Saadah
+
+Dear Abd Alrahman
+
+in the last update SRS we add new table to sort Authorized Fields "FLE_AUTHORIZED_SIGNATORY_REQ" but I am sell  sort 
+record in table "req_requests" just Once 
+Best Regards,
+Mouath Saadah
+
+
+Dear Mohamed Alkhalid
+
+I want to unsure about table "LES_LABOR_ESTIMATION_REQ" the cloumns "STATUS" & "LABOR_EST_TYPE" is not null
+but In my screen there is not details about value "STATUS" and I think the value for "LABOR_EST_TYPE" is 5 right ?
+Best Regards,
+Mouath Saadah
+
+Dear Abd Alrahman
+
+Good Morning
+I just want to unsure if the last update for the use case "RFLE037" also
+
+Best Regards,
+Mouath Saadah
+
+procedure
+
+
+Dear Mahmoud Tarawneh
+
+this update done for my screens :
+-LES006
+-MPMF008 & MPMF009 & MPMF015 & MPMF042 
+
+Best Regards,
+Mouath Saadah
+
+
+
+
+I think I have a problem to understand the FUNCTION "SYS_PKG.GET_REQUEST_CODE" 
+we enter two argument serves Id and trans type .
+The service id of our screens and about trans type of all screen 
+initiation we set 1 but the picture is different
+
+is my explanation true ?
+
+Best Regards,
+Mouath Saadah
+
+
+Dear Tarawneh,
+
+
+I have changed the procedures Name regarding the latest SRS for these pages:
+
+LES006
+
+ 
+
+
+Best Regards,
+Mouath Saadah
+
+in this screen need to submit request I read the more function in the button about create report 
+I just want to make sure there is no print
+look at this image 
+Thanks
+
+Dear Tarawneh
+
+done for my screens  :
+
+RFLE001 , RFLE015 , RFLE017 , RFLE036 , RFLE037
+RVIP001 , RVIP003
+RLES006
+LES006
+
+Best Regards,
+Mouath Saadah
+
+
+Dear Tarawneh
+
+every think is okay for me
+
+Best Regards,
+Mouath Saadah
+
+
+Regards,
+
+Abdelhadi Al-Qudah
+Software Quality Assurance 
+email: a.alqudah@mscmena.com
+Skype ID: Abdelhadi Al-Qudah
+
+
+Dear Mahmoud Tarawneh
+
+I  need to take a personal vacation  next Wednesday on 2019 / 05/ 22 
+Best Regards,
+Mouath Saadah
+
+
+personal vacation
+
+Dear Mohammad Alkhaled
+
+please when the new change for procedure "ADDLESSERPRC_CONFIRM" 
+*Re-send the task* 
+
+Best Regards,
+Mouath Saadah
+
+Dear Mahmoud Tarawneh
+
+return message in procedure "RENPERMPN_CONFIRM" is "unique constraint"
+
+**look at this attachment
+Best Regards,
+Mouath Saadah
+
+Dear Mahmoud Tarawneh
+
+the Pro does not exist "MPM_PKG.ISSUEPERMG_EFEES"
+
+**check  the screen shot attached
+Best Regards,
+Mouath Saadah
+
+
+Dear Ahlam
+
+I don’t have any issues in my screens 
+
+Best Regards,
+Mouath Saadah
+ADF Developer
+e m.mohammad@mscmena.com
+m +962-785525277
+
+expenses sheet from to
+
+, please advice.
+
+check the screenshot attached
+
+as per confirmed with Abdelrahman
+
+MPM_WORK_VISA.labore_id
+
+Reminder
+company adf :
+
+http://optimiza.me/
+
+http://www.balsam.com.sa/
+
+Certificate
+
+Please deploy if you can. Thanks in advance. 
+Could you advise?
+
+
+
+
+Dear Almomani and Al Khaled,
+ 
+after I met with EN. Ammer  today there are two points requested for reports
+ 
+1- add last change for screens 'استعلام عن ملف ' and 'استعلام عن تراخيص ' to reports 'تفاصيل الملف ' and 'تفاصيل الترخيص' same as .
+ 
+2- list for all services that don't exist in screen 'طباعة ايصالات الخدمات', Kindly check the attached document for all service exist in screen 'طباعة ايصالات الخدمات'
+ 
+please advice ,
+
+
+
+
+Thank you so much for allowing me the opportunity to be part of the Balsam United
+I am delighted to accept the job offer, and I am looking forward to being an active and useful member of the team
+
+Regards
+
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+http://www.awasthiashish.com/2014/05/getting-selected-value-not-index.html?m=1    Getting selected value (not index) 
+
+
+
+
+
+172.30.56.132
+(vm-jbox-hub-001)
+Rahaf Khashroom |	DEV                |   MN-RKHASHROOM    |   192.168.14.21  |   172.30.56.132
+
+Mahammad Nawras	|   DEV	               |   MN-MNAWRAS	    |   192.168.14.20  |   172.30.56.132
+
+Siba Obaid	    |   QA                 |   MN-SALOBAID	    |   192.168.14.58  |   Non
+
+Moath Mohammad	|   DEV	               |   MN-MMOHAMMAD	    |   192.168.14.40  |   172.30.56.132
+Moath Mohammad	|   DEV	               |   MN-MMOHAMMAD	    |   192.168.14.40  |   172.30.56.132
+
+Hasan Sharaf	|   DevOps	           |   MN-HASAN-DevOps  |	192.168.14.58  |   172.30.56.132
+
+
+Nasser 
+
+
+https://www.coursera.org/
+
+username: nsalk@amazon.com
+password: Nasser123
+
+
+oreilly.com
+
+username: nsalk@amazon.com
+password: MenaDex@123

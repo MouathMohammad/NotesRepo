@@ -1,0 +1,78 @@
+1 - Tooltip Buttons with Popups                                                      1* TooltipButton
+oasis:TooltipButton                                                                  2* ButtonsGroup    
+                                                                                     3* OasisForm 
+2 - Tooltip Buttons with Popups                                                      4* IconLabel
+oasis:TooltipButton // type="menu"                                                   5* OasisRow
+                                                                                     6* OasisColumn
+3 - Toggle Buttons                                                                   7* OasisIcon
+oasis:ButtonsGroup                                                                   8* OasisFormItem
+                                                                                     9* OasisSpacer
+4 - Panel Form 1 Col With bottons                                                   10* OasisToolbar
+oasis:OasisForm                                                                     11* OasisButtonsToolbar
+                                                                                    12* FlexForm -> FlexGroup, FlexItem
+5 - Panel Form 3 columnwith labelStyle and labelAlignment
+oasis:OasisForm id="of4" columns="3" LabelStyle="smallLabel" labelAlignment="top"
+
+6 - Panel Form 2 Col With buttons
+oasis:OasisForm id="of3" columns="3"
+<f:facet name="end">
+
+7 - Labels with Image
+<oasis:IconLabel id="il1" LabelData="10:00" LabelIcon="fa-clock-o"/>
+<oasis:IconLabel id="il2" LabelData="5" LabelIcon="fa-hashtag"/>
+<oasis:IconLabel id="il3" LabelData="200" LabelText="LOS"/>
+
+8 - Grid options 1
+ex: 1
+<oasis:OasisRow id="or1">
+  <f:facet name="columns">
+    <oasis:OasisColumn id="oc1" span="2" order="two">
+      <f:facet name="content">
+        <af:panelGroupLayout id="pgl25" layout="vertical"></af:panelGroupLayout>
+      </f:facet>
+    </oasis:OasisColumn>
+</oasis:OasisRow>
+ex: 2
+<oasis:OasisColumn id="oc6" maxWidth="100"></oasis:OasisColumn>
+<oasis:OasisColumn id="oc6" minWidth="300"></oasis:OasisColumn>
+
+9 - Grid options 2
+<oasis:OasisRow id="or4" noOfColumns="3" >  </oasis:OasisRow> 
+<oasis:OasisRow id="or4" noOfColumns="3" align="right" >  </oasis:OasisRow>
+<oasis:OasisRow id="or4" noOfColumns="3" spaceBetween="true" >  </oasis:OasisRow>
+
+10 - OasisIcon
+<oasis:OasisIcon iconName="fa-plus" id="oi1"/>
+<oasis:OasisIcon iconName="fa-user" id="oi1"/>
+
+11 - OasisFormItem**
+<oasis:OasisFormItem id="ofi1">
+
+12 - Contextual backgrounds
+<oasis:OasisOutputText styleClass="dangerBanner"/>
+<oasis:OasisOutputText styleClass="warningBanner"/>
+<oasis:OasisOutputText styleClass="successBanner"/>
+
+13 - OasisSpacer
+<oasis:OasisSpacer size="100" id="os2"/>
+<oasis:OasisSpacer size="100" id="os2" layout="V" />
+<oasis:OasisSpacer size="100" id="os2" layout="H" /> 
+
+14 - OasisOutputText
+<oasis:OasisOutputText id="oot2" truncateText="false" value=" "/>
+
+15 - Toolbar
+<oasis:OasisToolbar id="ot14" paddingLeft="30" paddingRight="30">
+
+16 - Grid
+<oasis:OasisRow id="or4" grid="true" >
+desktopSize="3" offsetDesktopSize="2"
+</oasis:OasisRow>
+
+17 - OasisButtonsToolbar
+<oasis:OasisButtonsToolbar id="obt1">
+
+18- FlexForm
+<oasis:FlexForm id="of1" NoOfColumnsLg="2" NoOfColumnsMd="2" NoOfColumnsSm="2" showLabelInTopSm="false">
+<oasis:FlexGroup id="fg1" NoOfColumnsMd="1" NoOfColumnsLg="1" NoOfColumnsSm="1" border="false" background="false" noTitle="true">
+<oasis:FlexItem id="fi1" inputId="Phone1it5" label="#{messages['ADDRESSTF_ADDRESS_WORK']}" iconLabel="fa-phone">

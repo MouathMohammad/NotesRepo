@@ -1,0 +1,85 @@
+Talabat                                                                serviceId
+____________________________________________________________________________________________________                                                                     
+RFLE001 Open New File                                                       3                                           "فتح ملف"
+RFLE010 Add New Delegate                                                    8                         "طلب اضافة مندوب على الملف"
+RFLE015 Update File                                                         27                                        "تعديل ملف"
+RFLE017 Print Employment List                                               50                                "طباعة كشف العمالة"
+RFLE036 Print a Certificate for those Interested                            49                 "طباعة شهادة اعتماد لمن يهمه الأمر"
+RFLE037 Open New Small Project File                                         65                        "طلب فتح ملف مشروعات صغيرة"
+
+RVIP001 Join the file to the VIP                                            61                  "طلب التحاق ملف بقوائم المتميزين"
+RVIP003 Cancel Join the file to the VIP                                     63            "طلب الغاء التحاق ملف بقوائم المتميزين"
+
+RLES006 Labor Estimation (Private Contract -  Services )                    44             "طلب تقدير احتياج عقود أهلية –  خدمات"
+RLES012 Adding vehicles owned for the purpose of leasing                    127                "اضافة مركبات مملوكة بغرض التأجير"
+
+RMPMG001 Issuing a work permit ( Gulf Employment)                           123                      "إصدار إذن عمل عمالة خليجية"
+RMPMN001 Issuing a work permit (National Employment Registration Notice)    121                         "إشعار تسجيل عمالة وطنية"
+RMPMB001 Issuing a work permit (Unspecified Nationality)                    125                 "إصدار إذن عمل لغير محدد الجنسية"
+RMPMF009 Issuing a work permit - based on a Visa                            76                 "إصدار إذن عمل - بناء على التصريح"
+RMPMF015 Renew Work Permit ( Partner )                                      111                             " تجديد إذن عمل شريك"
+RMPMF042 Transfer work permits to the government sector                     100                "طلب تحويل اذن عمل الى قطاع حكومي"
+RMPMF052 Undo Work Permit Conversion outside sctor                          141                "تحويل من خارج القطاع - تعديل وضع"
+RMPMF056 Undo Work Permit Conversion outside sctor                          144                      "تراجع عن تحويل خارج القطاع"
+____________________________________________________________________________________________________
+Back-End
+
+FLE012  Delegate card orders                                                138               "تدقيق طلب اعادة طباعة بطاقة مندوب"
+
+LES006  Review Labor Estimation (Private Contract -  Services )             44             "طلب تقدير احتياج عقود أهلية –  خدمات"
+
+
+**RMPMG001 Issuing a work permit ( Gulf Employment)                          123                     "إصدار إذن عمل عمالة خليجية"
+RMPMN001 Issuing a work permit (National Employment Registration Notice)     121                        "إشعار تسجيل عمالة وطنية"
+**RMPMB001 Issuing a work permit (Unspecified Nationality)                   125                "إصدار إذن عمل لغير محدد الجنسية"
+**MPMF008  Review Visa Cancellation (Printed)                                108                      "إلغاء تأشيرة عمل –  صادرة"
+MPMF009  Issuing a work permit - based on a Visa         `                    76           "تدقيق إصدار إذن عمل - بناء على تصريح"
+MPMF015  Review Renew Work Permit ( Partner )                                111                             "شريك تجديد إذن عمل"
+MPMF038  Update labor info from PACI & MOI                                    -                          "طلب تحديث الرقم المدني"
+MPMF042  Transfer work permits to the government sector                      100     "تدقيق طلب تحويل اذن عمل الى القطاع الحكومي" 
+MPMF056 Undo Work Permit Conversion outside sctor                            144                     "تراجع عن تحويل خارج القطاع"
+MPM005   Work visa info                                                       -                            "تفاصيل تأشيرة العامل"
+FIG002   Print a financial guarantee application for banks                    -              "طباعة طلب ضمان مالي (مخاطبة للبنك)"
+FIG010   Liquidation of financial guarante                                    -                             "تسييل الضمان المالي"
+FIG012   Manage Approve Liquidation financial guarantee Requests              -                  "إدارة طلبات تسيل الضمان المالي"
+
+-----------
+PamUtility :
+
+UTLSER001   Manages System Services                                           -                              "ادارة خدمات النظام"                                    
+
+PamSecurity :
+
+SEC007
+
+
+FinanicialGuarntee :
+
+FIG004
+FIG002
+FIG010
+FIG012
+
+
+Report //
+
+RMPMF001 73
+RMPMF010 77
+RMPMF039 87
+
+
+Saleh //
+
+Back-End
+
+MPMF001  Review Issuing a work visa request                                 73                        "تدقيق طلب اصدار تصريح عمل"
+MPMF022  Review Transfer from partner permit to labor permit request        86                    "تدقيق طلب تحويل من شريك لعامل"
+
+Talabat
+
+RMPMF024 Submission form for Cancel Work Permit - for the residence abroad         114                             "طلب إلغاء إذن العمل – لسقوط الإقامة خارج البلاد"   
+RMPMF025 Submission form for Cancel Work Permit ( for the expiry of the contract and for the departure)  115   "طلب إلغاء إذن العمل – لانتهاء العقد وداعي المغادرة"
+RMPMF026 Submission form for Cancel Work Permit (  For the Worker’s Death ) 116                                               "طلب إلغاء إذن العمل – لوفاة العامل"
+RMPMF027 Submission form for Cancel Work Permit (For citizenship) 117                                                   "طلب إلغاء إذن العمل – للحصول على الجنسية"
+RMPMF028 Submission form for Cancel Work Permit (For not completing the residency procedures) 118              "طلب إلغاء إذن العمل – لعدم استكمال إجراءات الإقامة"
+RMPMF029 Submission form for Cancel Work Permit (Transfer to outside the sector) 119                                 "طلب إلغاء إذن العمل – تحويل إلى خارج القطاع"

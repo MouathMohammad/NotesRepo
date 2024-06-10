@@ -1,0 +1,64 @@
+Git life cycle : woring directory ==> staging area ==> local repo ==> remote repo
+
+c\
+cd Users\mouath\Downloads
+mkdir My-Github
+cd My-Github
+
+1) Clone Remote Repo
+git clone https://github.com/MouathMohammad/Git_Course.git
+
+2) Status Repository
+git status
+
+3) Add files to staging area
+git add <file_name> <file_name> #OR# git add *
+
+4) Remove files from staging area
+git reset head <file_name> <file_name> #OR# git reset head *
+
+5) Commit my work to Local Repo
+git commit -m "Created The main Project Structure"
+
+6) Returns all branches name in Local Repo
+git branch
+
+7) Return Remote Repo name
+git remote -v
+
+8) Push All changes to Remote Repo
+git push <remote_name> <branch_name>
+git push -u <remote_name> <branch_name> // pull then push
+
+9) Pull All changes to Local Repo
+git pull <remote_name>
+
+10) Configration user name and email
+git config --global user.name "<add name>"
+git config --global user.email "<add email>"
+
+11) Github Public Key
+ssh-keygen -t rsa -b 4096 -C "m.mohammad@oasissys.com"
+type %USERPROFILE%\.ssh\id_rsa.pub
+
+12) Initalized empty Git Repo
+git init
+
+13) Add folders to new Repo
+git remote add <remote_name> git@github.com:<UserName>/<FolderNmae (Git Repo name)>.git
+
+_________Git Configration____________________
+
+git config -l //  return all configration list
+git help config //  open web site for all configuration details
+git config -l --show-origin // return all configration list with directory
+git config -unset user.name // delete user.name from configration
+git config --global --edit
+
+
+________________________
+cd    | go to directory
+dir   | show list folders and files
+cls   | clean cmd screen
+mkdir | create new directory
+cat   | return file content
