@@ -153,6 +153,7 @@ Place of Death = 274
 Officer = staff type
 Service Type = 5103
 clinic session break = 16
+operation type = 487
 ________________________________________________________
 
 
