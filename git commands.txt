@@ -43,12 +43,70 @@ type %USERPROFILE%\.ssh\id_rsa.pub
 file details :
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCh9xviGZap6yCkGcJL6ikhr9Fa3h9mkTCvFmtDMkcXFyQbOVfw9aoNDth0slAZ5ShbYw2HVyximYVbqLRkTKSr8cd6sE/7RVDblPn8wDr4CqfCGnNrYERVEQ7PMTbj4YWg3GA2O8Lcvnw+zjfuLSf4aPeZc7UVbirdlKKZug77OYJ3r0RoaMVN+Ucl/0bUcjsHJgW7/usU1Buub+wWFo2j9sPqLEi18PvN6E+iK0LSnl/8POhTqCq55+Vdiv1v61yNAz1SHvpM70kPrbXPnocZcFBBqJqaB8Yp5l2DWI3XkJTPFIS+xoo85Aj+rrhoqn8Ne8JBoNB2W5rubV8p3R+YwqfYb/aza8a8XD00lop1g40wyHKV7QxnrgrRldKraumguwblpAI0PqNJ32sGq8Rw1OnDAdB7dm81/Yoe/WSvl16KSQPnrjrjtyAKboJEd0J/ndVqInlre56Rz8vGy5+1nPPaXUjqIv9uXvDs76xugkcQBIi1lvyDpID2BrZOGFSP08p0BMlC8VTpEUTc8bV2jnAXYRQmxodRgw/Do4hseOEc4LOf2DC83v8OfXw05rnr1/ZT4rUWO2Q8CK9cCxVovIVF4ejvFsntCX6G8CQmZMlv1eY1Ocs0O75YYDGfaoy5Bj3mxFicvun/1D8dTc5OK6/9EZC7dLqk8tPrCDVNQw== m.mohammad@oasissys.comtest:
 ssh -T git@github.com
+
 12) Initalized empty Git Repo
 git init
 
-13) Add folders to new Repo
+13) Add files to new Repo
 git branch -M main
 git remote add <remote_name> git@github.com:<UserName>/<Remot Repo name>.git
+
+14) Alias 
+git config --global alias.st status
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.co checkout
+
+15) Add/Delete/Rename branch
+add:
+git branch <branch name>
+git checkout -b <branch name>
+delete:
+git branch -d <branch name>
+git branch -D <branch name>
+rename:
+git br -m <new branch name>
+
+16) Merge
+git checkout <main branch>
+git merge <other branch>
+
+17) Stash // like stack LIFO
+git stash save "<name stash>"
+git stash list // get all stashes
+git stash pop // get first stash and delete it from list
+git stash apply // get first stash without delete it from list
+git stash drop  // delete first stash
+git stash show // show contact of first stash 
+git stash clear // delete all stash
+git stash clear stash@{2} // delete specific stash by index
+
+18)Remove files from staging area
+git restore --staged
+
+19)Remove files
+git clean -c // show files befor delete
+git clean -f // delete files
+
+20)Reset commit 
+git reset --hard 4d3d71d59e6d33e73dcc348d1a847e9ca076bdb4
+git push origin main --force
+
+21)Return all commint
+git log
+
+22) Tagging (Lightweight Tags or Annotated Tags)
+git tag // show all tag
+Lightweight tag:
+git tag <tag name>
+Annotated tag:
+git tag -a <tag name> -m "<tag details>"
+
+git push origin <tag name>
+git tag -l "v1.*" // search tag
+delete tag :
+git tag -d v1.0 
+git push origin --delete v2.0
 
 _________Git Configration____________________
 
@@ -56,12 +114,14 @@ git config -l //  return all configration list
 git help config //  open web site for all configuration details
 git config -l --show-origin // return all configration list with directory
 git config -unset user.name // delete user.name from configration
-git config --global --edit
+git config --global --edit // show file edit for git 
 
 
 ________________________
-cd    | go to directory
-dir   | show list folders and files
-cls   | clean cmd screen
-mkdir | create new directory
-cat   | return file content
+cd          | go to directory
+dir         | show list folders and files
+cls         | clean cmd screen
+mkdir       | create new directory
+create file | copy nul file3.txt
+type        | return file content
+echo        | add new files

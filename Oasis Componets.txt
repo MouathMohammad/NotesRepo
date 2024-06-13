@@ -76,5 +76,3 @@ desktopSize="3" offsetDesktopSize="2"
 <oasis:FlexForm id="of1" NoOfColumnsLg="2" NoOfColumnsMd="2" NoOfColumnsSm="2" showLabelInTopSm="false">
 <oasis:FlexGroup id="fg1" NoOfColumnsMd="1" NoOfColumnsLg="1" NoOfColumnsSm="1" border="false" background="false" noTitle="true">
 <oasis:FlexItem id="fi1" inputId="Phone1it5" label="#{messages['ADDRESSTF_ADDRESS_WORK']}" iconLabel="fa-phone">
-
-test

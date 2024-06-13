@@ -128,10 +128,35 @@ adf.userSession.userData.oasisCodes.[Method name ]	                          [Th
 
 
 
+________Codes_Data___________
+
+Title = 29
+Registration type = 251
+Guardian Relation = 17
+Marital Status = 2
+Religion = 1
+Nationality = 5
+Job = 4
+Category = 379
+Blood Type = 
+ID type = 9
+contact type = 18
+contact relation = 17
+extra info type = 23
+warning problem type = 309
+____
+Certified By = staff type
+Staff Presen = staff type
+Region = 503
+State of Death = 504
+Place of Death = 274
+Officer = staff type
+Service Type = 5103
+clinic session break = 16
 ________________________________________________________
 
 
-Work from Home
+Work from Home  
 
 
 windows / microsoft key :
