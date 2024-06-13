@@ -1541,33 +1541,33 @@ Other 50(11.5 card + 20 internet + 6 hair + 12.5 o)
 ##1##
 /694 - 200 = 494
 100 home -200 jm3eh= 194-o 50 = 144
-wallet 6.400
-Bank  3.140
+wallet 6,400
+Bank  3,140
 ##2##
 /694 - 200 = 494
 100 home -200 jm3eh= 194-o 50 = 144
 wallet 600
-Bank  9.150
+Bank  9,150
 ##3##
 /0 - 0 = 0
 50 home - 0 jm3eh = -50 -o 50 -70 = -170
-wallet 1.200
-Bank  10.150
+wallet 1,200
+Bank  10,150
 ##4##
 /0 - 0 = 0
 50 home - 200 jm3eh = -250 -o 50 -61 = -361
 wallet 800
-Bank  10.660
+Bank  10,660
 ##5##
 /0 - 0 = 0
 0 home - 200 jm3eh = -200 -o 40 -140 = -380
 wallet 500
-Bank  10.965
+Bank  10,965
 ##6##
 /1200 - 750 = 450
-50 home - 200 jm3eh = -250 -o 100 = 100
+-50 home - 200 jm3eh = 200 -o 90= 110
 wallet 900
-Bank  9.810
+Bank  9,810
 ##7##
 ##8##
 ##9##
@@ -1578,58 +1578,43 @@ Bank  9.810
 
 
 
-_2024_ >> 694 / 1200
-200 + 3.200 jm3eh = 3.400
+_2024_ >> 694 / 1,200
+200 + 3,200 jm3eh = 3,400
 200 + 250 farewell + 456 vacation = 906
 -170 + 560 = 390
 -361 + 487 = 126
 -380
-750,//5.231
+750,//5,231
 500
 500
 500
 500
 500
 500
-= 8.231
+= 8,231
 
 *
 _(1)_  - 20 Adam Teacher - 163 Car Training - 20 Help Peaple - 27 Medicine = 230
 _(2)_  - 73 Car Training  = 73
 _(3)_  - 20 Adam Teacher - 110 Car Training  = 130
-_(4)_  - 20 Adam Teacher = 20
+_(4)_  - 20 Adam Teacher - 50 Eid - 15 resume.io - 15 Car Training = 100
 _(5)_  - 18 Adam Glasses - 20 Saeed - 70 Car Training - 30 Beef - 16.5 Mom Medicine 
        - 80 Perfume - 90 Clothes - 30 Help Team = 335
-_(6)_  - 0  = 0  // 788
+_(6)_  - 20 Adam Teacher = 20  // 888
 _(7)_  - 0  = 0
 _(8)_  - 0  = 0
 _(9)_  - 0  = 0
-_(10)_  - 0  = 0
-_(11)_  - 0  = 0
-_(12)_  - 0  = 0
- > 788
+_(10)_ - 0  = 0
+_(11)_ - 0  = 0
+_(12)_ - 0  = 0
+ > 888
 
-= #7.704#
+= #7,604#
 
 ______________________
 
-total : 9,347 ==> 17.51
+total : 9,347 ==> 16,951
 ______________________
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
