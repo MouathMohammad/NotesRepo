@@ -95,7 +95,15 @@ git push origin main --force
 21)Return all commint
 git log
 
-22) Tagging (Lightweight Tags or Annotated Tags)
+22) GitIgnore file
+echo > .gitignore
+# Compiled source
+*.class
+!a.class
+#SVN folder
+.svn/
+
+23) Tagging (Lightweight Tags or Annotated Tags)
 git tag // show all tag
 Lightweight tag:
 git tag <tag name>
