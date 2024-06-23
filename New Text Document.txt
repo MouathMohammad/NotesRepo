@@ -1601,22 +1601,22 @@ _(3)_  - 20 Adam Teacher - 110 Car Training  = 130
 _(4)_  - 20 Adam Teacher - 50 Eid - 15 resume.io - 15 Car Training = 100
 _(5)_  - 18 Adam Glasses - 20 Saeed - 70 Car Training - 30 Beef - 16.5 Mom Medicine 
        - 80 Perfume - 90 Clothes - 30 Help Team = 335
-_(6)_  - 20 Adam Teacher = 20  // 888
+_(6)_  - 20 Adam Teacher - 40 Mostafa Egypt - 11 Mahmoud Phone - 300 Eid
+       - 20 Abd Elhadee - 15 Car Training = 406  // 1,274
 _(7)_  - 0  = 0
 _(8)_  - 0  = 0
 _(9)_  - 0  = 0
 _(10)_ - 0  = 0
 _(11)_ - 0  = 0
-_(12)_ - 0  = 0
- > 888
+_(12)_ - 0  = 0 
+ > 1,274
 
-= #7,604#
+= #6,957#
 
 ______________________
 
-total : 9,347 ==> 16,951
+total : 9,347 ==> 16,304
 ______________________
-
 
 
 
