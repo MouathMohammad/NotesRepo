@@ -85,7 +85,8 @@ ____________          ____________          ____________
 #To add a new TaskFlow : [ MAPS001 , MAPS017 ]
 exec Add_New_Task_Flow('TESTTF','Test Task Flow','/WEB-INF/oasis/test/flows/TestTF.xml#TestTF','Y');
 
-#To add a new error message : [ MAPS015 , MAPS016 ]
+#To add a new error message : [ MAPS015 , MAPS016 ](
+#(Q,V,F,W) i.e (Question message,Validation,Fatal Error,Warning Message)
 DECLARE
 v_error_no NUMBER;
 BEGIN
@@ -1536,7 +1537,7 @@ total : 10391 ==> 10,000 - 653 = 9,347
 ______________________
 
 salary : 0
-Other 50(11.5 card + 20 internet + 6 hair + 12.5 o)
+Other 100(11.5 card + 20 internet + 6 hair + 81.5 o)
 
 (
 ##1##
