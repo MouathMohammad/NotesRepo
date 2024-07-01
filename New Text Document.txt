@@ -70,6 +70,7 @@ ____________
 5 / GitBucket : https://jedbucket.oasisapp.services/login
 6 / Jira : https://jordan.oasisapp.services/dvlp/faces/Login.jsf
 7 / Github
+8 / Menaitch
 ____________          ____________          ____________
 1 / mouaths123
 2 / Mouath_1434323
@@ -78,7 +79,7 @@ ____________          ____________          ____________
 5 / user name : mouath  |  pass : 9961023646
 6 / user name : m.mohammad@oasissys.com |  pass : 12345678
 7 / user name : m.mohammad@oasissys.com |  pass : mouaths123
-
+8 / user name : 900285 |  pass : M0785525277 | MURJAN
 
 ##FUNCTION
 
@@ -115,7 +116,7 @@ adf.userSession.userData.staffId	                                          Used 
 adf.userSession.userData.languageId	                                          Used to get login user language Id 	                                                        bigDecimal
 adf.userSession.userData.workEntityId	                                      Used to get login user work entity Id	                                                        bigDecimal
 adf.userSession.userData.facilityId	                                          Used to get user facility id	                                                                bigDecimal
-adf.userSession.userData.hospitalId	                                          Used to get user hospital Id 	                                                                bigDecimal
+adf.userSession.userData.hospitalId                                          Used to get user hospital Id 	                                                                bigDecimal
 adf.userSession.userData.fullMedRec	                                          used to get full medical paramters  refrenced in document by  P_FULL_MED_REC                  bigDecimal
 adf.userSession.userData.diagDivision	                                      used to get full medical paramters  refrenced in document by  P_DIAG_DIVISION	                bigDecimal
 adf.userSession.userData.signDivision	                                      used to get full medical paramters  refrenced in document by  P_SIGN_DIVISION	                bigDecimal
@@ -130,7 +131,9 @@ git lable value maps021
 
 #{messages['PATIENTSEARCHTF_PATIENTSEARCH_CANCEL_BTTN']}
 
+git lable value maps022
 
+#{oasisBundle['PATIENTSEARCHTF_PATIENTSEARCH_CANCEL_BTTN']}
 
 
 ________Codes_Data___________
@@ -159,6 +162,17 @@ Officer = staff type
 Service Type = 5103
 clinic session break = 16
 operation type = 487
+
+
+
+________Pages______________
+
+pageTemplate
+
+        <f:attribute name="showTitle" value="false"/>
+        <f:attribute name="showSearchToggleButton" value="false"/>
+        <f:attribute name="searchType" value="none"/>
+        <f:attribute name="hideSeachSection" value="false"/>
 ________________________________________________________
 
 
@@ -1438,6 +1452,9 @@ _________________________
 total : 10306 ==> 10,000
 _________________________
 
+
+
+
 salary : 555
 Other 50(11 card + 20 internet + 2 card aunt + 6 hair + 7 m3sl + 4 o)
 
@@ -1540,8 +1557,12 @@ ______________________
 total : 10391 ==> 10,000 - 653 = 9,347
 ______________________
 
-salary : 0
-Other 100(11.5 card + 20 internet + 6 hair + 81.5 o)
+
+
+
+salary : 1,168
+Other 200(11.5 card + 20 internet + 6 hair + 25 perfume + 6 deodorant +
+          2.5 shampoo + 15 club + 114 o)
 
 (
 ##1##
@@ -1570,10 +1591,10 @@ Bank  10,660
 wallet 500
 Bank  10,965
 ##6##
-/1200 - 750 = 450
+/1,168 - 718 = 450
 -50 home - 200 jm3eh = 200 -o 90= 110
-wallet 900
-Bank  9,810
+wallet 270
+Bank  10,728
 ##7##
 ##8##
 ##9##
@@ -1584,20 +1605,20 @@ Bank  9,810
 
 
 
-_2024_ >> 694 / 1,200
+_2024_ >> 694 | 1,168
 200 + 3,200 jm3eh = 3,400
 200 + 250 farewell + 456 vacation = 906
 -170 + 560 = 390
 -361 + 487 = 126
 -380
-750,//5,231
-+600
+718,//5,199
+600
 500
 500
 500
 500
 500
-= 8,231
+= 8,199
 
 *
 _(1)_  - 20 Adam Teacher - 163 Car Training - 20 Help Peaple - 27 Medicine = 230
@@ -1607,20 +1628,20 @@ _(4)_  - 20 Adam Teacher - 50 Eid - 15 resume.io - 15 Car Training = 100
 _(5)_  - 18 Adam Glasses - 20 Saeed - 70 Car Training - 30 Beef - 16.5 Mom Medicine 
        - 80 Perfume - 90 Clothes - 30 Help Team = 335
 _(6)_  - 20 Adam Teacher - 40 Mostafa Egypt - 11 Mahmoud Phone - 300 Eid
-       - 20 Abd Elhadee - 15 Car Training = 406  // 1,274
+       - 20 Abd Elhadee - 35 Car Training = 426  // 1,294
 _(7)_  - 0  = 0
 _(8)_  - 0  = 0
 _(9)_  - 0  = 0
 _(10)_ - 0  = 0
 _(11)_ - 0  = 0
 _(12)_ - 0  = 0 
- > 1,274
+ > 1,294
 
-= #6,957#
+= #6,905#
 
 ______________________
 
-total : 9,347 ==> 16,304
+total : 9,347 ==> 16,252
 ______________________
 
 
