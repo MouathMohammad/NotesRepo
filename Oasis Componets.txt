@@ -10,7 +10,7 @@ oasis:ButtonsGroup                                                              
 4 - Panel Form 1 Col With bottons                                                   10* OasisToolbar
 oasis:OasisForm                                                                     11* OasisButtonsToolbar
                                                                                     12* FlexForm -> FlexGroup, FlexItem
-5 - Panel Form 3 columnwith labelStyle and labelAlignment
+5 - Panel Form 3 columnwith labelStyle and labelAlignment                           13* OasisListOfValues
 oasis:OasisForm id="of4" columns="3" LabelStyle="smallLabel" labelAlignment="top"
 
 6 - Panel Form 2 Col With buttons
@@ -77,6 +77,20 @@ desktopSize="3" offsetDesktopSize="2"
 <oasis:FlexGroup id="fg1" NoOfColumnsMd="1" NoOfColumnsLg="1" NoOfColumnsSm="1" border="false" background="false" noTitle="true">
 <oasis:FlexItem id="fi1" inputId="Phone1it5" label="#{messages['ADDRESSTF_ADDRESS_WORK']}" iconLabel="fa-phone">
 
+19- OasisListOfValues
+<oasis:OasisListOfValues popupTitle="TOOLSETSTF_TOOLSETDETAILS_LOV_POPUPTITLE_PROCEDURE"
+id="proc_olov" onSelect="#{viewScope.detailsBean.onSelectProcedure}"
+onValueChange="#{viewScope.detailsBean.onChangeProcedure}"
+onSearch="#{viewScope.detailsBean.onSearchProcedures}"
+value="#{viewScope.detailsBean.procedures.description}"
+searchAttributes="Procedure,IosMain" selectAttribute="Procedure" maxNumberInSearch="7"
+onLaunchPopup="#{viewScope.detailsBean.onLaunchProcedures}"
+placeHolder="#{messages['TOOLSETSTF_TOOLSETDETAILS_LOV_PLACEHOLDER_PROCEDURE']}"
+iterator="#{bindings.ProceduresLOVIterator}">
+<f:facet name="TableFacet">
+
+</f:facet>
+</oasis:OasisListOfValues>
 Oasis Bean
 __________
 
