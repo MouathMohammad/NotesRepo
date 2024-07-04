@@ -1,0 +1,198 @@
+Common Methods
+______________
+
+DCIteratorBinding dummyBasicIter = CommonADFUtils.findIterator("DummyPatientSearchROVIterator");
+OR
+private Supplier<PageDefinition> pageDef = ()-> PageDefinitionImpl.findPageDefinition(null);//global variable
+
+ToolSetsROVImpl vo = toolSetView();
+
+private ToolSetsROVImpl toolSetView(){
+    return (ToolSetsROVImpl) pageDef.get()
+                                    .getIterator("ToolSetsROVIterator")
+                                    .getViewObject();
+}
+//find iterator by name
+________________________________________________________________________________________________________
+
+getUserBean().getUserHospitalId();
+CommonUserDataFactory.getCommonUserData().getHospitalId();
+//get session details | get common user data
+________________________________________________________________________________________________________
+
+CommonJSFUtils.putInPageFlowScope("basicRegistration", false); 
+// to add new page flow scope with value
+________________________________________________________________________________________________________
+
+getRuleValue("ADT_PATFILE_REQ", "N"); //by bean code
+new BigDecimal(adf.userSession.userData.rules.getRuleValue('OR_ANESTHIA_TEAM','0'))// by VO grovy exprition
+// return rules value by name and if null return second parameter // extends OasisModelUtils
+________________________________________________________________________________________________________
+
+showOasisBusinessMessage(new BigDecimal(43));
+
+// show msg by errore ==> the common method will get errore type from DB
+________________________________________________________________________________________________________
+
+OasisBusinessException msg = new OasisBusinessException(BigDecimal.valueOf(9723));
+return msg.getErrorMessage();
+// return error msg details by error no from DB
+________________________________________________________________________________________________________
+                   
+getConfirmNoFilePopup().show(new RichPopup.PopupHints());
+
+	
+public RichPopup getConfirmNoFilePopup() {
+  RichPopup popup = (RichPopup) CommonJSFUtils.findComponent("nomedicalprofiledialog");
+  return popup;
+}
+// call popup 
+________________________________________________________________________________________________________
+
+    OasisBusinessException message = new OasisBusinessException(BigDecimal.valueOf(9724));
+    OasisDynamicPopup.showErrorMessage(message.getErrorMessage());
+// call popup OasisDynamicPopup used OasisNavigationContext
+________________________________________________________________________________________________________
+
+Object healthId = CommonADFUtils.getBoundAttributeValue("Healthid");
+Boolean disableDemoAndIDsFlag = Boolean.FALSE;
+if(healthId != null && "N".equals(disableDemoAndIDsRule))
+    disableDemoAndIDsFlag = Boolean.TRUE;
+CommonJSFUtils.putInPageFlowScope("disableDemoAndIDs", disableDemoAndIDsFlag);
+//read value from bindings and set it in page flow scope
+________________________________________________________________________________________________________
+
+Object modeObj = CommonJSFUtils.getFromPageFlowScope("Scope.SearchMode}");
+OR
+String mode = CommonJSFUtils.resolveExpressionAsString("#{pageFlowScope.SearchMode}");
+// get page flow scope
+________________________________________________________________________________________________________
+
+DCIteratorBinding advancedSearchIter = CommonADFUtils.findIterator("PatientSearchAdvancedROVIterator");
+PatientSearchAdvancedROVImpl advancedSearchVO =
+    (PatientSearchAdvancedROVImpl) advancedSearchIter.getViewObject();
+advancedSearchVO.setApplyViewCriteriaName(null);
+advancedSearchVO.executeEmptyRowSet();
+//clear iterator by set null to view object
+________________________________________________________________________________________________________
+
+vo.setNamedWhereClauseParam("P_CalledFromMainMenuParam", getPageCalledFromMainMenu());
+OR
+dummyBasicVO.setMaxFetchSize(-1);
+dummyBasicVO.setWhereClause(whereClause);
+//filter query direct 
+________________________________________________________________________________________________________
+
+CommonJSFUtils.resolveMethodExpression("#{bindings.ToolSetsROV.collectionModel.makeCurrent}", null,
+    new Class[] { SelectionEvent.class }, new Object[] { selectionEvent });
+//make selection listener for table from bean 
+________________________________________________________________________________________________________
+
+#{viewScope.detailsBean.actionRemoveProcedure(row.row)}
+
+    public void actionRemoveToolSet(ToolSetsROVRowImpl row){
+        if(row != null){
+            quesionBeforDeleteToolSet(row);
+        }
+    }
+	
+    private void quesionBeforDeleteToolSet(ToolSetsROVRowImpl row) {
+        OasisDynamicPopup confirmDialog = new OasisDynamicPopup(13874L);
+        confirmDialog.setDialogType("yesNo");
+        confirmDialog.setConfirmText("Yes");
+        confirmDialog.setCancelText("No");
+        confirmDialog.registerDialogCallback((outcome) -> {
+            if (DialogEvent.Outcome.yes.equals(outcome)) {
+                try{
+                    toolSetId = row.getToolSetId();
+//                    removeToolSet(row);
+                    row.remove();
+                    toolSetView().getDBTransaction().commit();
+                    CommonADFUtils.refreshIterator(ToolSetIterators.TOOLSET_ROV);
+                    OasisDynamicPopup.showSuccessDeleteMessage();
+                }catch(Exception e){
+//                    refreshEntity((ToolSetsROVImpl) row.getViewObject());
+                    toolSetView().getDBTransaction().rollback();
+                    CommonADFUtils.refreshIterator(ToolSetIterators.TOOLSET_ROV);
+                    ToolSetsROVImpl vo = (ToolSetsROVImpl) pageDef.get().getIterator("ToolSetsROVIterator").getViewObject();
+                    vo.findAndSetCurrentRowByKey(new Key(new Object[] { CommonUserDataFactory.getCommonUserData()
+                                                                        .getHospitalId(), toolSetId }), 1);
+                    setRowKeySet(new Key(new Object[] {CommonUserDataFactory.getCommonUserData().getHospitalId(),toolSetId}));
+                    ErrorUtils.handle(e);
+                }
+            }
+            refresh(ToolSetContainers.MANAGE_PAGE);
+        });
+        confirmDialog.show();
+    }
+
+// create popup from code and delete record 
+________________________________________________________________________________________________________
+
+ErrorUtils.handle(e);
+OR
+new SimpleErrorHandling().handle(e);
+
+//error handle
+________________________________________________________________________________________________________
+refresh(ToolSetContainers.MANAGE_PAGE);
+
+public void refresh(String compId) {
+    UIComponent component = CommonJSFUtils.findComponent(compId);
+    if (component != null)
+        reRenderComponents(new String[] { compId });
+}
+//refresh component
+________________________________________________________________________________________________________
+toolSetView().getDBTransaction().commit();
+toolSetView().getDBTransaction().rollback();
+
+private ToolSetsROVImpl toolSetView(){
+    return (ToolSetsROVImpl) pageDef.get()
+                            .getIterator("ToolSetsROVIterator")
+                            .getViewObject();
+}
+	
+// commit and rollback in code
+________________________________________________________________________________________________________
+
+    /**
+     * added global search view criteria to viewobject
+     * @param value search value null value will remove global search
+     */
+    public void applyDynamicSearchViewCriteria(String param) {  // IN VO Impl
+        if (param == null || param.toString().isEmpty()) {
+            removeApplyViewCriteriaName("AutoSearchVC");
+        } else {
+            ViewCriteria autoSearchVC = this.createDynamicSearchViewCriteria("AutoSearchVC", new String[] { "Description" }, param);
+            applyViewCriteria(autoSearchVC);
+        }
+        this.executeQuery();
+    }
+
+	private String description ;
+	.
+	.
+	.
+	    public void setDescription(String description) {
+        this.description = description;
+        ((ToolSetsROVImpl) pageDef.get()
+                                  .getIterator(ToolSetIterators.TOOLSET_ROV)
+                                  .getViewObject()).applyDynamicSearchViewCriteria(description);
+        refresh(ToolSetContainers.MANAGE_PAGE);
+    }
+// cerate VC by code
+________________________________________________________________________________________________________
+
+#{bindings.ToolSetsROV.attributes[0]} // TF parameter sent PK for vo
+________________________________________________________________________________________________________
+
+refresh(agentInfo().isSm() || agentInfo().isMd() ? ToolSetContainers.MANAGE_PAGE : ToolSetContainers.DETAILS_COLUMN);
+
+private AgentInfoBean agentInfo(){
+    return (AgentInfoBean) CommonJSFUtils.getFromSessionScope("agentInfo");
+}
+//get agentInfo
+________________________________________________________________________________________________________
+CommonJSFUtils.showPopupById(SessionPopups.ADD_SESSION_POPUP);
+//show popup by id

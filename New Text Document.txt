@@ -510,7 +510,31 @@ AddVMOption -Xmx4096M
 
 /jdev.conf 
 
+
 AddVMOption -DMainWindow.MemoryMonitorOn=true
+# Optimize the JVM for strings/text editing (was removed in Java 8):
+AddVMOption -XX:+UseStringCache
+AddVMOption -XX:+OptimizeStringConcat
+# Was removed in Java 8:
+AddVMOption -XX:+UseCompressedStrings
+AddVMOption -XX:+UseCompressedOops
+# Use an aggressive garbage collector (constant small collections)
+AddVMOption -XX:+AggressiveOpts
+# Configure the CMS garbage collector.- For multi-core machines, use multiple threads to create objects and reduce pause times
+AddVMOption -XX:+UseConcMarkSweepGC
+AddVMOption -DVFS_ENABLE=true
+AddVMOption -Dsun.java2d.ddoffscreen=false
+AddVMOption -XX:+UseParNewGC
+AddVMOption -XX:+CMSIncrementalMode
+AddVMOption -XX:+CMSIncrementalPacing
+AddVMOption -XX:CMSIncrementalDutyCycleMin=0
+AddVMOption -XX:CMSIncrementalDutyCycle=10
+
+
+____________________________________________________________________________________________
+
+installation:
+
 cd "C:\Program Files\Java\jdk1.8.0_191\bin"
 java.exe -jar D:\WorkPC\Jdev12.2.1.4\fmw_12.2.1.4.0_bpm_quickstart.jar
 // apply the patches, execute the following commands one by one:  
@@ -1591,14 +1615,14 @@ Bank  10,660
 wallet 500
 Bank  10,965
 ##6##
-/1,128 - 678 = 450
--50 home - 200 jm3eh = 200 -o 90= 110
-wallet 270
-Bank  10,728
+/1,128 - 878 = 250
+-50 home - 0 jm3eh = 200 -o 90= 110
+wallet 900
+Bank  10,782
 ##7##
-/1,168 - 500 = 568
+/1,168 - 600 = 568
 -50 home - 200 jm3eh = 300 -o 200= 118
-wallet 270
+wallet 300
 Bank  10,725
 ##8##
 ##9##
@@ -1615,14 +1639,14 @@ _2024_ >> 694 | 1,168
 -170 + 560 = 390
 -361 + 487 = 126
 -380
-678,//5,159
-500
-500
-500
-500
-500
-500
-= 8,159
+878,//5,320
+600
+600
+600
+600
+600
+600
+= 8,920
 
 *
 _(1)_  - 20 Adam Teacher - 163 Car Training - 20 Help Peaple - 27 Medicine = 230
@@ -1641,11 +1665,11 @@ _(11)_ - 0  = 0
 _(12)_ - 0  = 0 
  > 1,294
 
-= #6,865#
+= #7,626#
 
 ______________________
 
-total : 9,347 ==> 16,252
+total : 9,347 ==> 16,973
 ______________________
 
 
@@ -2415,9 +2439,9 @@ Diamon star
 
 معادلة ميفلين سانت جيور، وهي كالآتي:
 
-W = 78
+W = 80
 H = 1.81
-A = 26
+A = 28
 للذكور: BMR = 10*W + 6.25*H - 5*A + 5
 
 الزكاة : 18 رجب
