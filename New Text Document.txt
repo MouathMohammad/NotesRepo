@@ -619,7 +619,7 @@ ADFContext.getCurrent().getSecurityContext().getUserName())
 JSFUtils.resolveExpression("#{sessionScope.userName}");
 
 Component :
-
+ 
 panel accordion >> show detail item
 panel splitter
 panel stretch layout
