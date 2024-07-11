@@ -11,7 +11,7 @@ oasis:ButtonsGroup                                                              
 oasis:OasisForm                                                                     11* OasisButtonsToolbar
                                                                                     12* FlexForm -> FlexGroup, FlexItem
 5 - Panel Form 3 columnwith labelStyle and labelAlignment                           13* OasisListOfValues
-oasis:OasisForm id="of4" columns="3" LabelStyle="smallLabel" labelAlignment="top"
+oasis:OasisForm id="of4" columns="3" LabelStyle="smallLabel" labelAlignment="top"   14* OasisSelectCodes
 
 6 - Panel Form 2 Col With buttons
 oasis:OasisForm id="of3" columns="3"
@@ -88,9 +88,24 @@ onLaunchPopup="#{viewScope.detailsBean.onLaunchProcedures}"
 placeHolder="#{messages['TOOLSETSTF_TOOLSETDETAILS_LOV_PLACEHOLDER_PROCEDURE']}"
 iterator="#{bindings.ProceduresLOVIterator}">
 <f:facet name="TableFacet">
-
 </f:facet>
 </oasis:OasisListOfValues>
+
+20- 
+<oasis:OasisSelectCodes required="true"
+    valueBinding="#{bindings.ConsType}"
+    autoSubmit="true" returnType="code"
+    valueChangeListener="#{pageFlowScope.appointmentDetailsBean.editConsTypeData.consTypeValueChangeListener}"
+    rendered="#{sharedLookupBean.ruleValue['OPDENABLEVIDEOCONSLT,N'] eq 'Y'}"
+    codeType="210" skipUserCodes="OC" id="dc_osc"
+/>
+
+
+
+
+
+
+
 Oasis Bean
 __________
 

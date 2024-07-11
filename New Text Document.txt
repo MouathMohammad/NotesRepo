@@ -127,13 +127,37 @@ adf.userSession.userData.oasisUtils.[Method name ]	                          [us
 adf.userSession.userData.hospPrivateFlag	                                  find work entity private flag	                                                                String
 adf.userSession.userData.oasisCodes.[Method name ]	                          [This used call methods in OasisCodesSingleton ] --Need to skip validation in the expression	
 
-git lable value maps021
+**git lable value maps021
 
 #{messages['PATIENTSEARCHTF_PATIENTSEARCH_CANCEL_BTTN']}
 
-git lable value maps022
+**git lable value maps022
 
-#{oasisBundle['PATIENTSEARCHTF_PATIENTSEARCH_CANCEL_BTTN']}
+#{oasisBundle['ALL']}
+
+date format mask is G_DATE_MASK                               
+
+#{userBean.dateFormat}
+
+get active and disactive from DB sql
+
+,(case when trunc(osm.end_date) < trunc(Sysdate) then (select mp.resource_value from maps022 mp where mp.resource_key = 'IN-ACTIVE' and mp.hospital_id = sm.hospital_id and mp.language_id = OASIS.USER_LANGUAGE) else (select mp.resource_value from maps022 mp where mp.resource_key = 'ACTIVE' and mp.hospital_id = osm.hospital_id and mp.language_id = OASIS.USER_LANGUAGE) end)status 
+
+**deploy my work
+
+1-first commit work from githup => add tiket name and comment
+2-pull request then make tiket  => pull change to branch release/medical and acronym comment
+3-make tiket in jira ready testing => full down template in comment
+
+
+Feature/KFAFP-1181
+
+affected modules:
+Reports:OPDReports
+
+commit Hash No:
+46302fee495
+
 
 
 ________Codes_Data___________
@@ -173,6 +197,11 @@ pageTemplate
         <f:attribute name="showSearchToggleButton" value="false"/>
         <f:attribute name="searchType" value="none"/>
         <f:attribute name="hideSeachSection" value="false"/>
+		
+		
+________Set Enviroment Variable__________
+
+Registry Editor ==> Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
 ________________________________________________________
 
 
