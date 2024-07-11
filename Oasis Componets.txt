@@ -76,6 +76,7 @@ desktopSize="3" offsetDesktopSize="2"
 <oasis:FlexForm id="of1" NoOfColumnsLg="2" NoOfColumnsMd="2" NoOfColumnsSm="2" showLabelInTopSm="false">
 <oasis:FlexGroup id="fg1" NoOfColumnsMd="1" NoOfColumnsLg="1" NoOfColumnsSm="1" border="false" background="false" noTitle="true">
 <oasis:FlexItem id="fi1" inputId="Phone1it5" label="#{messages['ADDRESSTF_ADDRESS_WORK']}" iconLabel="fa-phone">
+**it is requerd to add inputId to all FlexItem befor run the app
 
 19- OasisListOfValues
 <oasis:OasisListOfValues popupTitle="TOOLSETSTF_TOOLSETDETAILS_LOV_POPUPTITLE_PROCEDURE"
@@ -90,6 +91,7 @@ iterator="#{bindings.ProceduresLOVIterator}">
 <f:facet name="TableFacet">
 </f:facet>
 </oasis:OasisListOfValues>
+**popupTitle should the key form maps021
 
 20- 
 <oasis:OasisSelectCodes required="true"

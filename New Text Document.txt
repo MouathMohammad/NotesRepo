@@ -198,7 +198,7 @@ pageTemplate
         <f:attribute name="searchType" value="none"/>
         <f:attribute name="hideSeachSection" value="false"/>
 		
-		
+	hhh	
 ________Set Enviroment Variable__________
 
 Registry Editor ==> Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
@@ -619,7 +619,7 @@ ADFContext.getCurrent().getSecurityContext().getUserName())
 JSFUtils.resolveExpression("#{sessionScope.userName}");
 
 Component :
- 
+
 panel accordion >> show detail item
 panel splitter
 panel stretch layout
@@ -1700,6 +1700,20 @@ ______________________
 
 total : 9,347 ==> 16,973
 ______________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
