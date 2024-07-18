@@ -102,6 +102,22 @@ iterator="#{bindings.ProceduresLOVIterator}">
     codeType="210" skipUserCodes="OC" id="dc_osc"
 />
 
+21-
+<af:panelTabbed position="above" id="oto_pt" styleClass="oneTouchOrdersTab"
+    inlineStyle="background-color: #FFF;padding-top:10px;margin-top:5px;">
+    <af:showDetailItem id="md_tab" text="#{messages['ONETOUCHORDERSSETUP_MEDICATIONS']}" styleClass="zozodtl"
+        disclosed="#{bindings.medications eq bindings.SelectedTab.inputValue}">
+        <af:region value="#{bindings.MedicationsTF.regionModel}" id="r1"/>
+        <af:setPropertyListener type="disclosure" from="#{bindings.medications}"
+            to="#{bindings.SelectedTab.inputValue}"/>
+    </af:showDetailItem>
+    <af:showDetailItem id="lb_tab" text="#{messages['ONETOUCHORDERSSETUP_LABORATORY']}"
+        disclosed="#{bindings.laboratory eq bindings.SelectedTab.inputValue}">
+        <af:region value="#{bindings.LaboratoryTF.regionModel}" id="r4"/>
+        <af:setPropertyListener type="disclosure" from="#{bindings.laboratory}"
+            to="#{bindings.SelectedTab.inputValue}"/>
+    </af:showDetailItem>
+</af:panelTabbed>
 
 
 

@@ -16,6 +16,8 @@ private ToolSetsROVImpl toolSetView(){
 ________________________________________________________________________________________________________
 
 getUserBean().getUserHospitalId();
+getUserBean().getUserLanguageId();
+getUserBean().getUserId();
 CommonUserDataFactory.getCommonUserData().getHospitalId();
 //get session details | get common user data
 ________________________________________________________________________________________________________
@@ -59,12 +61,25 @@ Boolean disableDemoAndIDsFlag = Boolean.FALSE;
 if(healthId != null && "N".equals(disableDemoAndIDsRule))
     disableDemoAndIDsFlag = Boolean.TRUE;
 CommonJSFUtils.putInPageFlowScope("disableDemoAndIDs", disableDemoAndIDsFlag);
+OR
+protected BigDecimal getIosMainMemo() {
+    return pageDef.get()
+            .getAttributeValue("IosMainMemo")
+            .map(Object::toString)
+            .map(BigDecimal::new)
+            .orElse(null);
+}
 //read value from bindings and set it in page flow scope
 ________________________________________________________________________________________________________
 
 Object modeObj = CommonJSFUtils.getFromPageFlowScope("Scope.SearchMode}");
 OR
 String mode = CommonJSFUtils.resolveExpressionAsString("#{pageFlowScope.SearchMode}");
+OR
+public BigDecimal workEntity(){
+    return getFromPageFlowScope("workEntity", BigDecimal.class);
+}
+
 // get page flow scope
 ________________________________________________________________________________________________________
 
@@ -184,15 +199,245 @@ ________________________________________________________________________________
 // cerate VC by code
 ________________________________________________________________________________________________________
 
+    public void filterSessionListByStatus(String status){
+        if(StaticVar.ALL.equals(status)){
+            removeApplyViewCriteriaName(StaticVar.STATUS_VC) ;
+        }else{
+            setstatusVCA(status);
+            setApplyViewCriteriaName(StaticVar.STATUS_VC);
+        }
+           executeQuery();
+    }
+	
+	    public void setstatusVCA(String value) {
+        ensureVariableManager().setVariableValue("statusVCA", value);
+    }
+// after create vc in VO make Impl vo set and execute vc
+________________________________________________________________________________________________________
+
 #{bindings.ToolSetsROV.attributes[0]} // TF parameter sent PK for vo
 ________________________________________________________________________________________________________
+
+#{agentInfo.lg or  agentInfo.gtLg or (!agentInfo.lg and !agentInfo.gtLg and viewScope.toolSetsBean.tabletMode eq 'Master')}
 
 refresh(agentInfo().isSm() || agentInfo().isMd() ? ToolSetContainers.MANAGE_PAGE : ToolSetContainers.DETAILS_COLUMN);
 
 private AgentInfoBean agentInfo(){
     return (AgentInfoBean) CommonJSFUtils.getFromSessionScope("agentInfo");
 }
-//get agentInfo
+//get agentInfo in Bean 
 ________________________________________________________________________________________________________
+
 CommonJSFUtils.showPopupById(SessionPopups.ADD_SESSION_POPUP);
 //show popup by id
+________________________________________________________________________________________________________
+
+private SessionDetailAMImpl appModule(){
+    return (SessionDetailAMImpl) getApplicationModule();
+}
+//get AM in Impl VO
+________________________________________________________________________________________________________
+
+//AMImp
+public BigDecimal checkSessionDelete(SessionDetailROVRowImpl rec , BigDecimal workEntity){
+    return (BigDecimal) callStoredFunction(NUMBER, "Sessions_Utl.OR_Check_Session_Delete(?,?,?)", new Object[] { workEntity ,rec.getOperatingSessionCode(),rec.getStaffId() });
+}
+    
+public Integer deleteStaffSession(BigDecimal workEntity , SessionDetailROVRowImpl rec ) {
+    CallableStatement st = null;
+    Integer result = -99;
+    Savepoint savepoint = null;
+    try {
+            st = getDBTransaction().createCallableStatement("begin ? := Sessions_Utl.OR_Delete_Staff_Session(?,?,?); end;", 0);
+            savepoint = st.getConnection().setSavepoint();
+            st.registerOutParameter(1, Types.NUMERIC);
+            st.setObject(2, workEntity);
+            st.setObject(3, rec.getOperatingSessionCode());
+            st.setObject(4, rec.getStaffId());
+            st.executeUpdate();
+            result = Optional.ofNullable(st.getObject(1))
+                             .map(Object::toString)
+                             .map(Integer::valueOf)
+                             .orElse(-99);
+    } catch (SQLException e) {
+            e.printStackTrace();
+            throw new JboException(e);
+    } finally {
+        if (st != null) {
+            try {
+                if (result.equals(0))
+                    st.getConnection().commit();
+                else
+                    st.getConnection().rollback(savepoint);
+                    st.close();
+            } catch (SQLException e) {
+                throw new JboException(e);
+            }
+        }
+    }
+    return result;
+}
+
+
+//VO Impl
+public void checkSessionDelete(BigDecimal workEntity , Consumer<Integer> result){
+    result.accept(appModule().checkSessionDelete(this, workEntity).intValue());
+}
+    
+public void deleteStaffSession(BigDecimal workEntity , Consumer<Integer> result){
+    result.accept(appModule().deleteStaffSession(workEntity , this)) ;
+}
+
+
+//code bean 
+public void actionRemoveSession(SessionDetailROVRowImpl row) {
+    if (row != null) {
+        try {
+            row.checkSessionDelete(workEntity(), result -> {
+                if (result.equals(0)) {
+                askForDeleteSession(row);
+                } else if (result.equals(-2) || result.equals(-3)) {
+                ErrorUtils.showPopupError(13574L);
+                }
+                });
+        } catch (Exception e) {
+            ErrorUtils.handle(e);
+        }
+    refresh(Containers.MANAGE_PAGES);
+        }
+}
+    
+    
+private void askForDeleteSession(SessionDetailROVRowImpl row){
+    OasisDynamicPopup confirmDialog = new OasisDynamicPopup(12896L);
+    confirmDialog.setDialogType("yesNo");
+    confirmDialog.setConfirmText(OasisModelUtils.getInstance().getOasisResourceKey("YES"));
+    confirmDialog.setCancelText(OasisModelUtils.getInstance().getOasisResourceKey("NO"));
+    confirmDialog.registerDialogCallback((outcome) -> {
+    if (DialogEvent.Outcome.yes.equals(outcome)) {
+        row.deleteStaffSession(workEntity() , result ->{
+        if (result.equals(0)){
+            doTaskFlowCommit();
+            CommonADFUtils.refreshIterator(Iterators.SESSION_DETAIL);
+            mainBean().actionRefIter(sessionDetailStrem.get().count() > 0 ? sessionDetailStrem.get().map(SessionDetailROVRowImpl.class::cast).findFirst().get().getOperatingSessionCode() : null);
+            refresh(Containers.MANAGE_PAGES);
+        }
+        else if (result.equals(-2) || result.equals(-3))
+            ErrorUtils.showPopupError(13574L);
+        });
+    }
+    });
+    confirmDialog.show();
+}
+
+//call functions in AM by Impl VO in code
+________________________________________________________________________________________________________
+
+public Boolean checkIfThisExtendWillOverlapWithAnotherSession(BigDecimal workEntity , SessionDetailROVRowImpl rec , Date endDate){
+    AnotherSessionsROVImpl vo = this.getAnotherSessionsROV();
+    vo.setP_SessionCode(rec.getOperatingSessionCode());
+    vo.setP_WorkEntity(workEntity);
+    vo.setP_EndDate(SessionModelUtils.convertDateToString(endDate));
+    vo.executeQuery();
+    return vo.first() != null ;
+}
+
+
+public Boolean overlapWithAnotherSessions(BigDecimal workEntity , Date endDate){
+    return appModule().checkIfThisExtendWillOverlapWithAnotherSession(workEntity, this, endDate);
+}
+	
+//check if VO incloudes any record
+________________________________________________________________________________________________________
+
+<!--<af:selectOneChoice label=" " id="socConsType" simple="true" autoSubmit="true"
+        value="#{bindings.ConsType}">
+        <af:forEach var="items" items="#{bindings.ConsTypeLOV1.rangeSet}">
+            <af:selectItem label="#{items.UserCode}" id="si1" value="#{items.Code}"/>
+        </af:forEach>
+    </af:selectOneChoice>-->
+    <af:selectOneChoice value="#{bindings.ConsType.inputValue}" unselectedLabel="#{oasisBundle['ALL']}"
+        label=" " id="smc1" simple="true" autoSubmit="true">
+    <f:selectItems value="#{bindings.ConsTypeLOV.items}" id="si1"/>
+    <f:validator binding="#{bindings.ConsTypeLOV.validator}"/>
+</af:selectOneChoice>
+//used selectOneChoice by drop selectManyChoice then replace component name and show how forEach work
+________________________________________________________________________________________________________
+
+public void serialNoValidator(@SuppressWarnings("oracle.jdeveloper.java.unused-parameter")
+                            FacesContext facesContext, UIComponent uIComponent, Object object) {
+    String serialNo = (String) object;
+    if (object != null) {
+        BigDecimal iosMain = getIosMainMemo();
+        if (iosWithSerialIsDuplicated(serialNo, iosMain)) {
+            Optional.of(uIComponent)
+                .map(RichInputText.class::cast)
+                .map((comp) -> showMessageForComponent(comp, 1150304L) )
+                .ifPresent((comp) -> comp.setValid(false));
+        }
+    }
+}
+    
+public boolean iosWithSerialIsDuplicated(String serialNo, BigDecimal iosMain) {
+    if (getPopupModeMemo().equals("C"))
+        return pageDef.get()
+            .getIteratorStream("OperatingInstrumentsIosVOIterator")
+            .map(OperatingInstrumentsIosVORowImpl.class::cast)
+            .anyMatch((row) -> row.getSerialNo().equals(serialNo) && row.getIosMain().equals(iosMain));
+    else
+        return pageDef.get()
+            .getIteratorStream("OperatingInstrumentsIosVOIterator")
+            .map(OperatingInstrumentsIosVORowImpl.class::cast)
+            .anyMatch((row) -> row.getSerialNo().equals(serialNo) && row.getIosMain().equals(iosMain) &&
+                        !row.getOrInstrumentId().equals(getOrInstrumentIdMemo()));
+}
+    
+protected <T extends UIComponent> T showMessageForComponent(T comp, long messageNo) {
+    showMessageForComponent(comp.getId(), new OasisBusinessException(messageNo).getErrorMessage());
+    return comp;
+}
+//add validation to inpute text from bean using Validator properity
+________________________________________________________________________________________________________
+
+OasisDynamicPopup.showErrorMessage(errorNo);
+//show error msg by popup
+________________________________________________________________________________________________________
+
+OasisDynamicPopup.showSuccessSavedMessage();
+//show success save msg
+________________________________________________________________________________________________________
+
+public void filter(BigDecimal ios, String search , BigDecimal category){
+    applySearchFilter(ios,search);
+    applyCategoryFilter(category);
+    executeQuery();
+    }
+    
+private void applySearchFilter(BigDecimal ios, String search){
+    if (search == null || search.toString().trim().isEmpty()) {
+        removeApplyViewCriteriaName("itemSearchVC");
+    } else {
+        String[] params = ios == null ? new String[] { "ItemDescription", "Ios" , "IosMain" , "IosUser" } : new String[] {"Ios"};
+        ViewCriteria itemSearchVC = this.createDynamicSearchViewCriteria("itemSearchVC", params, ios == null ? search : ios.toString());
+        applyViewCriteria(itemSearchVC);
+    }
+}
+
+private void applyCategoryFilter(BigDecimal category) {     
+    setcategoryVCA(category);
+    if (category == null)
+        removeApplyViewCriteriaName("CategoryVC");
+    else
+        setApplyViewCriteriaName("CategoryVC", true);
+}
+// filter table from filter section in RVO Impl
+________________________________________________________________________________________________________
+
+public String getWard() {
+    return Optional.ofNullable(getPatientSleepingDetailsAccessorROV())
+        .map(RowIterator::first)
+        .map(PatientSleepingDetailsROVRowImpl.class::cast)
+        .map(PatientSleepingDetailsROVRowImpl::getWardDescription)
+        .orElse(null);
+}
+// set transiat attribute from Impl by VL ==> Accessor

@@ -135,14 +135,36 @@ adf.userSession.userData.oasisCodes.[Method name ]	                          [Th
 
 #{oasisBundle['ALL']}
 
-date format mask is G_DATE_MASK                               
+**date format mask is G_DATE_MASK                               
+
+**get rule by page or tf
+
+#{sharedLookupBean.ruleValue['OR_DEPARTMENT,0']}
 
 #{userBean.dateFormat}
 
-get active and disactive from DB sql
+**get active and disactive from DB sql
 
 ,(case when trunc(osm.end_date) < trunc(Sysdate) then (select mp.resource_value from maps022 mp where mp.resource_key = 'IN-ACTIVE' and mp.hospital_id = sm.hospital_id and mp.language_id = OASIS.USER_LANGUAGE) else (select mp.resource_value from maps022 mp where mp.resource_key = 'ACTIVE' and mp.hospital_id = osm.hospital_id and mp.language_id = OASIS.USER_LANGUAGE) end)status 
 
+**add in all bean as common 
+
+private transient Supplier<PageDefinition> pageDef = () -> PageDefinitionImpl.findPageDefinition(null);
+private transient SimpleErrorHandling errorHandling = new SimpleErrorHandling();
+
+ex:
+    private void commit(){
+        try{
+            ((InstrumentsSterilizationVOImpl) pageDef.get()
+                                                     .getIterator("InstrumentsSterilizationVOIterator")
+                                                     .getViewObject()).getDBTransaction().commit();
+        }catch(Exception e){
+            errorHandling.handle(e);
+        }
+    }	
+ex:
+    errorHandling.handle(new OasisBusinessException(1150310L));
+	
 **deploy my work
 
 1-first commit work from githup => add tiket name and comment
@@ -159,6 +181,118 @@ commit Hash No:
 46302fee495
 
 
+
+
+
+
+
+My Tikets:
+
+KFAFP-1181 : add new lov const type and put it to report   |   Reports:OPDReports //add new lov consultation type and put it to report
+deployed no. #73
+
+
+_________________Common__________________
+
+_Model_
+
+
+**OasisModelUtils
+
+  ==> public String getMrNo(BigDecimal patientId)
+      public Long diffBetweenDates(Date firstDate, Date secandDate, final String returnType)
+	  public Date addToDate(Date originalDate, long value, String addedType)
+	  public java.sql.Date addToSqlDate(java.sql.Date d, Long val, String Type)
+	  public String capitalize(String value)
+	  public String join(String concatType, Object... values)
+	  public String getAgeAsString(Object birthDate)
+	  public String getRuleValue(final String ruleName, final String defaultValue)
+	  public java.sql.Date convertToSqlDate(Object dateToConvert)
+	  public java.sql.Date truncateDate(java.sql.Date date)
+	  public java.sql.Date getTruncatedSysdate()
+	  public Optional<Object> getQueryResult(final String query, Object... params)
+	  public String getCurrentTaskFlow()
+	  
+**CommonApplicationModuleImpl 
+
+  ==> public Object callStoredFunction(int sqlReturnType, String stmt, Object[] bindVars)
+      public Object[] callStoredFunctionWithOutParam(String stmt, Object[] bindVars, int[] outputParNum)
+	  public Object[] callStoredProcedureWithOutParam(String stmt, Object[] bindVars, int[] outputParNum)
+	  public final void callStoredProcedure(final String stmt, Object[] bindVars)
+	  public final void callStoredProcedureWithNoArgs(final String stmt)
+	  public String getRuleValue(BigDecimal hospitalId, String ruleName, String defaultValue)
+	  public String getRuleValue(String ruleName, String defaultValue)
+	  
+**OasisBusinessException
+  ==> public String getErrorMessage()
+      public OasisBusinessException(BigDecimal errorCode)
+      public OasisBusinessException(long errorCode)
+	  public String getMessageTypeDesc()
+	  public String getErrorMessage(Map<String, Object> params)
+      
+_ViewController_
+
+**CommonBaseBean
+
+  ==> protected void clearSelectedRowKeys(String tableId)
+      protected void openOasisListOfValuesPopup(String compId)
+	  protected String getRuleValue(String ruleName, String defaultValue)
+	  protected void reRenderComponents(String[] componentIds)
+	  protected void reRenderComponents(String[] componentIds, boolean skipIfNotExists)
+      protected void showOasisBusinessMessage(BigDecimal messageNo)
+	  protected String getOasisBundleValue(String key)//from table maps022
+	  public Row findRowByAttributeValue(String iteratorName, String attributeName, Object attributeValue)
+	  protected <T> T findPageDefAttributeValue(String attributeName, Class<T> returnClass)
+	  protected void updatePageDefAttributeValue(String attributeName, Object newAttributeValue)
+	  protected RichPopup findPopup(UIComponent comp)
+	  //msg
+	  protected String getMessageByKey(String key)//from table maps021
+	  protected String getMessageByKey(String key, Map<String, Object> params)
+	  protected void showErrorMessage(String messageKey)
+	  protected void showWarningMessage(String messageKey)
+	  protected void showSuccessMessage(String messageKey)
+	  //commit & rollback
+	  public void taskflowCommit()
+	  public void taskflowRollback()
+	  protected final OperationPromise appModuleCommit()
+	  protected final OperationPromise appModuleRollback()
+	  protected final TaskFlowOperationtPromise doTaskFlowCommit()
+	  protected final TaskFlowOperationtPromise doTaskFlowRollback()
+	  //Operation
+	  protected final OperationPromise executeOperation(String operationName)
+	  protected final OperationPromise executeOperation(String operationName, Map<String, Object> params)
+	  //Scope
+      protected final void putInViewScope(String attributeName, Object value) {// the same for PageFlowScope
+	  protected final Object getFromViewScope(String attributeName)// the same for PageFlowScope
+	  protected final <T> T getFromViewScope(String attributeName, Class<T> returnClass)// the same for PageFlowScope
+	  protected final Object getFromViewScopeOrDefault(String attributeName, Object defaultValue)// the same for PageFlowScope
+	  protected final <T> T getFromViewScopeOrDefault(String attributeName, Class<T> returnClass, T defaultValue)// the same for PageFlowScope
+      protected UserBean getUserBean()
+	  
+**CommonADFUtils
+
+  ==> public static ApplicationModule getApplicationModuleForDataControl(String name)
+      public static Object getBoundAttributeValue(String attributeName)
+	  public static void setBoundAttributeValue(String attributeName, Object value)
+	  public static Object getPageDefParameterValue(String pageDefName, String parameterName)
+	  public static DCIteratorBinding findIterator(String name)
+	  public static OperationBinding findOperation(String name)
+	  public static UIComponent findComponentInRoot(String id)
+	  public static void refreshIterator(String iterator)
+	  public static int getIteratorLength(String iteratorName)
+	  public static Row getCurrentRow(String iteratorName)
+	  public static void setAttributeValueInCurrentRow(String iteratorName, String attributeName, Object attributeValue)
+	  public static Object getAttributeValueFromCurrentRow(String iteratorName, String attributeName)
+
+**CommonJSFUtils
+
+  ==> public static Object resolveExpression(String expression)
+      public static void setExpressionValue(String expression, Object newValue)
+      void storeOnSession(String key, Object object)
+      public static Object getFromSession(String key)
+	  public static ApplicationModule getAm(String dataControlName)
+	  public static void putInPageFlowScope(String key, Object value)
+	  public static Object getFromPageFlowScope(String key)
 
 ________Codes_Data___________
 
@@ -2030,6 +2164,59 @@ __________
         return "";
     }
 	
+____________
+
+//RowSetIterator
+
+
+ private boolean checkLabors() {
+
+        ViewObjectImpl trxSalLaborProfile = null;
+
+        try {
+
+            trxSalLaborProfile =
+                (ViewObjectImpl) AdfUtil.findIterator("WpsVwspTrxSalLaborProfileWUVO2Iterator").getViewObject();
+
+            RowSetIterator trxSalLaborProfileRSI = trxSalLaborProfile.createRowSetIterator("");
+
+            if (trxSalLaborProfileRSI != null) {
+
+                trxSalLaborProfileRSI.reset();
+
+                while (trxSalLaborProfileRSI.hasNext()) {
+
+                    WpsVwspTrxSalLaborProfileWUVORowImpl trxSalLaborProfileRow =
+                        (WpsVwspTrxSalLaborProfileWUVORowImpl) trxSalLaborProfileRSI.next();
+
+                    if (trxSalLaborProfileRow != null) {
+                        //                    System.out.println(trxSalLaborProfileRow.getAuditResult());
+                        if (trxSalLaborProfileRow.getLaborProfileStatus() != null && trxSalLaborProfileRow.getLaborProfileStatus()
+                                                                                                          .toString()
+                                                                                                          .equals("15"))
+                            return false;
+                        if (trxSalLaborProfileRow.getLaborProfileStatus() == null || trxSalLaborProfileRow.getLaborProfileStatus()
+                                                                                                          .toString()
+                                                                                                          .isEmpty())
+                            return false;
+                    }
+
+                }
+
+                trxSalLaborProfileRSI.closeRowSetIterator();
+            }
+
+            LogUtil.LogBackend(LogUtil.INFO, "reject all labors success, Method: rejectAll", "AuditWagesFileEmpBean",
+                               LogUtil.EXECUTE);
+        } catch (Exception e) {
+           // LogUtil.LogBackend(LogUtil.ERROR, e, "AuditWagesFileEmpBean", LogUtil.EXECUTE);
+           e.printStackTrace();
+
+        }
+        return true;
+    }
+
+
 ____________
 
 //CheckLogIn
