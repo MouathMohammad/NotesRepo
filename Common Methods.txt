@@ -215,7 +215,7 @@ ________________________________________________________________________________
 // after create vc in VO make Impl vo set and execute vc
 ________________________________________________________________________________________________________
 
-#{bindings.ToolSetsROV.attributes[0]} // TF parameter sent PK for vo
+#{bindings.TeamsDataRVO.attributes[0]} // TF parameter sent PK for vo
 ________________________________________________________________________________________________________
 
 #{agentInfo.lg or  agentInfo.gtLg or (!agentInfo.lg and !agentInfo.gtLg and viewScope.toolSetsBean.tabletMode eq 'Master')}
@@ -441,3 +441,21 @@ public String getWard() {
         .orElse(null);
 }
 // set transiat attribute from Impl by VL ==> Accessor
+________________________________________________________________________________________________________
+
+#{appPrefBean.tableGlobalProperties.horizontalGridVisible}
+#{appPrefBean.tableGlobalProperties.verticalGridVisible}
+#{appPrefBean.tableGlobalProperties.scrollPolicy}
+#{appPrefBean.tableGlobalProperties.columnResizing}
+#{appPrefBean.tableGlobalProperties.disableColumnReordering}
+#{appPrefBean.tableGlobalProperties.contentDelivery}
+
+//table Global Properties
+
+________________________________________________________________________________________________________
+
+        <f:attribute name="hideSeachSection" value="true"/>
+        <f:attribute name="showSearchToggleButton" value="false"/>
+        <f:attribute name="showTitle" value="false"/>
+        <f:attribute name="searchType" value="none"/>
+// template properties

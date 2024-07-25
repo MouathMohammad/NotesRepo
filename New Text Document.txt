@@ -36,6 +36,7 @@ Env           Host        Port   Service Name | UserName
 _______|________________|______|______________|____________
 Dev    | 192.168.55.223  | 1521  | dvlpnrl    |  OASIS  
 
+jdbc/OasisConnDS
 
 ##Eviroment :
 _____________
@@ -102,6 +103,9 @@ exec Add_Resource_Key('TESTRESOURCEKEY','TEST','تجربة','/WEB-INF/oasis/test
 Adding a static Key [ MAPS022 ]
 exec Add_Static_Maps022('MALE','Male','ذكر';
 
+POPUP title for Oasis lov
+
+DETAILSTAFFTEAMTF_DETAILSTAFFTEAM_SEARCHSTAFFNAME
 
 ##GROOVY :
 __________
@@ -1784,7 +1788,7 @@ wallet 900
 Bank  10,782
 ##7##
 /1,168 - 600 = 568
--50 home - 200 jm3eh = 300 -o 200= 118
+-50 home - 200 jm3eh = 318 -o 200= 118
 wallet 300
 Bank  10,725
 ##8##
@@ -1820,21 +1824,20 @@ _(5)_  - 18 Adam Glasses - 20 Saeed - 70 Car Training - 30 Beef - 16.5 Mom Medic
        - 80 Perfume - 90 Clothes - 30 Help Team = 335
 _(6)_  - 20 Adam Teacher - 40 Mostafa Egypt - 11 Mahmoud Phone - 300 Eid
        - 20 Abd Elhadee - 35 Car Training = 426  // 1,294
-_(7)_  - 0  = 0
+_(7)_  - 35 Car Training - 46 Clothes - 19 Net Zain = 100
 _(8)_  - 0  = 0
 _(9)_  - 0  = 0
 _(10)_ - 0  = 0
 _(11)_ - 0  = 0
 _(12)_ - 0  = 0 
- > 1,294
+ > 1,394
 
-= #7,626#
+= #7,526#
 
 ______________________
 
-total : 9,347 ==> 16,973
+total : 9,347 ==> 16,873
 ______________________
-
 
 
 
