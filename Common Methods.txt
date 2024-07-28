@@ -459,3 +459,11 @@ ________________________________________________________________________________
         <f:attribute name="showTitle" value="false"/>
         <f:attribute name="searchType" value="none"/>
 // template properties
+
+________________________________________________________________________________________________________
+
+CommonJSFUtils.showErrorMessageInOasisListOfValues("proc_olov",
+    OasisModelUtils.getInstance()
+    .getOasisBundledKey("REQUIRED_MESSAGE"));
+//show error msg required in component
+	
