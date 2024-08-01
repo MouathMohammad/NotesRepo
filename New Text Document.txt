@@ -171,7 +171,7 @@ ex:
 	
 **deploy my work
 
-1-first commit work from githup => add tiket name and comment
+1-first commit work from githup => add tiket name and commit
 2-pull request then make tiket  => pull change to branch release/medical and acronym comment
 3-make tiket in jira ready testing => full down template in comment
 
@@ -1792,6 +1792,10 @@ Bank  10,782
 wallet 300
 Bank  10,725
 ##8##
+/1,168 - 550 = 618
+-50 home - 200 jm3eh = 368 -o 240= 128
+wallet 722
+Bank  10,804
 ##9##
 ##10##
 ##11##
@@ -1807,13 +1811,13 @@ _2024_ >> 694 | 1,168
 -361 + 487 = 126
 -380
 878,//5,320
-600
-600
-600
-600
-600
-600
-= 8,920
+600-30
+550
+550
+550
+550
+550
+= 8,640
 
 *
 _(1)_  - 20 Adam Teacher - 163 Car Training - 20 Help Peaple - 27 Medicine = 230
@@ -1824,19 +1828,19 @@ _(5)_  - 18 Adam Glasses - 20 Saeed - 70 Car Training - 30 Beef - 16.5 Mom Medic
        - 80 Perfume - 90 Clothes - 30 Help Team = 335
 _(6)_  - 20 Adam Teacher - 40 Mostafa Egypt - 11 Mahmoud Phone - 300 Eid
        - 20 Abd Elhadee - 35 Car Training = 426  // 1,294
-_(7)_  - 35 Car Training - 46 Clothes - 19 Net Zain = 100
+_(7)_  - 35 Car Training - 46 Clothes - 19 Net Zain - 30 Farm = 130
 _(8)_  - 0  = 0
 _(9)_  - 0  = 0
 _(10)_ - 0  = 0
 _(11)_ - 0  = 0
 _(12)_ - 0  = 0 
- > 1,394
+ > 1,424
 
-= #7,526#
+= #7,216#
 
 ______________________
 
-total : 9,347 ==> 16,873
+total : 9,347 ==> 16,563
 ______________________
 
 

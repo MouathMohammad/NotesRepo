@@ -465,5 +465,29 @@ ________________________________________________________________________________
 CommonJSFUtils.showErrorMessageInOasisListOfValues("proc_olov",
     OasisModelUtils.getInstance()
     .getOasisBundledKey("REQUIRED_MESSAGE"));
+	
+showMessageForComponent("team_desc",
+    OasisModelUtils.getInstance()
+    .getOasisBundledKey("REQUIRED_MESSAGE"));
 //show error msg required in component
 	
+________________________________________________________________________________________________________
+
+1) add method in onLaunch for oasis LOV
+    private void prepareAllStaffLov(){
+        CommonViewObjectImpl vo = (CommonViewObjectImpl) pageDef.get()
+                                                                .getIterator("AllStaffLOVIterator")
+                                                                .getViewObject();
+        vo.setWhereClause(null);
+        vo.addWhereClause("1 = 1");
+        vo.addWhereClause(String.format("AND QRSLT.staff_id not in(%s)", pageDef.get()
+            .getIteratorStream("TeamStaffVOIterator")
+            .map(TeamStaffVORowImpl.class::cast)
+            .map(TeamStaffVORowImpl::getStaffId)
+            .collect(Collectors.joining("','", "'","'"))));
+        vo.executeQuery();
+    }
+2) add VC not exsist after add new VL
+3) add custom operation :
+IN (select regexp_substr(:P_IosMainList,'[^,]+', 1, level) from DUAL connect by regexp_substr(:P_IosMainList, '[^,]+', 1, level) is not null )
+// make lov not repeat value after add it befor commit
