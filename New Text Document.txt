@@ -1828,19 +1828,19 @@ _(5)_  - 18 Adam Glasses - 20 Saeed - 70 Car Training - 30 Beef - 16.5 Mom Medic
        - 80 Perfume - 90 Clothes - 30 Help Team = 335
 _(6)_  - 20 Adam Teacher - 40 Mostafa Egypt - 11 Mahmoud Phone - 300 Eid
        - 20 Abd Elhadee - 35 Car Training = 426  // 1,294
-_(7)_  - 35 Car Training - 46 Clothes - 19 Net Zain - 30 Farm = 130
+_(7)_  - 35 Car Training - 46 Clothes - 19 Net Zain - 25 Farm = 125
 _(8)_  - 0  = 0
 _(9)_  - 0  = 0
 _(10)_ - 0  = 0
 _(11)_ - 0  = 0
 _(12)_ - 0  = 0 
- > 1,424
+ > 1,419
 
-= #7,216#
+= #7,221#
 
 ______________________
 
-total : 9,347 ==> 16,563
+total : 9,347 ==> 16,568
 ______________________
 
 
