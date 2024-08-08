@@ -92,7 +92,7 @@ iterator="#{bindings.ProceduresLOVIterator}">
 </f:facet>
 </oasis:OasisListOfValues>
 **popupTitle should the key form maps021
-
+**popupTitle TOOLSETSTF_TOOLSETDETAILS_LOV_POPUPTITLE_PROCEDURE
 20- 
 <oasis:OasisSelectCodes required="true"
     valueBinding="#{bindings.ConsType}"
@@ -119,8 +119,13 @@ iterator="#{bindings.ProceduresLOVIterator}">
     </af:showDetailItem>
 </af:panelTabbed>
 
-
-
+22-
+<oasis:OasisTableContainer tableId="t1" id="otc1" fullWidth="true" overflowVisible="true">
+    <f:facet name="table">
+ 
+    </f:facet>
+</oasis:OasisTableContainer>
+**TableId should the table compomentr id 
 
 
 

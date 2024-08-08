@@ -190,7 +190,7 @@ commit Hash No:
 
 
 
-My Tikets:
+My Tickets:
 
 KFAFP-1181 : add new lov const type and put it to report   |   Reports:OPDReports //add new lov consultation type and put it to report
 deployed no. #73
@@ -300,31 +300,25 @@ _ViewController_
 
 ________Codes_Data___________
 
-Title = 29
-Registration type = 251
-Guardian Relation = 17
-Marital Status = 2
 Religion = 1
-Nationality = 5
+Marital Status = 2
 Job = 4
+Nationality = 5
+ID Type = 9
+Clinic Session Break = 16
+Guardian/Contact Relation = 17
+Contact Type = 18
+Extra Info Type = 23
+Title = 29
+Registration Type = 251
+Place of Death = 274
+Warning Problem Type = 309
 Category = 379
-Blood Type = 
-ID type = 9
-contact type = 18
-contact relation = 17
-extra info type = 23
-warning problem type = 309
-____
-Certified By = staff type
-Staff Presen = staff type
+Operation Type = 487
 Region = 503
 State of Death = 504
-Place of Death = 274
-Officer = staff type
 Service Type = 5103
-clinic session break = 16
-operation type = 487
-
+Blood Type = 10060
 
 
 ________Pages______________
@@ -2719,96 +2713,6 @@ in progress
 
 
 
-
-
-
-Kindly Mahmoud Tarawneh    Salah Saad
-I need deploy for this app
-
- 
-
-
-	
-PamReportll (Dev & Prod & Ashal)
-	
-	Abdelrahman Almomani   Abdelhadi Al Qudah
-	I finished the changed
-
-
-
-
-
-
-
-Dear Tarawneh
-
-I need a personal vacation day please on Tuesday, 2019/Feb/05
-
-Best Regards,
-Mouath Saadah
-
-Dear Abd Alrahman
-
-in the last update SRS we add new table to sort Authorized Fields "FLE_AUTHORIZED_SIGNATORY_REQ" but I am sell  sort 
-record in table "req_requests" just Once 
-Best Regards,
-Mouath Saadah
-
-
-Dear Mohamed Alkhalid
-
-I want to unsure about table "LES_LABOR_ESTIMATION_REQ" the cloumns "STATUS" & "LABOR_EST_TYPE" is not null
-but In my screen there is not details about value "STATUS" and I think the value for "LABOR_EST_TYPE" is 5 right ?
-Best Regards,
-Mouath Saadah
-
-Dear Abd Alrahman
-
-Good Morning
-I just want to unsure if the last update for the use case "RFLE037" also
-
-Best Regards,
-Mouath Saadah
-
-procedure
-
-
-Dear Mahmoud Tarawneh
-
-this update done for my screens :
--LES006
--MPMF008 & MPMF009 & MPMF015 & MPMF042 
-
-Best Regards,
-Mouath Saadah
-
-
-
-
-I think I have a problem to understand the FUNCTION "SYS_PKG.GET_REQUEST_CODE" 
-we enter two argument serves Id and trans type .
-The service id of our screens and about trans type of all screen 
-initiation we set 1 but the picture is different
-
-is my explanation true ?
-
-Best Regards,
-Mouath Saadah
-
-
-Dear Tarawneh,
-
-
-I have changed the procedures Name regarding the latest SRS for these pages:
-
-LES006
-
- 
-
-
-Best Regards,
-Mouath Saadah
-
 in this screen need to submit request I read the more function in the button about create report 
 I just want to make sure there is no print
 look at this image 
@@ -2825,77 +2729,6 @@ LES006
 
 Best Regards,
 Mouath Saadah
-
-
-Dear Tarawneh
-
-every think is okay for me
-
-Best Regards,
-Mouath Saadah
-
-
-Regards,
-
-Abdelhadi Al-Qudah
-Software Quality Assurance 
-email: a.alqudah@mscmena.com
-Skype ID: Abdelhadi Al-Qudah
-
-
-Dear Mahmoud Tarawneh
-
-I  need to take a personal vacation  next Wednesday on 2019 / 05/ 22 
-Best Regards,
-Mouath Saadah
-
-
-personal vacation
-
-Dear Mohammad Alkhaled
-
-please when the new change for procedure "ADDLESSERPRC_CONFIRM" 
-*Re-send the task* 
-
-Best Regards,
-Mouath Saadah
-
-Dear Mahmoud Tarawneh
-
-return message in procedure "RENPERMPN_CONFIRM" is "unique constraint"
-
-**look at this attachment
-Best Regards,
-Mouath Saadah
-
-Dear Mahmoud Tarawneh
-
-the Pro does not exist "MPM_PKG.ISSUEPERMG_EFEES"
-
-**check  the screen shot attached
-Best Regards,
-Mouath Saadah
-
-
-Dear Ahlam
-
-I don’t have any issues in my screens 
-
-Best Regards,
-Mouath Saadah
-ADF Developer
-e m.mohammad@mscmena.com
-m +962-785525277
-
-expenses sheet from to
-
-, please advice.
-
-check the screenshot attached
-
-as per confirmed with Abdelrahman
-
-MPM_WORK_VISA.labore_id
 
 Reminder
 company adf :
@@ -2929,6 +2762,55 @@ Thank you so much for allowing me the opportunity to be part of the Balsam Unite
 I am delighted to accept the job offer, and I am looking forward to being an active and useful member of the team
 
 Regards
+____________________________________________________________________________________________
+
+الدورة التأهيلية الثالثة عشر للحياة الزوجية
+
+
+
+
+
+المحاضرة الثانية: دوافع الزواج (الدورة 13)
+
+ دوافع الزواج
+ الدافع الديني
+ الدافع الإجتماعي
+ دافع الوالدي(الابوبة والامومة)
+ الدافع الجنسي
+ الدافع النفسي
+ الدوافع الخاصة
+
+
+
+
+
+
+المحاضرة العاشرة: قواعد في احتواء المشكلات الزوجية (الدورة 13)
+
+٨ قواعد مهمه ف إحتواء المشكلات الزوجيه:-
+١-أصلح ما بينك وبين الله 
+يصلح الله ما بينك وبين الناس
+
+٢-اعلم أن المشكلات الزوجية ليست شرآ كلها،  
+               بل ربما كان فيها خير كبير
+
+فوائد المشكلات الزوجية :-
+٣-إذا حدثت مشكلة بينك وبين زوجتك
+              فلا تلجأ إلي ٧ أمور:-
+             ١-لا تترك البيت
+             ٢-لا تدخل الأبناء ف الخلاف
+             ٣-لا تلجأ إلى السحر والشعوذة
+             ٤-الطلاق 
+             ٥-الدعاء بالهلاك
+             ٦-الضرب والسب واللعن
+             ٧-التهديد بالزوجة الثانية
+٤-واجه المشكلة بجلسة نقاش بشروط
+٥-الوقت كفيل بحل عدد من المشكلات
+٦-التعايش مع المشكلة
+٧-إستشر ثقة، بعيدآ
+٨-إسأل ربك ف الثلث الأخير من الليل
+
+
 
 
 

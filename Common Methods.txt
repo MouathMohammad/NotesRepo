@@ -491,3 +491,32 @@ ________________________________________________________________________________
 3) add custom operation :
 IN (select regexp_substr(:P_IosMainList,'[^,]+', 1, level) from DUAL connect by regexp_substr(:P_IosMainList, '[^,]+', 1, level) is not null )
 // make lov not repeat value after add it befor commit
+________________________________________________________________________________________________________
+
+code:
+
+    private List<SelectItem> prepareConsultationType() {
+        OasisModelUtils modelUtils = OasisModelUtils.getInstance();
+        List<SelectItem> items = new ArrayList<SelectItem>();
+        String consType = findConsType();
+        if (consType != null) {
+            if("A".equals(consType)){
+                items.add(new SelectItem("A", modelUtils.getOasisResourceKey("ALL")));
+                items.add(new SelectItem("I", modelUtils.getOasisResourceKey("IN_HOSPITAL_CONSULTATION")));
+                items.add(new SelectItem("V", modelUtils.getOasisResourceKey("VIRTUAL_CONSULTATION")));
+            }else if("I".equals(consType)){
+                items.add(new SelectItem("I", modelUtils.getOasisResourceKey("IN_HOSPITAL_CONSULTATION")));
+            }else if("V".equals(consType)){
+                items.add(new SelectItem("V", modelUtils.getOasisResourceKey("VIRTUAL_CONSULTATION")));
+            }
+            portalSpecificTime.setConsultationType(consType);
+        }
+        return items ;
+    }
+	
+component:
+
+
+
+
+ConsultationType lov in code and in component
