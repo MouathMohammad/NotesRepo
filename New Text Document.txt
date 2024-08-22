@@ -82,6 +82,9 @@ ____________          ____________          ____________
 7 / user name : m.mohammad@oasissys.com |  pass : mouaths123
 8 / user name : 900285 |  pass : MErw5Xqu4Y | MURJAN
 
+
+OTSearchFilterPVO
+
 ##FUNCTION
 
 #To add a new TaskFlow : [ MAPS001 , MAPS017 ]
@@ -131,6 +134,18 @@ adf.userSession.userData.oasisUtils.[Method name ]	                          [us
 adf.userSession.userData.hospPrivateFlag	                                  find work entity private flag	                                                                String
 adf.userSession.userData.oasisCodes.[Method name ]	                          [This used call methods in OasisCodesSingleton ] --Need to skip validation in the expression	
 
+add the following imports 
+import groovy.transform.TypeCheckingMode
+import groovy.transform.TypeChecked
+and then put this tag before your expression value
+@TypeChecked(TypeCheckingMode.SKIP)
+
+**call sequance from VORowImp
+
+DBSequence : TEAM_STAFF_ID
+
+PkId : TeamStaffId
+
 **git lable value maps021
 
 #{messages['PATIENTSEARCHTF_PATIENTSEARCH_CANCEL_BTTN']}
@@ -173,17 +188,25 @@ ex:
 
 1-first commit work from githup => add tiket name and commit
 2-pull request then make tiket  => pull change to branch release/medical and acronym comment
+3- add TF to menu (after add TF by Function open screen user rulse and add new the function (to no what rule for current user jsu open page users and session))
 3-make tiket in jira ready testing => full down template in comment
 
 
-Feature/KFAFP-1181
+
+
+
+Detailes : 
+- add new Application "MaintainTeam" in Security module
+- add new PK for two entity TeamStaff and TeamWorkLink and remove old key 
+- update VO for team staff VO and team work entity VO in old page after we update PK in the entity object
+Feature/OS-418
 
 affected modules:
-Reports:OPDReports
+Security:MaintainTeams
 
 commit Hash No:
-46302fee495
-
+oasis-modules: 9b378f2793e, 78571127810
+oasis-common : 8f91b11f133
 
 
 
@@ -195,6 +218,8 @@ My Tickets:
 KFAFP-1181 : add new lov const type and put it to report   |   Reports:OPDReports //add new lov consultation type and put it to report
 deployed no. #73
 
+
+OS-418 : Refactor Maintain Teams  |  Security:MaintainTeams // refactor ald screen with new features
 
 _________________Common__________________
 
@@ -847,7 +872,28 @@ Expiration language
 5.	Make sure that you don’t add any custom styles to any component.
 
 
+table filter :
 
+added in VO imp
+
+    @Override
+        public String getCriteriaItemClause(ViewCriteriaItem viewCriteriaItem) {
+            viewCriteriaItem.setUpperColumns(true);
+            if (viewCriteriaItem.getValue() != null && !viewCriteriaItem.getValue().toString().contains("%") && viewCriteriaItem.getViewCriteria().getName().contains("__filterlist__") && viewCriteriaItem.getOperator().equals("STARTSWITH")) {
+                viewCriteriaItem.setValue("%" + viewCriteriaItem.getValue().toString().trim());
+            }
+            if (viewCriteriaItem.getValue() != null && !viewCriteriaItem.getValue().toString().contains("%") && viewCriteriaItem.getViewCriteria().getName().contains("__ImplicitViewCriteria__") && viewCriteriaItem.getOperator().equals("STARTSWITH")) {
+                viewCriteriaItem.setValue("%" + viewCriteriaItem.getValue().toString().trim());
+            }
+
+            if (viewCriteriaItem.getValue() != null && !viewCriteriaItem.getValue().toString().contains("%") && viewCriteriaItem.getViewCriteria().getName().contains("__FilterViewCriteria__") && viewCriteriaItem.getOperator().equals("STARTSWITH")) {
+                viewCriteriaItem.setValue("%" + viewCriteriaItem.getValue().toString().trim());
+            }
+
+            return super.getCriteriaItemClause(viewCriteriaItem);
+        }
+		
+		
 
 
 ________Bean_____
