@@ -205,9 +205,9 @@ affected modules:
 Security:MaintainTeams
 
 commit Hash No:
-oasis-modules: 9b378f2793e, 78571127810
-oasis-common : 8f91b11f133
-
+oasis-modules: 	8f91b11f133
+oasis-common : f9bb2d7cccd
+oasis-main : f5a6a83c04c
 
 
 
