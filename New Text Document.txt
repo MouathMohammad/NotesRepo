@@ -27,6 +27,23 @@ HOST :
 Local HOST : C:\Windows\System32\drivers\etc
 
 
+ORelly:
+
+nsalk@amazon.com
+MenaDex@123
+
+
+coursera:
+
+nsalk@amazon.com
+Nasser123
+
+office 365:
+
+2370297@std.hu.edu.jo
+
+Hu@25550
+
 ___________________________________BALSAM_______________________________________________________
 
 ##DataBase :
@@ -1832,8 +1849,8 @@ Bank  10,782
 wallet 300
 Bank  10,725
 ##8##
-/1,168 - 550 = 618
--50 home - 200 jm3eh = 368 -o 240= 128
+/1,168 - 525 = 643
+-50 home - 200 jm3eh = 418 -o 393 = 153
 wallet 722
 Bank  10,804
 ##9##
@@ -1852,7 +1869,7 @@ _2024_ >> 694 | 1,168
 -380
 878,//5,320
 600-30
-550
+525
 550
 550
 550
