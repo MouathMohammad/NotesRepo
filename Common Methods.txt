@@ -516,14 +516,7 @@ code:
 	
 component:
 
-
-
-
 ConsultationType lov in code and in component
+// used OasisSelectResources 
+________________________________________________________________________________________________________
 
-
-
- public boolean overlaps(DateRange other) {
-        return (this.startDate.compareTo(other.getEndDate()) <= 0 &&
-                this.endDate.compareTo(other.getStartDate()) >= 0);
-    }

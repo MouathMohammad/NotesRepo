@@ -53,6 +53,9 @@ Env           Host        Port   Service Name | UserName
 _______|________________|______|______________|____________
 Dev    | 192.168.55.223  | 1521  | dvlpnrl    |  OASIS  
 
+       | 192.168.55.10   | 1521  | jtest      |  sdsoasis
+
+
 jdbc/OasisConnDS
 
 ##Eviroment :
@@ -66,6 +69,14 @@ https://jordan.oasisapp.services/dvlp/faces/Login.jsf           user : oasisman 
 Web Logic IP : 192.168.55.145
 port : 7001
 http://192.168.55.145:7101/console
+
+
+kubernetes
+
+https://192.168.55.212:32724/
+
+
+eyJhbGciOiJSUzI1NiIsImtpZCI6InpNZVFONzdFbWJySGdIck53cWpXLXRnZ2kxT2czYnUyUHk2WEw3eFRaQTgifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoyMDMxODA5NDgxLCJpYXQiOjE3MTY0NDk0ODEsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJyZWFkLXVzZXIiLCJ1aWQiOiJhZDNlNjE0YS1iMjJiLTQwZmQtOTAyYS0xM2Y0MTBjYmMzOTYifX0sIm5iZiI6MTcxNjQ0OTQ4MSwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmVybmV0ZXMtZGFzaGJvYXJkOnJlYWQtdXNlciJ9.FuOaZeDz-QDGtvpjvayt4iUxrFI_ellY8YAjAtLulmEwc-u9RdwT-LkCi9wj6VOXO9z402KYhhre8KB9Bp_mVLjm8sWlDYwdsIiU3VtQSVXuLKPOw78TqdV0r6zhJebDyu9vXUUfcngg6-hKa6MdR4-qr_gH4reWWVFZv1nEjBWx1NVv7qt52Gq6E5ygumiYQKqoL-Lieo-CUipgxgNQHDbt78o3oydeEYydqdTOY7qC6JBep2kb0VjYGI9Rpi4zKtBPz55nH_yCvY3mmHNcPiGzI8tEDy2tcva8W3KXrIDdCZE4xc-AJPFjagxNGZLfSiuLZvf1J2Mm-09KsDfZwA
 
 
 ##Tooles :
@@ -212,19 +223,21 @@ ex:
 
 
 
-Detailes : 
-- add new Application "MaintainTeam" in Security module
-- add new PK for two entity TeamStaff and TeamWorkLink and remove old key 
-- update VO for team staff VO and team work entity VO in old page after we update PK in the entity object
-Feature/OS-418
+Details : 
+
+create a new screen for translation  error and static label (added the TF in GeneralSetup)
+create eo for maps016 and fixed issue in eo maps022 (source file)
+Feature/OS-419
+
 
 affected modules:
-Security:MaintainTeams
 
-commit Hash No:
-oasis-modules: 	8f91b11f133
-oasis-common : f9bb2d7cccd
-oasis-main : f5a6a83c04c
+Security:GeneralSetup
+
+
+commit Hash No:oasis-modules: 8c7011b0b7a
+
+oasis-common : 8c7011b0b7a
 
 
 
@@ -237,6 +250,17 @@ deployed no. #73
 
 
 OS-418 : Refactor Maintain Teams  |  Security:MaintainTeams // refactor ald screen with new features
+
+OS-419 : Error Translations | Security:GeneralSetup // create new screen for traslation error and static lable
+
+EMR-2578
+
+
+import groovy.transform.TypeCheckingMode
+import groovy.transform.TypeChecked
+TransientValueExpression
+@TypeChecked(TypeCheckingMode.SKIP)
+
 
 _________________Common__________________
 
@@ -1850,10 +1874,14 @@ wallet 300
 Bank  10,725
 ##8##
 /1,168 - 525 = 643
--50 home - 200 jm3eh = 418 -o 393 = 153
+-50 home - 200 jm3eh = 393 -o 240 = 153
 wallet 722
 Bank  10,804
 ##9##
+/1,168 - 375 = 793
+-50 home - 400 jm3eh = 343 -o 200 = 143
+wallet 100
+Bank  11,700
 ##10##
 ##11##
 ##12##
@@ -1869,12 +1897,12 @@ _2024_ >> 694 | 1,168
 -380
 878,//5,320
 600-30
-525
-550
-550
-550
-550
-= 8,640
+525-4
+375
+375
+375
+375
+= 7,911
 
 *
 _(1)_  - 20 Adam Teacher - 163 Car Training - 20 Help Peaple - 27 Medicine = 230
@@ -1886,30 +1914,20 @@ _(5)_  - 18 Adam Glasses - 20 Saeed - 70 Car Training - 30 Beef - 16.5 Mom Medic
 _(6)_  - 20 Adam Teacher - 40 Mostafa Egypt - 11 Mahmoud Phone - 300 Eid
        - 20 Abd Elhadee - 35 Car Training = 426  // 1,294
 _(7)_  - 35 Car Training - 46 Clothes - 19 Net Zain - 25 Farm = 125
-_(8)_  - 0  = 0
+_(8)_  - 20 Dentist - 50 Neck Aid Tools - 11 Udemy - 50 Batool First Visit
+       - 16 Neck Treatment = 147
 _(9)_  - 0  = 0
 _(10)_ - 0  = 0
 _(11)_ - 0  = 0
 _(12)_ - 0  = 0 
- > 1,419
+ > 1,566
 
-= #7,221#
+= #6,345#
 
 ______________________
 
-total : 9,347 ==> 16,568
+total : 9,347 ==> 15,692
 ______________________
-
-
-
-
-
-
-
-
-
-
-
 
 
 
