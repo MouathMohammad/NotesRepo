@@ -28,6 +28,8 @@ ________________________________________________________________________________
 
 getRuleValue("ADT_PATFILE_REQ", "N"); //by bean code
 new BigDecimal(adf.userSession.userData.rules.getRuleValue('OR_ANESTHIA_TEAM','0'))// by VO grovy exprition
+sharedLookupBean.ruleValue['HHCSERVCDEPT,-1'] eq row.ToServiceDept in page source
+
 // return rules value by name and if null return second parameter // extends OasisModelUtils
 ________________________________________________________________________________________________________
 
@@ -520,3 +522,20 @@ ConsultationType lov in code and in component
 // used OasisSelectResources 
 ________________________________________________________________________________________________________
 
+overflow-visible
+inlineStyle="z-index:6 !important; "
+// make oasis lov overfow
+
+________________________________________________________________________________________________________
+    
+private String getManageMaintainTeamsPagePath() {
+
+    return "/WEB-INF/com/balsam/oasis/maintain-team/ManageMaintainTeams.jsff";
+}
+
+public void onExit() {
+
+    PageDefinitionImpl.findPageDefinition(getManageMaintainTeamsPagePath()).releaseDataControl("MaintainTeamsAMDataControl");
+}
+	
+//refresh transaction to fixed filter table
