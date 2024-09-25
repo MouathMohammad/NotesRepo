@@ -524,6 +524,9 @@ ________________________________________________________________________________
 
 overflow-visible
 inlineStyle="z-index:6 !important; "
+
+inlineStyle="margin-top:25px;
+
 // make oasis lov overfow
 
 ________________________________________________________________________________________________________
@@ -539,3 +542,24 @@ public void onExit() {
 }
 	
 //refresh transaction to fixed filter table
+
+________________________________________________________________________________________________________
+
+    @Override
+        public String getCriteriaItemClause(ViewCriteriaItem viewCriteriaItem) {
+            viewCriteriaItem.setUpperColumns(true);
+            if (viewCriteriaItem.getValue() != null && !viewCriteriaItem.getValue().toString().contains("%") && viewCriteriaItem.getViewCriteria().getName().contains("__filterlist__") && viewCriteriaItem.getOperator().equals("STARTSWITH")) {
+                viewCriteriaItem.setValue("%" + viewCriteriaItem.getValue().toString().trim());
+            }
+            if (viewCriteriaItem.getValue() != null && !viewCriteriaItem.getValue().toString().contains("%") && viewCriteriaItem.getViewCriteria().getName().contains("__ImplicitViewCriteria__") && viewCriteriaItem.getOperator().equals("STARTSWITH")) {
+                viewCriteriaItem.setValue("%" + viewCriteriaItem.getValue().toString().trim());
+            }
+
+            if (viewCriteriaItem.getValue() != null && !viewCriteriaItem.getValue().toString().contains("%") && viewCriteriaItem.getViewCriteria().getName().contains("__FilterViewCriteria__") && viewCriteriaItem.getOperator().equals("STARTSWITH")) {
+                viewCriteriaItem.setValue("%" + viewCriteriaItem.getValue().toString().trim());
+            }
+
+            return super.getCriteriaItemClause(viewCriteriaItem);
+        }
+		
+// make filter cloumn in table work by contains insted of equals

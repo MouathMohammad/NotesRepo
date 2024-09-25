@@ -41,8 +41,18 @@ Nasser123
 office 365:
 
 2370297@std.hu.edu.jo
-
+Arme123$
 Hu@25550
+
+intilij:
+mohammad.alfayez
+M0785525277
+
+code license : 5DNAO6H9WK
+
+code discount : EDUPACK50
+
+
 
 ___________________________________BALSAM_______________________________________________________
 
@@ -225,14 +235,15 @@ ex:
 
 Details : 
 
-fixed style issues in maintain team page
+-Added filter for table by staff ID and name
+-Please note that I also fixed the issue in the pagination staff members table and when deleting privileges
 
-feature/EMR-2578
+hotfix/KFGHP-572
 
 
 affected modules:
 
-Referrals:ReferralDashboard
+Security:StaffXYPrivileges
 
 
 commit Hash No:
@@ -255,12 +266,15 @@ feature/OS-419     :   Error Translations               | Security:GeneralSetup 
 
 feature/EMR-2578   :   Referrals Dashboard	            | Referrals:ReferralDashboard //  add the new rule to disable action referral
 
+hotfix/KFHTP-207   :   Did Not Attend Unlock            | OPD:OpdDidNotAttend         //  Create new page "Did Not Attend Unlock " to unlock attend
+
+hotfix/KFGHP-572   :   Staff Privileges	                | Security:StaffXYPrivileges  //  add filter table for staff id and staff name
+
 
 ___Bug___
 
 bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
 
-bugfix/KFHTP-207   :   Did Not Attend Unlock            | OPD:OpdDidNotAttend         //  Create new page "Did Not Attend Unlock " to unlock attend
 
 
 
@@ -1882,8 +1896,8 @@ Bank  10,782
 wallet 300
 Bank  10,725
 ##8##
-/1,168 - 525 = 643
--50 home - 200 jm3eh = 393 -o 240 = 153
+/1,168 - 325 = 843
+-50 home - 400 jm3eh = 393 -o 240 = 153
 wallet 722
 Bank  10,804
 ##9##
@@ -1906,12 +1920,12 @@ _2024_ >> 694 | 1,168
 -380
 878,//5,320
 600-30
-525-4
+325-4
 375
 375
 375
 375
-= 7,911
+= 7,711
 
 *
 _(1)_  - 20 Adam Teacher - 163 Car Training - 20 Help Peaple - 27 Medicine = 230
@@ -1931,11 +1945,11 @@ _(11)_ - 0  = 0
 _(12)_ - 0  = 0 
  > 1,996
 
-= #5,915#
+= #5,715#
 
 ______________________
 
-total : 9,347 ==> 15,262
+total : 9,347 ==> 15,062
 ______________________
 
 
