@@ -235,21 +235,21 @@ ex:
 
 Details : 
 
--Added filter for table by staff ID and name
--Please note that I also fixed the issue in the pagination staff members table and when deleting privileges
+-Added new tap for Subspecialties
+-Added new eos for tables : SUB_SPECIALTY_DATA and SUB_SPECIALTY_LANG
 
-hotfix/KFGHP-572
+hotfix/OS-421
 
 
 affected modules:
 
-Security:StaffXYPrivileges
+Security:GeneralSetup
 
 
 commit Hash No:
 
-oasis-modules: 16063a3c17f
-
+oasis-modules : 59f9451f7cc
+oasis-common  : 6d895ca7245
 
 
 
@@ -269,6 +269,9 @@ feature/EMR-2578   :   Referrals Dashboard	            | Referrals:ReferralDashb
 hotfix/KFHTP-207   :   Did Not Attend Unlock            | OPD:OpdDidNotAttend         //  Create new page "Did Not Attend Unlock " to unlock attend
 
 hotfix/KFGHP-572   :   Staff Privileges	                | Security:StaffXYPrivileges  //  add filter table for staff id and staff name
+
+hotfix/OS-421      :   Maintain Departments		        | Security:GeneralSetup      //  add new tap for Subspecialties | from v7.4.0
+
 
 
 ___Bug___
@@ -1937,38 +1940,31 @@ _(5)_  - 18 Adam Glasses - 20 Saeed - 70 Car Training - 30 Beef - 16.5 Mom Medic
 _(6)_  - 20 Adam Teacher - 40 Mostafa Egypt - 11 Mahmoud Phone - 300 Eid
        - 20 Abd Elhadee - 35 Car Training = 426  // 1,294
 _(7)_  - 35 Car Training - 46 Clothes - 19 Net Zain - 25 Farm = 125
-_(8)_  - 20 Dentist - 50 Neck Aid Tools - 11 Udemy - 50 Batool First Visit
-       - 16 Neck Treatment = 147
-_(9)_  - 430 New Phone  = 430
+_(8)_  - 20 Dentist - 50 Neck Aid Tools - 11 Udemy - 16 Neck Treatment = 97
+_(9)_  - 430 New Phone = 430
 _(10)_ - 0  = 0
 _(11)_ - 0  = 0
 _(12)_ - 0  = 0 
- > 1,996
+ > 1,946
 
-= #5,715#
+= #5,765#
 
 ______________________
 
-total : 9,347 ==> 15,062
+total : 9,347 ==> 15,112
 ______________________
 
 
+2024
 
+Batool + Clothes 
 
+_(8)_ 50 First Visit = 50
+_(9)_ 30 Al  Fatiha + 60 Talasemia Test + 2840 Batool Gold + 110 Clothes = 3,040
+______________________
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+total : 15,062 - 3,090 = 11,972
+______________________
 
 
 
