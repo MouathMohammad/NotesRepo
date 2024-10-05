@@ -1909,6 +1909,10 @@ Bank  10,804
 wallet 100
 Bank  11,700
 ##10##
+/1,168 - 375 = 793
+-50 home - 400 jm3eh = 343 -o 200 = 143
+wallet 800
+Bank  7,614
 ##11##
 ##12##
 )
@@ -1955,16 +1959,19 @@ total : 9,347 ==> 15,112
 ______________________
 
 
-2024
+<2024>
+
 
 Batool + Clothes 
 
 _(8)_ 50 First Visit = 50
 _(9)_ 30 Al  Fatiha + 60 Talasemia Test + 2840 Batool Gold + 110 Clothes = 3,040
+_(9)_ 100 Cocheh + 20 Juice + 10 Brochures + 110 Knafeeh + 60 Mathoon + 30 Benzyl Nabel = 330
 ______________________
 
-total : 15,062 - 3,090 = 11,972
+total : 15,062 - 3,420 = 11,642
 ______________________
+
 
 
 
