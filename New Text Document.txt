@@ -279,6 +279,14 @@ ___Bug___
 bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
 
 
+Own Ticket:
+__________
+
+Udemy : Master Spring Boot 3 & Spring Framework 6 with Java    |  SDS-1149
+
+Book : OCA: Oracle Certified Associate Java SE 8 | SDS-1150
+
+
 
 
 
