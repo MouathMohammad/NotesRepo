@@ -226,7 +226,7 @@ ex:
 
 1-first commit work from githup => add tiket name and commit
 2-pull request then make tiket  => pull change to branch release/medical and acronym comment
-3- add TF to menu (after add TF by Function open screen user rulse and add new the function (to no what rule for current user jsu open page users and session))
+3- add TF to menu (after add TF by Function open screen user rulse and add new the function (to no what rule for current user jsu open page users and session))//DEVELOPER
 3-make tiket in jira ready testing => full down template in comment
 
 
@@ -235,21 +235,21 @@ ex:
 
 Details : 
 
--Added new tap for Subspecialties
--Added new eos for tables : SUB_SPECIALTY_DATA and SUB_SPECIALTY_LANG
+-Added new app SystemCodes
+-refactor old screen ( System Codes )with new features
 
-hotfix/OS-421
+feature/OS-422
 
 
 affected modules:
 
-Security:GeneralSetup
+Security:SystemCodes
 
 
 commit Hash No:
 
 oasis-modules : 59f9451f7cc
-oasis-common  : 6d895ca7245
+oasis-main  : 6d895ca7245
 
 
 
@@ -261,7 +261,6 @@ feature/KFAFP-1181 :   Outpatient Reports	            | Reports:OPDReports      
 
 feature/OS-418     :   Refactor Maintain Teams          | Security:MaintainTeams      //  refactor ald screen with new features
 
-
 feature/OS-419     :   Error Translations               | Security:GeneralSetup       //  create new screen for traslation error and static lable
 
 feature/EMR-2578   :   Referrals Dashboard	            | Referrals:ReferralDashboard //  add the new rule to disable action referral
@@ -270,9 +269,9 @@ hotfix/KFHTP-207   :   Did Not Attend Unlock            | OPD:OpdDidNotAttend   
 
 hotfix/KFGHP-572   :   Staff Privileges	                | Security:StaffXYPrivileges  //  add filter table for staff id and staff name
 
-hotfix/OS-421      :   Maintain Departments		        | Security:GeneralSetup      //  add new tap for Subspecialties | from v7.4.0
+hotfix/OS-421      :   Maintain Departments		        | Security:GeneralSetup       //  add new tap for Subspecialties | from v7.4.0
 
-
+feature/OS-422     :   System Codes                     | Security:SystemCodes        //  refactor old screen ( System Codes )with new features
 
 ___Bug___
 
@@ -282,9 +281,9 @@ bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams
 Own Ticket:
 __________
 
-Udemy : Master Spring Boot 3 & Spring Framework 6 with Java    |  SDS-1149
+Udemy : Master Spring Boot 3 & Spring Framework 6 with Java    | IW-372
 
-Book : OCA: Oracle Certified Associate Java SE 8 | SDS-1150
+Book : OCA: Oracle Certified Associate Java SE 8               | IW-373
 
 
 
@@ -841,6 +840,7 @@ JavaImp
 design :
 
 width:220px !important
+width:100%
 AFStretchWidth
 margin:10px; font-size:large;  font-weight:bold;
 
@@ -1974,10 +1974,10 @@ Batool + Clothes
 
 _(8)_ 50 First Visit = 50
 _(9)_ 30 Al  Fatiha + 60 Talasemia Test + 2840 Batool Gold + 110 Clothes = 3,040
-_(9)_ 100 Cocheh + 20 Juice + 10 Brochures + 110 Knafeeh + 60 Mathoon + 30 Benzyl Nabel = 330
+_(9)_ 100 Cocheh + 20 Juice + 10 Brochures + 110 Knafeeh + 60 Mathoon + 40 Benzyl Nabel = 340
 ______________________
 
-total : 15,062 - 3,420 = 11,642
+total : 15,062 - 3,430 = 11,632
 ______________________
 
 

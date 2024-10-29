@@ -1,1 +1,62 @@
-Subspecialties
+tap : Subspecialties                      hotfix/OS-421
+
+tables:
+
+SUB_SPECIALTY_DATA
+SUB_SPECIALTY_LANG
+
+eo:
+
+SubSpecialtyData
+SubSpecialtyLang
+
+vo:
+
+SubSpecialtyRVO
+
+
+
+
+DECLARE
+v_error_no NUMBER;
+BEGIN
+oasis.set_hospital_id(1);
+v_error_no :=Add_Error_Msg('Q','You are about to Delete the Subspecialties, Are you sure?
+','You are about to Delete the current Team, Are you sure?');
+dbms_output.put_line('v_error_no='||v_error_no);
+END;
+
+
+v_error_no=14538  //deleted
+
+
+
+DECLARE
+v_error_no NUMBER;
+BEGIN
+oasis.set_hospital_id(1);
+v_error_no :=Add_Error_Msg('F','no description is allowed to be duplicated
+','no description is allowed to be duplicated');
+dbms_output.put_line('v_error_no='||v_error_no);
+END;
+
+
+v_error_no=14540
+
+
+
+
+
+
+
+exec Add_Resource_Key('MAINTAINSERVICEDEPTTF_UPDATESERVICEDEPARTMENT_TAB_SUBSPECIALTY','Subspecialties','Subspecialties','/WEB-INF/com/balsam/oasis/maintainservicedepartment/flows/MaintainServiceDeptTF.xml#MaintainServiceDeptTF');
+exec Add_Resource_Key('MAINTAINSERVICEDEPTTF_UPDATESERVICEDEPARTMENT_TITLE_SUBSPECIALTY','Subspecialties','Subspecialties','/WEB-INF/com/balsam/oasis/maintainservicedepartment/flows/MaintainServiceDeptTF.xml#MaintainServiceDeptTF');
+exec Add_Resource_Key('MAINTAINSERVICEDEPTTF_UPDATESERVICEDEPARTMENT_TABLE_SUBSPECIALTYID','Subspecialty ID','Subspecialty ID','/WEB-INF/com/balsam/oasis/maintainservicedepartment/flows/MaintainServiceDeptTF.xml#MaintainServiceDeptTF');
+exec Add_Resource_Key('MAINTAINSERVICEDEPTTF_UPDATESERVICEDEPARTMENT_TABLE_ENDESCRIPTION','English Description','English Description','/WEB-INF/com/balsam/oasis/maintainservicedepartment/flows/MaintainServiceDeptTF.xml#MaintainServiceDeptTF');
+exec Add_Resource_Key('MAINTAINSERVICEDEPTTF_UPDATESERVICEDEPARTMENT_TABLE_ARDESCRIPTION','Arabic Description','Arabic Description','/WEB-INF/com/balsam/oasis/maintainservicedepartment/flows/MaintainServiceDeptTF.xml#MaintainServiceDeptTF');
+exec Add_Resource_Key('MAINTAINSERVICEDEPTTF_UPDATESERVICEDEPARTMENT_BTN_REMOVE','Remove','Remove','/WEB-INF/com/balsam/oasis/maintainservicedepartment/flows/MaintainServiceDeptTF.xml#MaintainServiceDeptTF');
+exec Add_Resource_Key('MAINTAINSERVICEDEPTTF_UPDATESERVICEDEPARTMENT_BTN_ADD','Add','Add','/WEB-INF/com/balsam/oasis/maintainservicedepartment/flows/MaintainServiceDeptTF.xml#MaintainServiceDeptTF');
+
+
+
+
