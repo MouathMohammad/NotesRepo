@@ -237,8 +237,9 @@ Details : 
 
 -Added new app SystemCodes
 -refactor old screen ( System Codes )with new features
+-make PKs for 'ProgCodesData' EO change indicators
 
-feature/OS-422
+feature/OS-422 
 
 
 affected modules:
@@ -250,6 +251,7 @@ commit Hash No:
 
 oasis-modules : 59f9451f7cc
 oasis-main  : 6d895ca7245
+oasis-common : 	2dccbab36e7
 
 
 
@@ -1922,6 +1924,10 @@ Bank  11,700
 wallet 800
 Bank  7,614
 ##11##
+/1,168 - 275 = 893
+-50 home - 400 jm3eh= 443 -o 200 - 100 batool = 143
+wallet 0
+Bank  0
 ##12##
 )
 
@@ -1954,7 +1960,7 @@ _(6)_  - 20 Adam Teacher - 40 Mostafa Egypt - 11 Mahmoud Phone - 300 Eid
 _(7)_  - 35 Car Training - 46 Clothes - 19 Net Zain - 25 Farm = 125
 _(8)_  - 20 Dentist - 50 Neck Aid Tools - 11 Udemy - 16 Neck Treatment = 97
 _(9)_  - 430 New Phone = 430
-_(10)_ - 0  = 0
+_(10)_ - 0 non  = 0
 _(11)_ - 0  = 0
 _(12)_ - 0  = 0 
  > 1,946
@@ -1972,12 +1978,12 @@ ______________________
 
 Batool + Clothes 
 
-_(8)_ 50 First Visit = 50
-_(9)_ 30 Al  Fatiha + 60 Talasemia Test + 2840 Batool Gold + 110 Clothes = 3,040
-_(9)_ 100 Cocheh + 20 Juice + 10 Brochures + 110 Knafeeh + 60 Mathoon + 40 Benzyl Nabel = 340
+_(8) _ 50 First Visit = 50
+_(9) _ 30 Al  Fatiha + 60 Talasemia Test + 2840 Batool Gold + 110 Clothes = 3,040
+_(10) _ 100 Cocheh + 20 Juice + 10 Brochures + 110 Knafeeh + 60 Mathoon + 40 Benzyl Nabel + 160 Lunch Batool Family = 500
 ______________________
 
-total : 15,062 - 3,430 = 11,632
+total : 15,062 - 3,590 = 11,472
 ______________________
 
 

@@ -183,6 +183,34 @@ v_error_no=14548
 
 
 
+
+DECLARE
+v_error_no NUMBER;
+BEGIN
+oasis.set_hospital_id(1);
+v_error_no :=Add_Error_Msg('Q','There are pending changes made , Save them or Discard Changes to continue'
+,'There are pending changes made , Save them or Discard Changes to continue');
+dbms_output.put_line('v_error_no='||v_error_no);
+END;
+
+
+v_error_no=14552
+
+
+
+
+DECLARE
+v_error_no NUMBER;
+BEGIN
+oasis.set_hospital_id(1);
+v_error_no :=Add_Error_Msg('F','You can''t remove this prog code because it has been used'
+,'You can''t remove this prog code because it has been used');
+dbms_output.put_line('v_error_no='||v_error_no);
+END;
+
+
+v_error_no=14553
+
 exec Add_Resource_Key('SYSTEMCODESTF_MANAGESYSTEMCODES_TITLE_MASTER','Manage Codes','Manage Codes','/WEB-INF/com/balsam/oasis/systemcodes/SystemCodesTF.xml#SystemCodesTF');
 exec Add_Resource_Key('SYSTEMCODESTF_MANAGESYSTEMCODES_TITLE_DETAILS','Msater Codes Data','Msater Codes Data','/WEB-INF/com/balsam/oasis/systemcodes/SystemCodesTF.xml#SystemCodesTF');
 
@@ -198,7 +226,7 @@ exec Add_Resource_Key('SYSTEMCODESTF_MASTERSYSTEMCODES_TABLE_SUBTYPEREQ','Sub Ty
 exec Add_Resource_Key('SYSTEMCODESTF_MASTERSYSTEMCODES_TABLE_PROGCODEREQ','Prog Code Required','Prog Code Required','/WEB-INF/com/balsam/oasis/systemcodes/SystemCodesTF.xml#SystemCodesTF');
 exec Add_Resource_Key('SYSTEMCODESTF_MASTERSYSTEMCODES_BTN_ADDNEWCODE','Add New Code','Add New Code','/WEB-INF/com/balsam/oasis/systemcodes/SystemCodesTF.xml#SystemCodesTF');
 
-exec Add_Resource_Key('SYSTEMCODEDETAILSTF_SYSTEMCODEDETAILS_DETAILS_DESC','Description','Description','/WEB-INF/com/balsam/oasis/systemcodes/details/SystemCodeDetailsTF.xml#SystemCodeDetailsTF');
+exec Add_Resource_Key('SYSTEMCODEDETAILSTF_SYSTEMCODEDETAILS_DETAILS_CODE_TYPE','Description','Description','/WEB-INF/com/balsam/oasis/systemcodes/details/SystemCodeDetailsTF.xml#SystemCodeDetailsTF');
 exec Add_Resource_Key('SYSTEMCODEDETAILSTF_SYSTEMCODEDETAILS_DETAILS_ASSOCI','Associated','Associated','/WEB-INF/com/balsam/oasis/systemcodes/details/SystemCodeDetailsTF.xml#SystemCodeDetailsTF');
 exec Add_Resource_Key('SYSTEMCODEDETAILSTF_SYSTEMCODEDETAILS_DETAILS_ERRORDESC','Error Desc','Error Desc','/WEB-INF/com/balsam/oasis/systemcodes/details/SystemCodeDetailsTF.xml#SystemCodeDetailsTF');
 exec Add_Resource_Key('SYSTEMCODEDETAILSTF_SYSTEMCODEDETAILS_DETAILS_USERCODEREQ','User Code Required','User Code Required','/WEB-INF/com/balsam/oasis/systemcodes/details/SystemCodeDetailsTF.xml#SystemCodeDetailsTF');
