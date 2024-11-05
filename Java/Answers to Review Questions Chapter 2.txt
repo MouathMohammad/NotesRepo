@@ -1,0 +1,20 @@
+A D
+*A B D
+*F
+B C D F
+C 
+F
+D
+**B
+F
+*D
+A
+D
+*A
+C
+E
+*B
+D
+B
+D
+B

@@ -1,0 +1,23 @@
+A B E
+D
+B D E
+A B
+C D
+E
+A B C
+B
+A C D E 
+E
+C D
+G
+A D
+D
+A E
+B C
+A E
+C D E
+B D
+B E
+*A
+*B E 
+*C D
