@@ -64,7 +64,8 @@ _______|________________|______|______________|____________
 Dev    | 192.168.55.223  | 1521  | dvlpnrl    |  OASIS  
 
        | 192.168.55.10   | 1521  | jtest      |  sdsoasis
-
+	   
+       | 192.168.55.10   | 1521  | rwdhp      |  oasis
 
 jdbc/OasisConnDS
 
@@ -240,7 +241,7 @@ Details : 
 -make PKs for 'ProgCodesData' EO change indicators
 
 feature/OS-422 
-
+fixed checkbox issue
 
 affected modules:
 
@@ -274,6 +275,19 @@ hotfix/KFGHP-572   :   Staff Privileges	                | Security:StaffXYPrivil
 hotfix/OS-421      :   Maintain Departments		        | Security:GeneralSetup       //  add new tap for Subspecialties | from v7.4.0
 
 feature/OS-422     :   System Codes                     | Security:SystemCodes        //  refactor old screen ( System Codes )with new features
+
+hotfix/KAHTP-558   :   System Rules /PatientUtilsAMImpl | Security:SystemCodes        //  **add new pre-validation "validatCloseVisit" by function for Record Outcome **fixed segue rules LOV in SystemRules
+
+hotfix/OPD-387     :   Outpatient Clinic Sessions       | OPD:OpdSetup                //added new validation for the end date based on the rule to calculate max date available
+
+                       Operating Rooms Sessions         
+                       Delivery Rooms Sessions	
+					   Endoscopy Rooms Sessions         | OperatingRooms:OperatingRoomsSetup //added new validation for the end date based on the rule to calculate max date available
+					   Cathlab Rooms Sessions
+					   
+					   Physiotherapy Clinic Sessions    | Physiotherapy:PhysiotherapySetup // added new validation for the end date based on the rule to calculate max date available
+					   Renal Clinics Sessions
+
 
 ___Bug___
 
@@ -1975,12 +1989,13 @@ ______________________
 
 <2024>
 
-
 Batool + Clothes 
 
 _(8) _ 50 First Visit = 50
 _(9) _ 30 Al  Fatiha + 60 Talasemia Test + 2840 Batool Gold + 110 Clothes = 3,040
 _(10) _ 100 Cocheh + 20 Juice + 10 Brochures + 110 Knafeeh + 60 Mathoon + 40 Benzyl Nabel + 160 Lunch Batool Family = 500
+
+= #3,590#
 ______________________
 
 total : 15,062 - 3,590 = 11,472

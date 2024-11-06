@@ -398,6 +398,10 @@ protected <T extends UIComponent> T showMessageForComponent(T comp, long message
     showMessageForComponent(comp.getId(), new OasisBusinessException(messageNo).getErrorMessage());
     return comp;
 }
+OR
+private void errorMessageForComponent(String compId , long errorNo){
+    showMessageForComponent(compId, new OasisBusinessException(errorNo).getErrorMessage());
+}
 //add validation to inpute text from bean using Validator properity
 ________________________________________________________________________________________________________
 
@@ -525,7 +529,7 @@ ________________________________________________________________________________
 overflow-visible
 inlineStyle="z-index:6 !important; "
 
-inlineStyle="margin-top:25px;
+inlineStyle="margin-top:25px;"
 
 // make oasis lov overfow
 
@@ -563,3 +567,10 @@ ________________________________________________________________________________
         }
 		
 // make filter cloumn in table work by contains insted of equals
+________________________________________________________________________________________________________
+
+            String formattedErrorMsg =
+                MessageFormat.format((new OasisBusinessException(14556L).getErrorMessage()), maxDate.toString());
+            showMessageForComponent(compId, formattedErrorMsg);
+			
+// show error msg with bind values

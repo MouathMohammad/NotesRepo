@@ -1,0 +1,44 @@
+My Tickets |
+___________|
+
+
+feature/KFAFP-1181 :   Outpatient Reports	            | Reports:OPDReports          //  add new lov consultation type and put it to report
+
+feature/OS-418     :   Refactor Maintain Teams          | Security:MaintainTeams      //  refactor ald screen with new features
+
+feature/OS-419     :   Error Translations               | Security:GeneralSetup       //  create new screen for traslation error and static lable
+
+feature/EMR-2578   :   Referrals Dashboard	            | Referrals:ReferralDashboard //  add the new rule to disable action referral
+
+hotfix/KFHTP-207   :   Did Not Attend Unlock            | OPD:OpdDidNotAttend         //  Create new page "Did Not Attend Unlock " to unlock attend
+
+hotfix/KFGHP-572   :   Staff Privileges	                | Security:StaffXYPrivileges  //  add filter table for staff id and staff name
+
+hotfix/OS-421      :   Maintain Departments		        | Security:GeneralSetup       //  add new tap for Subspecialties | from v7.4.0
+
+feature/OS-422     :   System Codes                     | Security:SystemCodes        //  refactor old screen ( System Codes )with new features
+
+hotfix/KAHTP-558   :   System Rules /PatientUtilsAMImpl | Security:SystemCodes        //  **add new pre-validation "validatCloseVisit" by function for Record Outcome **fixed segue rules LOV in SystemRules
+
+hotfix/OPD-387     :   Outpatient Clinic Sessions       | OPD:OpdSetup                //added new validation for the end date based on the rule to calculate max date available
+
+                       Operating Rooms Sessions         
+                       Delivery Rooms Sessions	
+					   Endoscopy Rooms Sessions         | OperatingRooms:OperatingRoomsSetup //added new validation for the end date based on the rule to calculate max date available
+					   Cathlab Rooms Sessions
+					   
+					   Physiotherapy Clinic Sessions    | Physiotherapy:PhysiotherapySetup // added new validation for the end date based on the rule to calculate max date available
+					   Renal Clinics Sessions
+
+
+___Bug___
+
+bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
+
+
+Own Ticket:
+__________
+
+Udemy : Master Spring Boot 3 & Spring Framework 6 with Java    | IW-372
+
+Book : OCA: Oracle Certified Associate Java SE 8               | IW-373
