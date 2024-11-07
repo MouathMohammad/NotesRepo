@@ -256,55 +256,6 @@ oasis-common : 	2dccbab36e7
 
 
 
-
-My Tickets:
-
-
-feature/KFAFP-1181 :   Outpatient Reports	            | Reports:OPDReports          //  add new lov consultation type and put it to report
-
-feature/OS-418     :   Refactor Maintain Teams          | Security:MaintainTeams      //  refactor ald screen with new features
-
-feature/OS-419     :   Error Translations               | Security:GeneralSetup       //  create new screen for traslation error and static lable
-
-feature/EMR-2578   :   Referrals Dashboard	            | Referrals:ReferralDashboard //  add the new rule to disable action referral
-
-hotfix/KFHTP-207   :   Did Not Attend Unlock            | OPD:OpdDidNotAttend         //  Create new page "Did Not Attend Unlock " to unlock attend
-
-hotfix/KFGHP-572   :   Staff Privileges	                | Security:StaffXYPrivileges  //  add filter table for staff id and staff name
-
-hotfix/OS-421      :   Maintain Departments		        | Security:GeneralSetup       //  add new tap for Subspecialties | from v7.4.0
-
-feature/OS-422     :   System Codes                     | Security:SystemCodes        //  refactor old screen ( System Codes )with new features
-
-hotfix/KAHTP-558   :   System Rules /PatientUtilsAMImpl | Security:SystemCodes        //  **add new pre-validation "validatCloseVisit" by function for Record Outcome **fixed segue rules LOV in SystemRules
-
-hotfix/OPD-387     :   Outpatient Clinic Sessions       | OPD:OpdSetup                //added new validation for the end date based on the rule to calculate max date available
-
-                       Operating Rooms Sessions         
-                       Delivery Rooms Sessions	
-					   Endoscopy Rooms Sessions         | OperatingRooms:OperatingRoomsSetup //added new validation for the end date based on the rule to calculate max date available
-					   Cathlab Rooms Sessions
-					   
-					   Physiotherapy Clinic Sessions    | Physiotherapy:PhysiotherapySetup // added new validation for the end date based on the rule to calculate max date available
-					   Renal Clinics Sessions
-
-
-___Bug___
-
-bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
-
-
-Own Ticket:
-__________
-
-Udemy : Master Spring Boot 3 & Spring Framework 6 with Java    | IW-372
-
-Book : OCA: Oracle Certified Associate Java SE 8               | IW-373
-
-
-
-
-
 import groovy.transform.TypeCheckingMode
 import groovy.transform.TypeChecked
 TransientValueExpression
@@ -1933,15 +1884,15 @@ Bank  10,804
 wallet 100
 Bank  11,700
 ##10##
-/1,168 - 375 = 793
--50 home - 400 jm3eh = 343 -o 200 = 143
+/1,168 - 175 = 993
+-50 home - 400 jm3eh = 543 -o 200 - 200 batool = 143
 wallet 800
 Bank  7,614
 ##11##
 /1,168 - 275 = 893
 -50 home - 400 jm3eh= 443 -o 200 - 100 batool = 143
-wallet 0
-Bank  0
+wallet 200
+Bank  7,920
 ##12##
 )
 
@@ -1957,10 +1908,10 @@ _2024_ >> 694 | 1,168
 600-30
 325-4
 375
-375
-375
-375
-= 7,711
+275
+275
+275
+= 7,411
 
 *
 _(1)_  - 20 Adam Teacher - 163 Car Training - 20 Help Peaple - 27 Medicine = 230
@@ -1976,14 +1927,14 @@ _(8)_  - 20 Dentist - 50 Neck Aid Tools - 11 Udemy - 16 Neck Treatment = 97
 _(9)_  - 430 New Phone = 430
 _(10)_ - 0 non  = 0
 _(11)_ - 0  = 0
-_(12)_ - 0  = 0 
+_(12)_ - 0  = 0
  > 1,946
 
-= #5,765#
+= #5,465#
 
 ______________________
 
-total : 9,347 ==> 15,112
+total : 9,347 ==> 14,812
 ______________________
 
 
@@ -1998,7 +1949,7 @@ _(10) _ 100 Cocheh + 20 Juice + 10 Brochures + 110 Knafeeh + 60 Mathoon + 40 Ben
 = #3,590#
 ______________________
 
-total : 15,062 - 3,590 = 11,472
+total : 14,812 - 3,590 = 11,172
 ______________________
 
 

@@ -21,7 +21,7 @@ feature/OS-422     :   System Codes                     | Security:SystemCodes  
 hotfix/KAHTP-558   :   System Rules /PatientUtilsAMImpl | Security:SystemCodes        //  **add new pre-validation "validatCloseVisit" by function for Record Outcome **fixed segue rules LOV in SystemRules
 
 hotfix/OPD-387     :   Outpatient Clinic Sessions       | OPD:OpdSetup                //added new validation for the end date based on the rule to calculate max date available
-
+                                                                                        in outpatient Clinic Sessions Filter staff table by staff_id ,staff name
                        Operating Rooms Sessions         
                        Delivery Rooms Sessions	
 					   Endoscopy Rooms Sessions         | OperatingRooms:OperatingRoomsSetup //added new validation for the end date based on the rule to calculate max date available
@@ -29,6 +29,8 @@ hotfix/OPD-387     :   Outpatient Clinic Sessions       | OPD:OpdSetup          
 					   
 					   Physiotherapy Clinic Sessions    | Physiotherapy:PhysiotherapySetup // added new validation for the end date based on the rule to calculate max date available
 					   Renal Clinics Sessions
+
+hotfix/KFHTP-282   :   Users and Sessions               | Security:UsersAndSessions   //  add the filter to the table by work entity, Work Entity Description display work entity in the table and LOV
 
 
 ___Bug___
@@ -42,3 +44,25 @@ __________
 Udemy : Master Spring Boot 3 & Spring Framework 6 with Java    | IW-372
 
 Book : OCA: Oracle Certified Associate Java SE 8               | IW-373
+
+
+
+Comments:
+
+
+Details : 
+
+-add filter to the table by work entity , Work Entity Description
+ display work entity in the table and LOV
+
+hotfix/KFHTP-282
+
+
+affected modules:
+
+Security:UsersAndSessions
+
+
+commit Hash No:
+
+oasis-modules : 1701f99279b

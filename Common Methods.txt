@@ -549,6 +549,8 @@ public void onExit() {
 
 ________________________________________________________________________________________________________
 
+import oracle.jbo.ViewCriteriaItem;
+
     @Override
         public String getCriteriaItemClause(ViewCriteriaItem viewCriteriaItem) {
             viewCriteriaItem.setUpperColumns(true);
@@ -574,3 +576,9 @@ ________________________________________________________________________________
             showMessageForComponent(compId, formattedErrorMsg);
 			
 // show error msg with bind values
+
+________________________________________________________________________________________________________
+
+OasisModelUtils.getInstance().displayStaffName(staffId, formate ('LONG' or 'SHORT'))
+
+//get staff name by id in transiate attribute
