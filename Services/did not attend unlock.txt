@@ -1,0 +1,67 @@
+Did Not Attend Unlock
+______________
+didnotattendunlock
+
+App name : OpdDidNotAttend
+model: OpdDidNotAttendModel
+viewControler : OpdDidNotAttendView
+view :com.balsam.oasis.didnotattendunlock.view
+
+** add jars to projects
+
+
+Model:
+AM => OpdDidNotAttendAM
+
+
+**cerate test folder and copy files WEB-INF
+
+\com\balsam\oasis\didnotattendunlock
+TF ==> OpdDidNotAttendUnlockTF
+page in TF:
+OpdDidNotAttendUnlock
+
+**fixed configration AM
+jdbc/OasisConnDS
+
+Rule : OPD_DNA_CRLESS_SCOPE
+
+
+
+
+
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_TITLE_POPUP','Did Not Attend Unlock','Did Not Attend Unlock','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_MRN','Mr.No.','Mr.No.','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_PATIENTID','Patient Id','Patient Id','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_PATIENTNAME','Patient Name','Patient Name','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_DEPARTMENT','Department','Department','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_DESCRIPTIONEN_POPUP_TITLE','Search and Select Department','Search and Select Department','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_DESCRIPTIONAR_TABLE','Service Department','Service Department','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_DESCRIPTIONAR_DESC_TABLE','Description','Description','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_CLINIC','Clinic','Clinic','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_POPUP_TITLE','Search and Select Clinic','Search and Select Clinic','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_WORKENTITY_TABLE','Work Entity','Work Entity','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_WORKENTITY_DESC_TABLE','Description','Description','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_FROMDATE','From Date','From Date','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_TODATE','To Date','To Date','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_HEGFROMDATE','Heg From Date','Heg From Date','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_HEGTODATE','Heg To Date','Heg To Date','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_DNAREASON','DNA Reason','DNA Reason','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_DNAREASON_POPUP_TITLE','Search and Select DNA Reason','Search and Select DNA Reason','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_DNAREASON_TABLE','Code','Code','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_DNAREASON_DESC_TABLE','Description','Description','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_CLOSE_BTN','Close ','Close','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+exec Add_Resource_Key('OPDDIDNOTATTENDTF_OPDDIDNOTATTEND_UNLOCK_BTN','Unlock','Unlock','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF');
+
+
+
+
+Did Not Attend Unlock TF :
+
+exec Add_New_Task_Flow('OPDDIDNOTATTENDTF','Did Not Attend Unlock','/WEB-INF/com/balsam/oasis/didnotattendunlock/OpdDidNotAttendUnlockTF.xml#OpdDidNotAttendUnlockTF','Y');

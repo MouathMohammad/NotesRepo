@@ -1,0 +1,52 @@
+Error Translations
+______________
+errortranslations
+
+Model:
+AM => ErrorTranslationsAM
+AM => StaticResourcesAM
+
+**fixed configration AM
+jdbc/OasisConnDS
+
+
+
+
+
+
+exec Add_Resource_Key('MAINTRANSLATIONSTF_MAINTRANSLATIONS_ERRORTRANSLATIONS_TAB','Error Translations','Error Translations','/WEB-INF/com/balsam/oasis/errortranslations/flows/MainTranslationsTF.xml#MainTranslationsTF');
+exec Add_Resource_Key('MAINTRANSLATIONSTF_MAINTRANSLATIONS_STATICRESOURCES_TAB','Static Resources','Static Resources','/WEB-INF/com/balsam/oasis/errortranslations/flows/MainTranslationsTF.xml#MainTranslationsTF');
+
+exec Add_Resource_Key('ERRORTRANSLATIONSTF_ERRORTRANSLATIONS_ERRORNO_FILTER','Error No','Error No','/WEB-INF/com/balsam/oasis/errortranslations/flows/ErrorTranslationsTF.xml#ErrorTranslationsTF');
+exec Add_Resource_Key('ERRORTRANSLATIONSTF_ERRORTRANSLATIONS_ERRORNO_TABLE','Error No','Error No','/WEB-INF/com/balsam/oasis/errortranslations/flows/ErrorTranslationsTF.xml#ErrorTranslationsTF');
+exec Add_Resource_Key('ERRORTRANSLATIONSTF_ERRORTRANSLATIONS_ERRORNO_POPUP','Error No','Error No','/WEB-INF/com/balsam/oasis/errortranslations/flows/ErrorTranslationsTF.xml#ErrorTranslationsTF');
+exec Add_Resource_Key('ERRORTRANSLATIONSTF_ERRORTRANSLATIONS_DESCRIPTION_FILTER','Description','Description','/WEB-INF/com/balsam/oasis/errortranslations/flows/ErrorTranslationsTF.xml#ErrorTranslationsTF');
+exec Add_Resource_Key('ERRORTRANSLATIONSTF_ERRORTRANSLATIONS_DESCRIPTIONEN_TABLE','English Description','English Description','/WEB-INF/com/balsam/oasis/errortranslations/flows/ErrorTranslationsTF.xml#ErrorTranslationsTF');
+exec Add_Resource_Key('ERRORTRANSLATIONSTF_ERRORTRANSLATIONS_DESCRIPTIONAR_TABLE','Arabic Description','Arabic Description','/WEB-INF/com/balsam/oasis/errortranslations/flows/ErrorTranslationsTF.xml#ErrorTranslationsTF');
+exec Add_Resource_Key('ERRORTRANSLATIONSTF_ERRORTRANSLATIONS_DESCRIPTIONEN_POPUP','English Description','English Description','/WEB-INF/com/balsam/oasis/errortranslations/flows/ErrorTranslationsTF.xml#ErrorTranslationsTF');
+exec Add_Resource_Key('ERRORTRANSLATIONSTF_ERRORTRANSLATIONS_DESCRIPTIONAR_POPUP','Arabic Description','Arabic Description','/WEB-INF/com/balsam/oasis/errortranslations/flows/ErrorTranslationsTF.xml#ErrorTranslationsTF');
+exec Add_Resource_Key('ERRORTRANSLATIONSTF_ERRORTRANSLATIONS_EDIT_BTN','Edit','Edit','/WEB-INF/com/balsam/oasis/errortranslations/flows/ErrorTranslationsTF.xml#ErrorTranslationsTF');
+exec Add_Resource_Key('ERRORTRANSLATIONSTF_ERRORTRANSLATIONS_SAVE_BTN','Save','Save','/WEB-INF/com/balsam/oasis/errortranslations/flows/ErrorTranslationsTF.xml#ErrorTranslationsTF');
+exec Add_Resource_Key('ERRORTRANSLATIONSTF_ERRORTRANSLATIONS_CANCEL_BTN','Cancel','Cancel','/WEB-INF/com/balsam/oasis/errortranslations/flows/ErrorTranslationsTF.xml#ErrorTranslationsTF');
+exec Add_Resource_Key('ERRORTRANSLATIONSTF_ERRORTRANSLATIONS_ERRORTRANSLATIONS_POPUP_TITLE','Edit Error Translations','Edit Error Translations','/WEB-INF/com/balsam/oasis/errortranslations/flows/ErrorTranslationsTF.xml#ErrorTranslationsTF');
+
+exec Add_Resource_Key('STATICRESOURCESTF_STATICRESOURCES_RESOURCEKEY_FILTER','Resource Key','Resource Key','/WEB-INF/com/balsam/oasis/errortranslations/flows/StaticResourcesTF.xml#StaticResourcesTF');
+exec Add_Resource_Key('STATICRESOURCESTF_STATICRESOURCES_RESOURCEKEY_TABLE','Resource Key','Resource Key','/WEB-INF/com/balsam/oasis/errortranslations/flows/StaticResourcesTF.xml#StaticResourcesTF');
+exec Add_Resource_Key('STATICRESOURCESTF_STATICRESOURCES_RESOURCEKEY_POPUP','Resource Key','Resource Key','/WEB-INF/com/balsam/oasis/errortranslations/flows/StaticResourcesTF.xml#StaticResourcesTF');
+exec Add_Resource_Key('STATICRESOURCESTF_STATICRESOURCES_DESCRIPTION_FILTER','Description','Description','/WEB-INF/com/balsam/oasis/errortranslations/flows/StaticResourcesTF.xml#StaticResourcesTF');
+exec Add_Resource_Key('STATICRESOURCESTF_STATICRESOURCES_DESCRIPTIONEN_TABLE','English Description','English Description','/WEB-INF/com/balsam/oasis/errortranslations/flows/StaticResourcesTF.xml#StaticResourcesTF');
+exec Add_Resource_Key('STATICRESOURCESTF_STATICRESOURCES_DESCRIPTIONAR_TABLE','Arabic Description','Arabic Description','/WEB-INF/com/balsam/oasis/errortranslations/flows/StaticResourcesTF.xml#StaticResourcesTF');
+exec Add_Resource_Key('STATICRESOURCESTF_STATICRESOURCES_DESCRIPTIONEN_POPUP','English Description','English Description','/WEB-INF/com/balsam/oasis/errortranslations/flows/StaticResourcesTF.xml#StaticResourcesTF');
+exec Add_Resource_Key('STATICRESOURCESTF_STATICRESOURCES_DESCRIPTIONAR_POPUP','Arabic Description','Arabic Description','/WEB-INF/com/balsam/oasis/errortranslations/flows/StaticResourcesTF.xml#StaticResourcesTF');
+exec Add_Resource_Key('STATICRESOURCESTF_STATICRESOURCES_EDIT_BTN','Edit','Edit','/WEB-INF/com/balsam/oasis/errortranslations/flows/StaticResourcesTF.xml#StaticResourcesTF');
+exec Add_Resource_Key('STATICRESOURCESTF_STATICRESOURCES_SAVE_BTN','Save','Save','/WEB-INF/com/balsam/oasis/errortranslations/flows/StaticResourcesTF.xml#StaticResourcesTF');
+exec Add_Resource_Key('STATICRESOURCESTF_STATICRESOURCES_CANCEL_BTN','Cancel','Cancel','/WEB-INF/com/balsam/oasis/errortranslations/flows/StaticResourcesTF.xml#StaticResourcesTF');
+exec Add_Resource_Key('STATICRESOURCESTF_STATICRESOURCES_STATICRESOURCES_POPUP_TITLE','Edit Static Resources','Edit Static Resources','/WEB-INF/com/balsam/oasis/errortranslations/flows/StaticResourcesTF.xml#StaticResourcesTF');
+
+
+
+
+
+TF :
+
+exec Add_New_Task_Flow('ERRORSTRANSLATIONSTF','Error Translations','/WEB-INF/com/balsam/oasis/errortranslations/flows/MainTranslationsTF.xml#MainTranslationsTF','Y');

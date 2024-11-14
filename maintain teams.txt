@@ -1,0 +1,250 @@
+maintain Teams
+______________
+
+App name : MaintainTeams
+model: MaintainTeamsModel
+viewControler : MaintainTeamsView
+view :com.balsam.oasis.maintainteam.view
+
+** add jars to projects
+
+
+Model:
+AM => MaintainTeamsAM
+AM => MaintainTeamDetailsAM
+
+**fixed configration AM
+jdbc/OasisConnDS
+
+readonly vo: TeamsDataRVO
+eo: TeamsData vo: DetailsTeamsDataVO
+eo: TeamStaff vo: TeamStaffVO
+eo: TeamDepts vo: TeamDeptsVO
+eo: TeamWorkLink vo: TeamWorkLinkVO
+
+vl: TeamStaffTeamsFkVlinks
+vl: TeamDeptTeamsFkVlinks
+vl: TeamWorkLinkTeamsFkVlinks
+
+
+
+
+
+**cerate test folder and copy files WEB-INF
+
+
+\com\balsam\oasis\maintain-team
+TF ==> MaintainTeamsTF
+page in TF:
+ManageMaintainTeams
+MasterMaintainTeams
+
+
+
+\com\balsam\oasis\maintain-team\team-details
+TF ==> MaintainTeamDetailsTF
+page in TF:
+MaintainTeamDetails
+
+
+\com\balsam\oasis\maintain-team\team-details\team-members
+TF ==> TeamMembersTF
+page in TF:
+TeamMembers
+
+\com\balsam\oasis\maintain-team\team-details\team-departments
+TF ==> TeamDepartmentsTF
+page in TF:
+TeamDepartments
+
+\com\balsam\oasis\maintain-team\team-details\team-allocations
+TF ==> TeamAllocationsTF
+page in TF:
+TeamAllocations
+
+MiantainBean extends CommonBaseBean
+
+class DisplayModes
+
+public static final String READ = "Read" ;
+public static final String CREATE = "Create" ;
+public static final String UPDATE = "Update" ;
+public static final String MASTER_ONLY = "Master" ;
+public static final String DETAIL_ONLY = "Detail" ;
+
+
+interface ModesListener
+
+
+public void changeToReadMode() ;
+public void changeToCreateMode() ;
+public void changeToUpdateMode() ;
+public void viewMasterOnly() ;
+public void viewDetailOnly() ;
+//public void refreshMaster(BigDecimal teamId) ;
+
+class TeamDataIterators
+
+public static final String TEAMDATA_ROV = "ToolSetsROVIterator" ;
+
+class TeamContainers
+
+public static final String MANAGE_PAGE = "mng_pg" ;
+public static final String DETAILS_COLUMN = "dt_column" ;
+public static final String TEAM_TABLE = "team_table" ;
+
+
+
+ErrorUtils
+
+    private static SimpleErrorHandling errorHandling = new SimpleErrorHandling();
+	
+    public static void showInlineError(long errorNo , String marker , String replaceWith){
+        CommonJSFUtils.showErrorMessage((new OasisBusinessException(errorNo).getErrorMessage()).replace(marker, replaceWith));
+    }
+    
+    public static void showInlineError(long errorNo){
+        errorHandling.handle(new OasisBusinessException(errorNo));
+    }
+    
+    public static void showPopupError(long errorNo){
+        OasisDynamicPopup.showErrorMessage(errorNo); 
+    }
+    
+    public static void handle(Exception e){
+        errorHandling.handle(e);
+    }
+    
+    public static String errorMessage(long errorNo){
+        return new OasisBusinessException(errorNo).getErrorMessage() ;
+    }
+	
+	
+	
+\com\balsam\oasis\maintainteam\view
+____________MiantainTeamBean______________
+
+
+private String pageMode = DisplayModes.READ ;
+private String tabletMode = DisplayModes.MASTER_ONLY ;
+private BigDecimal teamId ;
+private Supplier<PageDefinition> pageDef = ()-> PageDefinitionImpl.findPageDefinition(null) ;
+private String teamDescription ;
+
+    
+    @Override
+    public void changeToReadMode() {
+        pageMode = DisplayModes.READ ;
+    }
+
+    @Override
+    public void changeToCreateMode() {
+        pageMode = DisplayModes.CREATE ;
+    }
+
+    @Override
+    public void changeToUpdateMode() {
+        pageMode = DisplayModes.UPDATE ;
+    }
+    
+    @Override
+    public void viewMasterOnly() {
+        tabletMode = DisplayModes.MASTER_ONLY ;
+        //refreshMaster(teamId);
+        //clearSelectedRowKeys(TeamContainers.TEAM_TABLE);
+    }
+
+    @Override
+    public void viewDetailOnly() {
+        tabletMode = DisplayModes.DETAIL_ONLY ;
+    }
+	
+public void refresh(String compId) {
+    UIComponent component = CommonJSFUtils.findComponent(compId);
+    if (component != null)
+        reRenderComponents(new String[] { compId });
+}
+
+    public void setPageMode(String pageMode) {
+        this.pageMode = pageMode;
+    }
+
+    public String getPageMode() {
+        return pageMode;
+    }
+
+    public void setTabletMode(String tabletMode) {
+        this.tabletMode = tabletMode;
+    }
+
+    public String getTabletMode() {
+        return tabletMode;
+    }
+
+
+
+
+pageTemplate id="mng_pg"
+OasisRow => marginTop="0"
+OasisColumn  spanInLg="5" spanInMd="5" spanInSm="12" rendered="#{agentInfo.lg or  agentInfo.gtLg or (!agentInfo.lg and !agentInfo.gtLg and viewScope.toolSetsBean.tabletMode eq 'Master')}
+
+
+
+
+
+
+
+
+
+
+ DECLARE
+v_error_no NUMBER;
+BEGIN
+oasis.set_hospital_id(1);
+v_error_no :=Add_Error_Msg('F','You can''t remove this team because it has details exists
+','You can''t remove this team because it has details exists');
+dbms_output.put_line('v_error_no='||v_error_no);
+END;
+
+
+v_error_no=14511
+
+
+DECLARE
+v_error_no NUMBER;
+BEGIN
+oasis.set_hospital_id(1);
+v_error_no :=Add_Error_Msg('Q','You are about to Delete the current Team, Are you sure?
+','You are about to Delete the current Team, Are you sure?');
+dbms_output.put_line('v_error_no='||v_error_no);
+END;
+
+
+v_error_no=14533
+
+
+
+exec Add_Resource_Key('MASTERSTAFFTEAMTF_MASTERSTAFFTEAM_FI2','Team','Team','/WEB-INF/com/balsam/oasis/maintain-team/MaintainTeamsTF.xml#MaintainTeamsTF');
+exec Add_Resource_Key('MASTERSTAFFTEAMTF_MASTERSTAFFTEAM_REMOVETEAMBTN','Remove','Remove','/WEB-INF/com/balsam/oasis/maintain-team/MaintainTeamsTF.xml#MaintainTeamsTF');
+exec Add_Resource_Key('MASTERSTAFFTEAMTF_MASTERSTAFFTEAM_VIEWBTN','View','View','/WEB-INF/com/balsam/oasis/maintain-team/MaintainTeamsTF.xml#MaintainTeamsTF');
+
+exec Add_Resource_Key('DETAILSTAFFTEAMTF_DETAILSTAFFTEAM_STAFFNAME','Staff Name','Staff Name','/WEB-INF/com/balsam/oasis/maintain-team/details/TeamStaffTF.xml#TeamStaffTF');
+exec Add_Resource_Key('DETAILSTAFFTEAMTF_DETAILSTAFFTEAM_CONSTYPE','Cons Type','Cons Type','/WEB-INF/com/balsam/oasis/maintain-team/details/TeamStaffTF.xml#TeamStaffTF');
+
+exec Add_Resource_Key('DETAILSTAFFTEAMTF_SERVICEDEPARTMENTS_SERVICEDEPT','Service Dept','Service Dept','/WEB-INF/com/balsam/oasis/maintain-team/details/TeamServiceDepartmentsTF.xml#TeamServiceDepartmentsTF');
+exec Add_Resource_Key('DETAILSTAFFTEAMTF_SERVICEDEPARTMENTS_DESCRIPTION','Description','Description','/WEB-INF/com/balsam/oasis/maintain-team/details/TeamServiceDepartmentsTF.xml#TeamServiceDepartmentsTF');
+exec Add_Resource_Key('DETAILSTAFFTEAMTF_SERVICEDEPARTMENTS_DEPTTYPE','Dept Type','Dept Type','/WEB-INF/com/balsam/oasis/maintain-team/details/TeamServiceDepartmentsTF.xml#TeamServiceDepartmentsTF');
+
+exec Add_Resource_Key('DETAILSTAFFTEAMTF_TEAMALLOCATION_WORKENTITY','Work Entity','Work Entity','/WEB-INF/com/balsam/oasis/maintain-team/details/TeamAllocationTF.xml#TeamAllocationTF');
+exec Add_Resource_Key('DETAILSTAFFTEAMTF_TEAMALLOCATION_DESCRIPTION','Description','Description','/WEB-INF/com/balsam/oasis/maintain-team/details/TeamAllocationTF.xml#TeamAllocationTF');
+exec Add_Resource_Key('DETAILSTAFFTEAMTF_TEAMALLOCATION_COMMENCES','Commences','Commences','/WEB-INF/com/balsam/oasis/maintain-team/details/TeamAllocationTF.xml#TeamAllocationTF');
+exec Add_Resource_Key('DETAILSTAFFTEAMTF_TEAMALLOCATION_ENDS','Ends','Ends','/WEB-INF/com/balsam/oasis/maintain-team/details/TeamAllocationTF.xml#TeamAllocationTF');
+exec Add_Resource_Key('DETAILSTAFFTEAMTF_TEAMALLOCATION_ATTBED','Att Bed','Att Bed','/WEB-INF/com/balsam/oasis/maintain-team/details/TeamAllocationTF.xml#TeamAllocationTF');
+
+
+
+
+
+TF :
+
+exec Add_New_Task_Flow('STAFFTEAMSTF','Staff Teams','/WEB-INF/com/balsam/oasis/maintain-team/MaintainTeamsTF.xml#MaintainTeamsTF','Y');
