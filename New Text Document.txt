@@ -110,7 +110,7 @@ ____________
 5 / GitBucket : https://jedbucket.oasisapp.services/login
 6 / Jira : https://jordan.oasisapp.services/dvlp/faces/Login.jsf
 7 / Github
-8 / Menaitch
+8 / Menaitch : https://mena.almurjanholding.com/MenaITech/application/hrms/mename/
 ____________          ____________          ____________
 1 / mouaths123
 2 / Mouath_1434323
