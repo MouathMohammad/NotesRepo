@@ -32,7 +32,12 @@ hotfix/OPD-387     :   Outpatient Clinic Sessions       | OPD:OpdSetup          
 
 hotfix/KFHTP-282   :   Users and Sessions               | Security:UsersAndSessions   //  add the filter to the table by work entity, Work Entity Description display work entity in the table and LOV
 
+hotfix/MCHNP-469   :   PMI Reports	                    | Reports:PMIReportsApp       //  add new section Patient Visits Count in PMI report 
 
+hotfix/MMP-3038    :   Physiotherapy Booking	        | Physiotherapy:PhysiotherapyProcessing   // make machine lov distinct and show machine no
+
+hotfix/KKNHP-257   :   Outpatient Reports	            | Reports:OPDReports            // add lov Report Format to Daily Months Cenus section
+   
 ___Bug___
 
 bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
@@ -52,17 +57,16 @@ Comments:
 
 Details : 
 
--add filter to the table by work entity , Work Entity Description
- display work entity in the table and LOV
+-add lov Report Format for OPD Outpatient Reports screen in section "Daily Months Cenus" 
 
-hotfix/KFHTP-282
+hotfix/KKNHP-257
 
 
 affected modules:
 
-Security:UsersAndSessions
+Reports:OPDReports
 
 
 commit Hash No:
 
-oasis-modules : 1701f99279b
+oasis-modules : b04d7a8ea83

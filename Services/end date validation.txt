@@ -1,0 +1,29 @@
+1000165
+
+
+11246
+
+
+
+End Date must be less than %s
+
+
+
+
+
+DECLARE
+v_error_no NUMBER;
+BEGIN
+oasis.set_hospital_id(1);
+v_error_no :=Add_Error_Msg('F','End Date must be less than {0}','End Date must be less than {0}');
+dbms_output.put_line('v_error_no='||v_error_no);
+END;
+
+
+v_error_no=14556
+
+
+
+
+
+exec Add_Resource_Key('LOGINENTITIESTF_LOGINENTITIES_TABLE_WORK_ENTITY','Work Entity','Work Entity','/WEB-INF/com/balsam/oasis/usersandsessions/taskflows/LoginEntitiesTF.xml#LoginEntitiesTF');
