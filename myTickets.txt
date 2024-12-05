@@ -38,6 +38,11 @@ hotfix/MMP-3038    :   Physiotherapy Booking	        | Physiotherapy:Physiothera
 
 hotfix/KKNHP-257   :   Outpatient Reports	            | Reports:OPDReports            // add lov Report Format to Daily Months Cenus section
    
+hotfix/KFAFP-1457  :   OR Reports Verification	        | OperatingRooms:OperatingRoomsProcessing // add new filed amended by in Report details  popup for Verification Report Table
+                                                                                                      sync EO OperatingReports to DB and added new columns (CreatedByUser, CreationDate)
+
+hotfix/SAGHP-111   :   Outpatient Reports	            | Reports:OPDReports            // remove the Appointment Date column from Excel sheet
+
 ___Bug___
 
 bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
@@ -57,9 +62,9 @@ Comments:
 
 Details : 
 
--add lov Report Format for OPD Outpatient Reports screen in section "Daily Months Cenus" 
+-remove the Appointment Date column from Excel sheet
 
-hotfix/KKNHP-257
+hotfix/SAGHP-111
 
 
 affected modules:
@@ -69,4 +74,4 @@ Reports:OPDReports
 
 commit Hash No:
 
-oasis-modules : b04d7a8ea83
+oasis-modules : fa3c0637675

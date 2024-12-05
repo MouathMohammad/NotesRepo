@@ -581,4 +581,8 @@ ________________________________________________________________________________
 
 OasisModelUtils.getInstance().displayStaffName(staffId, formate ('LONG' or 'SHORT'))
 
-//get staff name by id in transiate attribute
+//get staff name by staff id in transiate attribute
+
+OasisModelUtils.getInstance().displayStaffNameByUser(staffId, formate ('LONG' or 'SHORT'))
+
+//get staff name by user id
