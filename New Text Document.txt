@@ -261,7 +261,7 @@ import groovy.transform.TypeChecked
 TransientValueExpression
 @TypeChecked(TypeCheckingMode.SKIP)
 
-
+RULES for patient show LONGPATNAMEPATTRN
 _________________Common__________________
 
 _Model_
@@ -811,6 +811,9 @@ width:100%
 AFStretchWidth
 margin:10px; font-size:large;  font-weight:bold;
 
+
+width: 80px
+min-width: 80px
 
 get user name :
 
@@ -1834,8 +1837,8 @@ ______________________
 
 
 salary : 1,168
-Other 200(11.5 card + 20 internet + 6 hair + 25 perfume + 6 deodorant +
-          2.5 shampoo + 15 club + 114 o)
+Other 100(11.5 card + 20 internet + 6 hair+ 6 deodorant +
+          2.5 shampoo + 20 car + 44 o)
 
 (
 ##1##
@@ -1894,8 +1897,8 @@ Bank  7,614
 wallet 200
 Bank  7,920
 ##12##
-/1,168 - 275 = 893
--50 home - 400 jm3eh= 443 -o 200 - 100 batool = 143
+/1,168 - 375 = 793
+-50 home - 400 jm3eh= 343 -o 100 - 100 batool = 143
 wallet 525
 Bank  7,653
 )
@@ -1914,8 +1917,8 @@ _2024_ >> 694 | 1,168
 375
 275-30
 175-30-(-100 o) = 45
-275
-= 7,151
+375
+= 7,251
 
 *
 _(1)_  - 20 Adam Teacher - 163 Car Training - 20 Help Peaple - 27 Medicine = 230
@@ -1934,13 +1937,13 @@ _(11)_ - 0 non  = 0
 _(12)_ - 0  = 0
  > 1,946
 
-= #5,205#
+= #5,305#
 
-______________________
-
-total : 9,347 ==> 14,552
-______________________
-
+_______________________
+                       
+total : 9,347 ==> 14,652
+_______________________
+                       
 
 <2024>
 
@@ -1956,14 +1959,14 @@ _(10) _ 100 Cocheh + 20 Juice + 10 Brochures + 110 Knafeeh + 60 Mathoon + 40 Ben
 
 Mahmoud 
 
-3585 - 850 mom mony = 2735
+3,585 - 850 mom mony = 2,735
 
 ______________________
 
-total : 14,552 - 3,590 (b,c) - 2,735 m = 8,227
+total : 14,652 - 3,590 (b,c) - 2,735 m = 8,327
 ______________________
 
-summary total amount: 8,227
+summary total amount: 8,327
 
 
 

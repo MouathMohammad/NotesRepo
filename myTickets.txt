@@ -43,9 +43,25 @@ hotfix/KFAFP-1457  :   OR Reports Verification	        | OperatingRooms:Operatin
 
 hotfix/SAGHP-111   :   Outpatient Reports	            | Reports:OPDReports            // remove the Appointment Date column from Excel sheet
 
+hotfix/KFAFP-1083  :   Maintain Work Entities	        | Utilities:Utilities           // add new filed name "Online Booking Cons Type"  to the Clinical Data section and Work Entities EO for the Maintain Work Entities page
+
+hotfix/KFHTP-316   :   Staff Type                       | Personnel:Personnel           // swap the label for Booking Waiting with Book Walking
+
+feature/PMI-397     :  Physician Worklist	            | EmrApplication:PatientHeader
+                                                          EmrApplication:PatientsList   //  hidden fields (not important) are displayed in the problems button
+                       
+					   Patient Search	                | PatientMasterIndex:PMI
+
+feature/KFAFP-1186  :  Referrals Dashboard              | Referrals:ReferralDashboard   // add action patient record to show patient info details
+           
 ___Bug___
 
 bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
+
+bugfix/AM-305     :   Outpatient Clinic Sessions       | OPD:OpdSetup                
+				   
+					   Physiotherapy Clinic Sessions    | Physiotherapy:PhysiotherapySetup // fixed issue making validator work with value change listener successfully
+					   Renal Clinics Sessions
 
 
 Own Ticket:
@@ -62,16 +78,26 @@ Comments:
 
 Details : 
 
--remove the Appointment Date column from Excel sheet
+-add action patient record to show patient info details
 
-hotfix/SAGHP-111
+feature/KFAFP-1186
 
 
 affected modules:
 
-Reports:OPDReports
+Referrals:ReferralDashboard
 
 
 commit Hash No:
 
-oasis-modules : fa3c0637675
+oasis-modules : e22cb4f6d7d17c4e5ce8132cdffaaf2541fac10c
+oasis-common  : d4f78c2a8d2a0b46dd4b001b5fe99306ada128ce
+
+
+_______________________________________
+
+
+
+feature/EMR-2578   -> feature/EMR-2578-new
+
+hotfix/MMP-3038    -> feature/MMP-3038-new
