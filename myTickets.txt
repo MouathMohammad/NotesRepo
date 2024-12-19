@@ -48,7 +48,7 @@ hotfix/KFAFP-1083  :   Maintain Work Entities	        | Utilities:Utilities     
 hotfix/KFHTP-316   :   Staff Type                       | Personnel:Personnel           // swap the label for Booking Waiting with Book Walking
 
 feature/PMI-397     :  Physician Worklist	            | EmrApplication:PatientHeader
-                                                          EmrApplication:PatientsList   //  hidden fields (not important) are displayed in the problems button
+                                                          EmrApplication:PatientsList   //  hidden fields (not important warning) are displayed in the problems button
                        
 					   Patient Search	                | PatientMasterIndex:PMI
 
