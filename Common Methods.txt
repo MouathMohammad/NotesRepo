@@ -587,3 +587,15 @@ OasisModelUtils.getInstance().displayStaffNameByUser(staffId, formate ('LONG' or
 
 //get staff name by user id
 
+
+#{viewScope.systemCodesBean.onExit}
+
+    private String getManageSystemCodesPagePath() {
+            return "/WEB-INF/com/balsam/oasis/systemcodes/ManageSystemCodes.jsff";
+        }
+
+        public void onExit() {
+            PageDefinitionImpl.findPageDefinition(getManageSystemCodesPagePath()).releaseDataControl("SystemCodesAMDataControl");
+        }
+
+//finalizer TF to fixed catching filter when changing page from menu

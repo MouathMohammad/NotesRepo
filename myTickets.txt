@@ -47,7 +47,7 @@ hotfix/KFAFP-1083  :   Maintain Work Entities	        | Utilities:Utilities     
 
 hotfix/KFHTP-316   :   Staff Type                       | Personnel:Personnel           // swap the label for Booking Waiting with Book Walking
 
-feature/PMI-397     :  Physician Worklist	            | EmrApplication:PatientHeader
+feature/PMI-397-new2     :  Physician Worklist	            | EmrApplication:PatientHeader
                                                           EmrApplication:PatientsList   //  hidden fields (not important warning) are displayed in the problems button
                        
 					   Patient Search	                | PatientMasterIndex:PMI
@@ -65,7 +65,7 @@ bugfix/AM-305     :   Outpatient Clinic Sessions       | OPD:OpdSetup
 
 
 Own Ticket:
-__________
+__________ 
 
 Udemy : Master Spring Boot 3 & Spring Framework 6 with Java    | IW-372
 
@@ -78,20 +78,21 @@ Comments:
 
 Details : 
 
--add action patient record to show patient info details
+-fixed issue (make the Problems button disable if it's empty)
 
-feature/KFAFP-1186
+feature/PMI-397
 
 
 affected modules:
 
-Referrals:ReferralDashboard
-
+EmrApplication:PatientHeader
+EmrApplication:PatientsList
+PatientMasterIndex:PMI
 
 commit Hash No:
 
-oasis-modules : e22cb4f6d7d17c4e5ce8132cdffaaf2541fac10c
-oasis-common  : d4f78c2a8d2a0b46dd4b001b5fe99306ada128ce
+oasis-modules : 12ee56753e5725e840fa6d9fa1f6d7a8a93e402e
+oasis-common  : bfc03ecfe095c964893efc1e71511a6121496ef4
 
 
 _______________________________________
