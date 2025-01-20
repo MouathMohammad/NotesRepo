@@ -53,9 +53,16 @@ feature/PMI-397-new2     :  Physician Worklist	            | EmrApplication:Pati
 					   Patient Search	                | PatientMasterIndex:PMI
 
 feature/KFAFP-1186  :  Referrals Dashboard              | Referrals:ReferralDashboard   // add action patient record to show patient info details
+<<<<<<< HEAD
            
 bugfix/AM-306       :  Home Page : Forgot password      | Oasis:main                    //fixed issue in user not exist validation
 
+=======
+          
+bugfix/AM-306       :  Home Page : Forgot password      | Oasis:main                    //fixed issue in reset password page (user name not exist validation)
+
+		  
+>>>>>>> f4bf54ac164e523f31f8fdcb633b17705dda6fb5
 ___Bug___
 
 bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
