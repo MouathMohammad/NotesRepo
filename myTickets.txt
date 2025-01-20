@@ -54,16 +54,19 @@ feature/PMI-397-new2     :  Physician Worklist	            | EmrApplication:Pati
 
 feature/KFAFP-1186  :  Referrals Dashboard              | Referrals:ReferralDashboard   // add action patient record to show patient info details
            
+bugfix/AM-306       :  Home Page : Forgot password      | Oasis:main                    //fixed issue in user not exist validation
+
 ___Bug___
 
 bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
 
-bugfix/AM-305     :   Outpatient Clinic Sessions       | OPD:OpdSetup                
+bugfix/AM-305      :   Outpatient Clinic Sessions       | OPD:OpdSetup                
 				   
 					   Physiotherapy Clinic Sessions    | Physiotherapy:PhysiotherapySetup // fixed issue making validator work with value change listener successfully
 					   Renal Clinics Sessions
 
-
+bugfix/OS-424      :   Maintain Teams	                | Security:MaintainTeams      //  fixed issue now we can add locations dependent to the ward 
+ 
 Own Ticket:
 __________ 
 
@@ -78,23 +81,21 @@ Comments:
 
 Details : 
 
--fixed issue (make the Problems button disable if it's empty)
+-fixed the issue in adding new work entity in the Team Allocation section
 
-feature/PMI-397
+bugfix/OS-424
 
 
 affected modules:
 
-EmrApplication:PatientHeader
-EmrApplication:PatientsList
-PatientMasterIndex:PMI
+Security:MaintainTeams
 
 commit Hash No:
 
-oasis-modules : 12ee56753e5725e840fa6d9fa1f6d7a8a93e402e
-oasis-common  : bfc03ecfe095c964893efc1e71511a6121496ef4
+oasis-modules : 4da754cb20b5709f0a1bf5626a19ff23cd3fd0e6
 
 
+		   
 _______________________________________
 
 
