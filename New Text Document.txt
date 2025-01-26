@@ -111,6 +111,7 @@ ____________
 6 / Jira : https://jordan.oasisapp.services/dvlp/faces/Login.jsf
 7 / Github
 8 / Menaitch : https://mena.almurjanholding.com/MenaITech/application/hrms/mename/
+9 / VM
 ____________          ____________          ____________
 1 / mouaths123
 2 / Mouath_1434323
@@ -120,6 +121,7 @@ ____________          ____________          ____________
 6 / user name : m.mohammad@oasissys.com |  pass : 12345678
 7 / user name : m.mohammad@oasissys.com |  pass : mouaths123
 8 / user name : 900285 |  pass : MErw5Xqu4Y | MURJAN
+9 / user name : .\BHC7 |  pass : M@!123456
 
 
 OTSearchFilterPVO
@@ -1983,8 +1985,8 @@ ________________________________2025__________________________________________
 
 salary : 1,251
 
-Other 100(11.5 card + 20 internet + 6 hair + 6 deodorant +
-          2.5 shampoo + 54 o)
+Other 100(11.5 card + 19 internet + 6 hair + 5 deodorant +
+          2.5 shampoo + 56 o)
 		  
 (
 ##1##
