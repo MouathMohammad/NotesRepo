@@ -47,7 +47,7 @@ hotfix/KFAFP-1083  :   Maintain Work Entities	        | Utilities:Utilities     
 
 hotfix/KFHTP-316   :   Staff Type                       | Personnel:Personnel           // swap the label for Booking Waiting with Book Walking
 
-feature/PMI-397-new2     :  Physician Worklist	            | EmrApplication:PatientHeader
+feature/PMI-397-new2:  Physician Worklist	            | EmrApplication:PatientHeader
                                                           EmrApplication:PatientsList   //  hidden fields (not important warning) are displayed in the problems button
                        
 					   Patient Search	                | PatientMasterIndex:PMI
@@ -55,6 +55,10 @@ feature/PMI-397-new2     :  Physician Worklist	            | EmrApplication:Pati
 feature/KFAFP-1186  :  Referrals Dashboard              | Referrals:ReferralDashboard   // add action patient record to show patient info details
  
 bugfix/AM-306       :  Home Page : Forgot password      | Oasis:main                    //fixed issue in user not exist validation
+
+feature/KFHBP-280   :  Users and Sessions	            | Security:UsersAndSessions     // Add a new section: and narrative and move the birth date beside staff ID
+
+feature/KAHTP-703   :  Physician Worklist               | EmrApplication:Oprations      // change the title name of the operation to Procedures, also add resource key for title label section "Manage Diagnosis History"
 
 ___Bug___
 
@@ -81,18 +85,18 @@ Comments:
 
 Details : 
 
--fixed the issue in adding new work entity in the Team Allocation section
+-change the title name of the operation to Procedures
 
-bugfix/OS-424
+feature/KAHTP-703
 
 
 affected modules:
 
-Security:MaintainTeams
+EmrApplication:Oprations
 
 commit Hash No:
 
-oasis-modules : 4da754cb20b5709f0a1bf5626a19ff23cd3fd0e6
+oasis-modules : 0cf439466e143611b59b1b05e7cd1faab08a35e2
 
 
 		   
