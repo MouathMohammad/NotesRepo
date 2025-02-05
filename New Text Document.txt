@@ -112,6 +112,7 @@ ____________
 7 / Github
 8 / Menaitch : https://mena.almurjanholding.com/MenaITech/application/hrms/mename/
 9 / VM
+10/ VPN : Work PC
 ____________          ____________          ____________
 1 / mouaths123
 2 / Mouath_1434323
@@ -122,6 +123,7 @@ ____________          ____________          ____________
 7 / user name : m.mohammad@oasissys.com |  pass : mouaths123
 8 / user name : 900285 |  pass : MErw5Xqu4Y | MURJAN
 9 / user name : .\BHC7 |  pass : M@!123456
+10 / USER: mmouath | Pass: M24mouath@343
 
 
 OTSearchFilterPVO
