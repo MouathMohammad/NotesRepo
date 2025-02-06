@@ -1,0 +1,35 @@
+
+    /**
+     * @author : Mouath
+     * date : Friday, May 13, 2022
+     * desc : call popup to display the attachment
+     **/
+    public void showAttachment2(ActionEvent actionEvent) {
+
+        try {
+            dId =
+                (JSFUtils.resolveExpression("#{itemApproved.bindings.paramDid.inputValue}")) == null ?
+                (JSFUtils.resolveExpression("#{itemApproved.bindings.DId.inputValue}").toString()) :
+                (JSFUtils.resolveExpression("#{itemApproved.bindings.paramDid.inputValue}")).toString();
+            type = (JSFUtils.resolveExpression("#{itemApproved.bindings.AttachmentTypeCode.inputValue}").toString());
+
+            if ("pdf".equalsIgnoreCase(type)) {
+                type = "application/pdf";
+            } else if ("jpeg".equalsIgnoreCase(type) || "jpg".equalsIgnoreCase(type)) {
+                type = "image/jpeg";
+            } else if ("png".equalsIgnoreCase(type)) {
+                type = "image/png";
+            } else if ("docx".equalsIgnoreCase(type)) {
+                type = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+            } else if ("gif".equalsIgnoreCase(type)) {
+                type = "image/gif";
+            }
+            fileUrl = CommonUtil.getOhsHostPath() + "shc/rtf/browsefile?did=" + dId + "&contentType=" + type;
+//            System.out.println("file url: " + fileUrl);
+
+            CommonUtil.browseFile(new Integer(dId), type);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
