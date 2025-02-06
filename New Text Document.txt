@@ -1990,14 +1990,15 @@ Other 100(11.5 card + 19 internet + 6 hair + 5 deodorant +
 		  
 (
 ##1##
-/1,251 - 200 = 1,051
-50 home - 400 jm3eh - 210 home services - 41 car = 350 -o 200 = 150
+/1,251 - (200-65) = (1,051+6S5)
+50 home - 400 jm3eh - 210 home services - 41 car = (350+65) -o (200+35) = (150+30)
 wallet 350
 Bank  3,355
 ##2##
-/1,251 = 1,251
-wallet 0
-Bank  0
+/1,251 - 200 = 1,051
+50 home - 400 jm3eh - 210 home services - 41 car = 350 -o 200 = 150
+wallet 800
+Bank  1650
 ##3##
 /1,251 = 1,251
 wallet 0
@@ -2043,7 +2044,7 @@ Bank  0
 
 
 _2025_ >> 1,251
-200
+(200-65)+1700
 200
 200
 200

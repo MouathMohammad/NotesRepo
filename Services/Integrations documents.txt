@@ -1,0 +1,22 @@
+PatientClinicalDocsTF
+
+PatientClinicalDocsBean
+
+Integrationsdocuments
+
+SELECT 'Y' from PATIENT_CLINICAL_DOCS where rownum=1
+
+PatientClinicalDocsRVO
+
+select 
+pcd.CLINICAL_DOC_ID,
+pcd.PATIENT_ID,
+pcd.DOCUMENT_TYPE,
+pcd.TEXT,
+pcd.CONTENT,
+pcd.CONTENT_TYPE,
+pcd.STATUS,
+pcd.CREATION_DATE,
+pcd.HOSPITAL_ID
+from PATIENT_CLINICAL_DOCS pcd
+where pcd.PATIENT_ID = :pPatientId and pcd.HOSPITAL_ID = :pHospitalId
