@@ -605,3 +605,22 @@ ________________________________________________________________________________
 <af:convertDateTime pattern="#{userBean.dateFormat}"/>
 
 // date pattern
+
+________________________________________________________________________________________________________
+
+    public void resetCodesData(){
+        getCodesDataVO().clearViewCriterias();
+        getCodesDataVO().executeQuery();
+    }
+	
+// this method added in AM impl when we need refresh table with filtrable fields
+
+________________________________________________________________________________________________________
+
+    private static final String DIAGNOSIS_APPLICATION_MODULE = "ManageDiagnosisAMDataControl";
+
+private ManageDiagnosisAMImpl findDiagnosisAM() {
+    return (ManageDiagnosisAMImpl) CommonADFUtils.getApplicationModuleForDataControl(DIAGNOSIS_APPLICATION_MODULE);
+}
+
+// get AM from bean

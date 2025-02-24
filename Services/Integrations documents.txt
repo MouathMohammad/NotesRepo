@@ -20,3 +20,24 @@ pcd.CREATION_DATE,
 pcd.HOSPITAL_ID
 from PATIENT_CLINICAL_DOCS pcd
 where pcd.PATIENT_ID = :pPatientId and pcd.HOSPITAL_ID = :pHospitalId
+
+
+
+exec Add_Static_Maps022('DOC_FINAL','Final','Final');
+
+exec Add_Static_Maps022('DOC_PRELIMINARY','Preliminary','Preliminary');
+
+
+
+
+/WEB-INF/com/balsam/oasis/facessheet/Integrationsdocuments/PatientClinicalDocsTF.xml#PatientClinicalDocsTF
+
+
+
+
+exec Add_Resource_Key('PATIENTCLINICALDOCSTF_PATIENTCLINICALDOCS_SECTION_TITLE','Integrations Documents','Integrations Documents','/WEB-INF/com/balsam/oasis/facessheet/Integrationsdocuments/PatientClinicalDocsTF.xml#PatientClinicalDocsTF');
+exec Add_Resource_Key('PATIENTCLINICALDOCSTF_PATIENTCLINICALDOCS_DOCUMENTTYPE_FILTERLOV','Document Type','Document Type','/WEB-INF/com/balsam/oasis/facessheet/Integrationsdocuments/PatientClinicalDocsTF.xml#PatientClinicalDocsTF');
+exec Add_Resource_Key('PATIENTCLINICALDOCSTF_PATIENTCLINICALDOCS_DOCUMENTTYPE_COLUMN','Document Type','Document Type','/WEB-INF/com/balsam/oasis/facessheet/Integrationsdocuments/PatientClinicalDocsTF.xml#PatientClinicalDocsTF');
+exec Add_Resource_Key('PATIENTCLINICALDOCSTF_PATIENTCLINICALDOCS_STATUS_COLUMN','Status','Status','/WEB-INF/com/balsam/oasis/facessheet/Integrationsdocuments/PatientClinicalDocsTF.xml#PatientClinicalDocsTF');
+exec Add_Resource_Key('PATIENTCLINICALDOCSTF_PATIENTCLINICALDOCS_CREATIONDATE_COLUMN','Created Date','Created Date','/WEB-INF/com/balsam/oasis/facessheet/Integrationsdocuments/PatientClinicalDocsTF.xml#PatientClinicalDocsTF');
+exec Add_Resource_Key('PATIENTCLINICALDOCSTF_PATIENTCLINICALDOCS_OPEN_BTN','Open','Open','/WEB-INF/com/balsam/oasis/facessheet/Integrationsdocuments/PatientClinicalDocsTF.xml#PatientClinicalDocsTF');

@@ -60,6 +60,11 @@ feature/KFHBP-280   :  Users and Sessions	            | Security:UsersAndSession
 
 feature/KAHTP-703   :  Physician Worklist               | EmrApplication:Oprations      // change the title name of the operation to Procedures, also add resource key for title label section "Manage Diagnosis History"
 
+feature/MMP-3517    :  Physician Worklist               |  EmrApplication:FacesSheet   //  add new section Integrations Documents in faces sheet tap
+
+feature/OS-425      :  Clinic Users Privileges          | OPD:OpdUserAuthClinic         // make page show also work entity for Physiotherapy and Renal
+
+feature/MIS-340    
 ___Bug___
 
 bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
@@ -70,7 +75,10 @@ bugfix/AM-305      :   Outpatient Clinic Sessions       | OPD:OpdSetup
 					   Renal Clinics Sessions
 
 bugfix/OS-424      :   Maintain Teams	                | Security:MaintainTeams      //  fixed issue now we can add locations dependent to the ward 
- 
+
+bugfix/OS-426      :   System Codes	                    | Security:SystemCodes        //  make filterable table fileds reset when change master record 
+
+
 Own Ticket:
 __________ 
 
@@ -85,18 +93,18 @@ Comments:
 
 Details : 
 
--change the title name of the operation to Procedures
+-make filterable table fileds reset when change master record 
 
-feature/KAHTP-703
+bugfix/OS-426
 
 
 affected modules:
 
-EmrApplication:Oprations
+Security:SystemCodes
 
 commit Hash No:
 
-oasis-modules : 0cf439466e143611b59b1b05e7cd1faab08a35e2
+oasis-modules : 24d0ae10596614d0f5014db66c908ceb18c93852
 
 
 		   
