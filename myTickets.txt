@@ -64,7 +64,12 @@ feature/MMP-3517    :  Physician Worklist               |  EmrApplication:FacesS
 
 feature/OS-425      :  Clinic Users Privileges          | OPD:OpdUserAuthClinic         // make page show also work entity for Physiotherapy and Renal
 
-feature/MIS-340    
+feature/MIS-340     :
+
+feature/AZMHP-325   :
+
+feature/MOHP-115    :  Physician Worklist               |  EmrApplication:PatientHeader // Display patient international profile using IPS
+
 ___Bug___
 
 bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
@@ -93,19 +98,19 @@ Comments:
 
 Details : 
 
--make filterable table fileds reset when change master record 
-
-bugfix/OS-426
+-Display patient international profile using IPS
+-Add new column to patient master view "IPS_QR_CODE"
+feature/MOHP-115
 
 
 affected modules:
 
-Security:SystemCodes
+EmrApplication:PatientHeader
 
 commit Hash No:
 
 oasis-modules : 24d0ae10596614d0f5014db66c908ceb18c93852
-
+oasis-common  :  8fcc565067796d10da6529167b9200479f1dbe83
 
 		   
 _______________________________________
@@ -115,3 +120,8 @@ _______________________________________
 feature/EMR-2578   -> feature/EMR-2578-new
 
 hotfix/MMP-3038    -> feature/MMP-3038-new
+
+
+
+
+exec Add_Resource_Key('PATIENTHEADERTF_BASICINFO_DOCUMENTS_LINK_IPS_VIEWER','IPS Viewer','IPS Viewer','/WEB-INF/com/balsam/oasis/patientheader/PatientHeaderTF.xml#PatientHeaderTF');
