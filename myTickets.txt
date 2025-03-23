@@ -60,16 +60,23 @@ feature/KFHBP-280   :  Users and Sessions	            | Security:UsersAndSession
 
 feature/KAHTP-703   :  Physician Worklist               | EmrApplication:Oprations      // change the title name of the operation to Procedures, also add resource key for title label section "Manage Diagnosis History"
 
-feature/MMP-3517    :  Physician Worklist               |  EmrApplication:FacesSheet   //  add new section Integrations Documents in faces sheet tap
+feature/MMP-3517    :  Physician Worklist               |  EmrApplication:FacesSheet   //  add new section Integrations Documents in faces sheet tap "Integrations Documents"
 
 feature/OS-425      :  Clinic Users Privileges          | OPD:OpdUserAuthClinic         // make page show also work entity for Physiotherapy and Renal
 
-feature/MIS-340     :
+feature/MIS-340     :  Physician Worklist               |  EmrApplication:ManageDiagnosis // call 3m code finder to add diagnosis "Menu"
 
-feature/AZMHP-325   :
+feature/AZMHP-325   :  Physician Worklist               |  EmrApplication:ReleasedResults // Make report in section lab results dynamic by lab dep no "Lab Result"
 
-feature/MOHP-115    :  Physician Worklist               |  EmrApplication:PatientHeader // Display patient international profile using IPS
+feature/MOHP-115    :  Physician Worklist               |  EmrApplication:PatientHeader // Display patient international profile using IPS "Menu"
 
+feature/KFAFP-1627  :  Multiple Clinic Cancelation      |  OPD:OpdSetup                  // add check restrict user in tow queries the filter and the details table
+
+feature/ASTHP-252   :  Operating Rooms Reports	        |  Reports:ORReportsApp         // update query for Surgent Staff lov in section Operating Daily Report
+
+feature/MMP-3420    :  Physician Worklist               |  EmrApplication:FacesSheet    // make table return 10 records for section "Medication"
+
+feature/MMP-3674    :  Brand Generics	                |  Pharmacy:PharmacySetup       // add new field Scientific Code in Main Information section
 ___Bug___
 
 bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
@@ -98,20 +105,20 @@ Comments:
 
 Details : 
 
--Display patient international profile using IPS
--Add new column to patient master view "IPS_QR_CODE"
-feature/MOHP-115
+- add new field Scientific Code in Main Information section
+- add new column SCIENTIFIC_CODE to entity PhBrandGenericsData
+feature/MMP-3674
 
 
 affected modules:
 
-EmrApplication:PatientHeader
+Pharmacy:PharmacySetup
 
 commit Hash No:
 
-oasis-modules : 24d0ae10596614d0f5014db66c908ceb18c93852
-oasis-common  :  8fcc565067796d10da6529167b9200479f1dbe83
+oasis-modules : 07ab2324e14080f7181565185df127b4b45f502e
 
+oasis-common : 7cc037fa3b245a6f3030da63e8313f691317cf70
 		   
 _______________________________________
 

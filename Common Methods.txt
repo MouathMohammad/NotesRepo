@@ -624,3 +624,117 @@ private ManageDiagnosisAMImpl findDiagnosisAM() {
 }
 
 // get AM from bean
+
+________________________________________________________________________________________________________
+
+            <af:button text="#{messages['FACESHEET_LABRESULTS_PRINT_REPORT']}" id="b1" actionListener="#{viewScope.laboratoryResultsBean.printLabResultReport}" actionDelivery="clientServer" styleClass="icon fa-print">
+            <f:attribute name="LabId" value="#{noneRow.bindings.LabId.inputValue}"/>
+													
+        Object labIdObj = actionEvent.getComponent()
+                                     .getAttributes()
+                                     .get("LabId");
+									 
+//get value from table using attribute component
+
+
+
+________________________________________________________________________________________________________
+
+
+        StringBuilder script = new StringBuilder();
+        script.append(String.format("var byteCharacters = atob('%s'); ", Base64.getEncoder().encodeToString(data.toByteArray())))
+              .append("var contentType = '" + mimeType + "';")
+              .append("var byteArrays = []; ")
+              .append("for (let offset = 0; offset < byteCharacters.length; offset += 1024) { ")
+              .append("var slice = byteCharacters.slice(offset, offset + 1024); ")
+              .append("var byteNumbers = new Array(slice.length); ")
+              .append("for (let i = 0; i < slice.length; i++) { ")
+              .append("byteNumbers[=6i] = slice.charCodeAt(i); } ")
+              .append("var byteArray = new Uint8Array(byteNumbers); ")
+              .append("byteArrays.push(byteArray); } ")
+              .append("var blob = new Blob(byteArrays, {type: contentType}); ")
+              .append("var blobUrl = URL.createObjectURL(blob); ")
+              .append("window.open(blobUrl, '_blank'); ");
+        callJavaScriptFunction(script.toString());
+		
+//call javascript in java
+
+________________________________________________________________________________________________________
+
+    private String mrn;
+    private Date dob;
+    private String sex;
+
+PatientUtilsAMImpl.lookupForInstance((am) -> {
+            PatientInfoROVRow patientRow = am.findPatientInfoRow(patientId);
+            this.mrn = patientRow.getMrn();
+            this.sex = patientRow.getSex();
+            this.dob = patientRow.getDateOfBirth();
+});
+
+//get patient details by patient id 
+
+________________________________________________________________________________________________________
+
+adf.userSession.userData.opdCSRestrictedUser // HOW AD NEW ATTRIBUTE TO SESSION_DETAIL
+
+IN FiltersAMImpl add method :
+
+
+    @SuppressWarnings("unchecked")
+    public void prepareClinicSessions(){
+        getSession().getUserData().put("opdCSRestrictedUser", isRestrictedUser());
+    }
+	
+	    private String isRestrictedUser() {
+        StringBuilder query = new StringBuilder("SELECT ");
+        query.append("NVL (m6.restrict_clinic_flag, 'N') restrict_clinic_flag ")
+             .append("FROM maps006 m6 ")
+             .append("WHERE m6.user_id = ? ")
+             .append("AND m6.hospital_id = ? ");
+        CommonUserData commonUserData = CommonUserDataFactory.getCommonUserData();
+        return (String) executeQuery(query.toString(), commonUserData.getUserId(), commonUserData.getHospitalId());
+    }
+	
+	    
+    public Object executeQuery(String query , Object... params) {
+        Object result = null;
+        PreparedStatement st = getDBTransaction().createPreparedStatement(query, 1);
+        ResultSet rs = null;
+        try {
+            IntStream.rangeClosed(1, params.length).forEach((i) -> {
+                try {
+                    st.setObject(i, params[i - 1]);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            });
+            rs = st.executeQuery();
+            if (rs.next())
+                result = rs.getObject(1);
+            rs.close();
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+	
+	
+	adf.userSession.userData.opdCSRestrictedUser
+	
+// add new attribute to session to use it in bind variable\
+
+
+________________________________________________________________________________________________________
+
+
+CommonJSFUtils.showRequiredMessageInOasisListOfValues("os_lst_diag");
+
+//requires msg for lov by id 
+
+________________________________________________________________________________________________________
+
+this.orderedDate = new Date(new java.util.Date().getTime());
+
+//get date time

@@ -167,6 +167,7 @@ adf.userSession.userData.languageId	                                          Us
 adf.userSession.userData.workEntityId	                                      Used to get login user work entity Id	                                                        bigDecimal
 adf.userSession.userData.facilityId	                                          Used to get user facility id	                                                                bigDecimal
 adf.userSession.userData.hospitalId                                          Used to get user hospital Id 	                                                                bigDecimal
+adf.userSession.userData.hospitalId                                          Used to get user hospital Id 	                                                                bigDecimal
 adf.userSession.userData.fullMedRec	                                          used to get full medical paramters  refrenced in document by  P_FULL_MED_REC                  bigDecimal
 adf.userSession.userData.diagDivision	                                      used to get full medical paramters  refrenced in document by  P_DIAG_DIVISION	                bigDecimal
 adf.userSession.userData.signDivision	                                      used to get full medical paramters  refrenced in document by  P_SIGN_DIVISION	                bigDecimal
@@ -176,6 +177,9 @@ adf.userSession.userData.rules.getRuleValue( [Rule_Name] , [default_value] )  [T
 adf.userSession.userData.oasisUtils.[Method name ]	                          [used to access methods in OasisModelUtils ] --Need to skip validation in the expression 	    *
 adf.userSession.userData.hospPrivateFlag	                                  find work entity private flag	                                                                String
 adf.userSession.userData.oasisCodes.[Method name ]	                          [This used call methods in OasisCodesSingleton ] --Need to skip validation in the expression	
+adf.userSession.userData.rules.getRuleValue('OPDHIDESHORTDEPT','-1')
+adf.userSession.userData.rules.getRuleValue('OR_DEPARTMENT','-1')
+adf.userSession.userData.rules.getRuleValue('OR_ANESTHIA_TEAM','-1')
 
 add the following imports 
 import groovy.transform.TypeCheckingMode
@@ -2002,9 +2006,10 @@ Bank  3,355
 wallet 800
 Bank  1650
 ##3##
-/1,251 = 1,251
-wallet 0
-Bank  0
+/1,251 - 200 = 1,051
+50 home - 400 jm3eh - 200 home services - 41 car = 360 -o 210 = 150
+wallet 1200
+Bank  1240
 ##4##
 /1,251 = 1,251
 wallet 0
