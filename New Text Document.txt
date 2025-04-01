@@ -153,6 +153,29 @@ POPUP title for Oasis lov
 
 DETAILSTAFFTEAMTF_DETAILSTAFFTEAM_SEARCHSTAFFNAME
 
+
+Eman Billy Ttttt Burdine
+,	Female	
+44Y-10M
+Consultant	
+Ltc Wael Abdelkareem Ibrahim
+/	
+2nd
+
+Location	
+Icu/Ccu Ward
+Room No	
+ICU
+Bed No	
+ICU-6
+Mrn	
+00435133
+Patient Id	
+5000467
+
+
+
+
 ##GROOVY :
 __________
 
@@ -2001,19 +2024,23 @@ Other 100(11.5 card + 19 internet + 6 hair + 5 deodorant +
 wallet 350
 Bank  3,355
 ##2##
-/1,251 - 200 = 1,051
-50 home - 400 jm3eh - 200 home services - 41 car = 360 -o 210 = 150
+/1,251 - (200-175) = 1,051
+50 home - 400 jm3eh - 200 home services - 41 car = (360+175) -o (210+175) = 150
 wallet 800
-Bank  1650
+Bank  1,650
 ##3##
-/1,251 - 200 = 1,051
-50 home - 400 jm3eh - 200 home services - 41 car = 360 -o 210 = 150
-wallet 1200
-Bank  1240
+/1,251 - (500-145) = 1,051
+0 home - 200 jm3eh - 200 home services - 41 car = (360+145) -o (210+145) = 150
+wallet 1,200
+Bank  1,240
+
+// Start new plan with marriage new the salary for next month
+
 ##4##
-/1,251 = 1,251
-wallet 0
-Bank  0
+/1,251 - 250 = 1,001
+0 home - 400 jm3eh - 200 home services - 41 car = 360 -o 210 = 150
+wallet 700
+Bank  3,000
 ##5##
 /1,251 = 1,251
 wallet 0
@@ -2052,18 +2079,18 @@ Bank  0
 
 _2025_ >> 1,251
 (200-65)+1700
-200+1700
+(200-175)+1700
+(500-145)
+200
+200
+200,//4,515
 200
 200
 200
-200,//4,545
 200
 200
 200
-200
-200
-200
-= 5,745
+= 5,715
 
 *
 _(1)_  - 0 non  = 0
