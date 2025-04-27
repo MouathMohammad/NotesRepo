@@ -293,6 +293,20 @@ TransientValueExpression
 @TypeChecked(TypeCheckingMode.SKIP)
 
 RULES for patient show LONGPATNAMEPATTRN
+
+
+_________________React_____________________
+
+** add oasis common in react 
+
+npm install -g pnpm
+pnpm set registry http://192.168.55.212:30748
+pnpm install
+pnpm install vite
+pnpm run dev
+
+
+
 _________________Common__________________
 
 _Model_
@@ -2029,18 +2043,19 @@ Bank  3,355
 wallet 800
 Bank  1,650
 ##3##
-/1,251 - (500-145) = 1,051
-0 home - 200 jm3eh - 200 home services - 41 car = (360+145) -o (210+145) = 150
+/1,251 - (500-320) = 1,051
+0 home - 200 jm3eh - 200 home services - 41 car = (360+320) -o (210+320) = 150
 wallet 1,200
 Bank  1,240
-
-// Start new plan with marriage new the salary for next month
 
 ##4##
 /1,251 - 250 = 1,001
 0 home - 400 jm3eh - 200 home services - 41 car = 360 -o 210 = 150
 wallet 700
 Bank  3,000
+
+// Start new plan with marriage new the salary for next month
+
 ##5##
 /1,251 = 1,251
 wallet 0
@@ -2080,7 +2095,7 @@ Bank  0
 _2025_ >> 1,251
 (200-65)+1700
 (200-175)+1700
-(500-145)
+(500-320)
 200
 200
 200,//4,515
