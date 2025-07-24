@@ -77,6 +77,35 @@ feature/ASTHP-252   :  Operating Rooms Reports	        |  Reports:ORReportsApp  
 feature/MMP-3420    :  Physician Worklist               |  EmrApplication:FacesSheet    // make table return 10 records for section "Medication"
 
 feature/MMP-3674    :  Brand Generics	                |  Pharmacy:PharmacySetup       // add new field Scientific Code in Main Information section
+
+feature/KKNHP-530   :  Physician Worklist / PatientUtilsAMImpl  |  EmrApplication:PatientHeader  // When the user clicks on Order Management, I added a new precondition validation "Menu"
+
+feature/MMP-3233    :  Physician Worklist / Summary     | EmrApplication:FacesSheet    // add patient risk details in allergy popup 
+
+feature/OPD-392     :  SMS Events                       | OasisEvent:OasisEventSetup  // add new SMS Module OPD Treatment Room
+
+feature/OPD-393     :  Clinic Users Privileges	        | OPD:OpdUserAuthClinic         // make page show also work entity for OPD Treatment Room
+
+feature/OS-428      :  Users and Sessions	            | Security:UsersAndSessions     // update query for table users and filter LOV
+
+feature/MOHP-194    :  Patient Search                   | PatientMasterIndex:PMI      //   add new section ( Hajj Service ) in NHIC popup
+note : after add to beta and hotfixe also add to v9.3 and v9.4  ex : MOHP-194-tagv94                                                                                      update PatientInfo object
+
+feature/OPD-395     :  OPD Treatment Room Reports       | OpdTreatmentRoom:OpdTreatmentRoomProcessing      //   Add a new page, OPD Treatment Room Reports, with two sections
+                                                                                                                " Treatment Room Pick List Appointment" and "Treatment Room Appointments By Patient"
+
+feature/OPD-397     :  OPD Treatment Room WorkList      | OpdTreatmentRoom:OpdTreatmentRoomProcessing      //  Add a new page, OPD Treatment Room WorkList
+main : feature/MMP-1015
+                                                        | EmrApplication:FacesSheet
+feature/KFGHP-825   :  Physician Worklist               | EmrApplication:PatientHeader                     // make button "Diet Assignment" also show when patient attendance Type emergency and rule ERALLOWDIET or entity type renal "Menu"
+                                                        | Physiotherapy:PhysiotherapyProcessing
+
+feature/HADP-2823   :  Users and Sessions               | Security:UsersAndSessions                        // fixed issue when add new user and change facility             
+
+feature/AZMHP-447   :  Patient Search                   | PatientMasterIndex:PMI                           // Make the validation "Only English\Arabic Characters are allowed!" not work in unknown patient
+
+feature/MMP-3162    :  Cath Lab WorkList	            | OperatingRooms:OperatingRoomsProcessing          // show surgical safety checklist in Cath lab worklist
+
 ___Bug___
 
 bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
@@ -90,13 +119,16 @@ bugfix/OS-424      :   Maintain Teams	                | Security:MaintainTeams  
 
 bugfix/OS-426      :   System Codes	                    | Security:SystemCodes        //  make filterable table fileds reset when change master record 
 
+bugfix/KFGHP-839   :  Patient Search                   | PatientMasterIndex:PMI      //   fixed issue no parameters save wrong data
 
 Own Ticket:
 __________ 
 
-Udemy : Master Spring Boot 3 & Spring Framework 6 with Java    | IW-372
+Udemy : Master Spring Boot 3 & Spring Framework 6 with Java       | IW-372
 
-Book : OCA: Oracle Certified Associate Java SE 8               | IW-373
+Book : OCA: Oracle Certified Associate Java SE 8                  | IW-373
+
+Training : Spring Boot + React : Refactor Maintain Teams Service  | IW-393
 
 
 
@@ -105,21 +137,17 @@ Comments:
 
 Details : 
 
-- add new field Scientific Code in Main Information section
-- add new column SCIENTIFIC_CODE to entity PhBrandGenericsData
-feature/MMP-3674
 
+- show surgical safety checklist in Cath lab worklist
+
+feature/MMP-3162
 
 affected modules:
 
-Pharmacy:PharmacySetup
+OperatingRooms:OperatingRoomsProcessing
 
 commit Hash No:
-
-oasis-modules : 07ab2324e14080f7181565185df127b4b45f502e
-
-oasis-common : 7cc037fa3b245a6f3030da63e8313f691317cf70
-		   
+oasis-modules : 2f4d079fab2a293f723e036754019f7e0ca75f86
 _______________________________________
 
 
@@ -132,3 +160,9 @@ hotfix/MMP-3038    -> feature/MMP-3038-new
 
 
 exec Add_Resource_Key('PATIENTHEADERTF_BASICINFO_DOCUMENTS_LINK_IPS_VIEWER','IPS Viewer','IPS Viewer','/WEB-INF/com/balsam/oasis/patientheader/PatientHeaderTF.xml#PatientHeaderTF');
+
+
+
+
+
+

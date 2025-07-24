@@ -1,0 +1,69 @@
+com.balsam.oasis.opdtreatroomprocessing.model.opdtreatroomreports.services
+
+TreatmentRoomReportsAM
+
+
+
+TreatmentRoomLOV
+ViewLOV
+_____________________________
+
+
+
+
+OpdTreatmentRoomReportsTF
+
+OpdTreatPickListAppointmentTF
+
+OpdTreatAppointListByPatientTF
+
+Treatment Room Pick List Appointment
+
+onSelectTreatmentRoom
+onValueChangeTreatmentRoom
+
+
+
+exec Add_New_Task_Flow('TREATMENTROOMREPORTS','Treatment Room Reports','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatroomreportscard/OpdTreatRoomReportsCardTF.xml#OpdTreatRoomReportsCardTF','Y');
+_____________________________
+
+
+exec Add_Resource_Key('OPDTREATPICKLISTAPPOINTMENTTF_OPDTREATPICKLISTAPPOINTMENT_HEADER_TITLE','Treatment Room Pick List Appointment','Treatment Room Pick List Appointment','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatpicklistappointment/OpdTreatPickListAppointmentTF.xml#OpdTreatPickListAppointmentTF');
+exec Add_Resource_Key('OPDTREATPICKLISTAPPOINTMENTTF_OPDTREATPICKLISTAPPOINTMENT_TREATMENTROOM_FIELD','Treatment Room','Treatment Room','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatpicklistappointment/OpdTreatPickListAppointmentTF.xml#OpdTreatPickListAppointmentTF');
+exec Add_Resource_Key('OPDTREATPICKLISTAPPOINTMENTTF_OPDTREATPICKLISTAPPOINTMENT_FROMDATE_FIELD','From Date','From Date','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatpicklistappointment/OpdTreatPickListAppointmentTF.xml#OpdTreatPickListAppointmentTF');
+exec Add_Resource_Key('OPDTREATPICKLISTAPPOINTMENTTF_OPDTREATPICKLISTAPPOINTMENT_TODATE_FIELD','To Date','To Date','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatpicklistappointment/OpdTreatPickListAppointmentTF.xml#OpdTreatPickListAppointmentTF');
+exec Add_Resource_Key('OPDTREATPICKLISTAPPOINTMENTTF_OPDTREATPICKLISTAPPOINTMENT_VIEW_FIELD','View','View','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatpicklistappointment/OpdTreatPickListAppointmentTF.xml#OpdTreatPickListAppointmentTF');
+exec Add_Resource_Key('OPDTREATPICKLISTAPPOINTMENTTF_OPDTREATPICKLISTAPPOINTMENT_DESCTYPE_FIELD','Destination Type','Destination Type','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatpicklistappointment/OpdTreatPickListAppointmentTF.xml#OpdTreatPickListAppointmentTF');
+exec Add_Resource_Key('OPDTREATPICKLISTAPPOINTMENTTF_OPDTREATPICKLISTAPPOINTMENT_RUNREPORT_BTN','Run Report','Run Report','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatpicklistappointment/OpdTreatPickListAppointmentTF.xml#OpdTreatPickListAppointmentTF');
+exec Add_Resource_Key('OPDTREATPICKLISTAPPOINTMENTTF_OPDTREATPICKLISTAPPOINTMENT_WORKENTITY_COLUMN','Work Entity','Work Entity','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatpicklistappointment/OpdTreatPickListAppointmentTF.xml#OpdTreatPickListAppointmentTF');
+exec Add_Resource_Key('OPDTREATPICKLISTAPPOINTMENTTF_OPDTREATPICKLISTAPPOINTMENT_DESC_COLUMN','Description','Description','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatpicklistappointment/OpdTreatPickListAppointmentTF.xml#OpdTreatPickListAppointmentTF');
+
+
+
+exec Add_Resource_Key('OPDTREATAPPOINTLISTBYPATIENTTF_OPDTREATAPPOINTLISTBYPATIENT_HEADER_TITLE','Treatment Room Appointments By Patient','Treatment Room Appointments By Patient','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatappointlistbypatient/OpdTreatAppointListByPatientTF.xml#OpdTreatAppointListByPatientTF');
+exec Add_Resource_Key('OPDTREATAPPOINTLISTBYPATIENTTF_OPDTREATAPPOINTLISTBYPATIENT_TREATMENTROOM_FIELD','Treatment Room','Treatment Room','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatappointlistbypatient/OpdTreatAppointListByPatientTF.xml#OpdTreatAppointListByPatientTF');
+exec Add_Resource_Key('OPDTREATAPPOINTLISTBYPATIENTTF_OPDTREATAPPOINTLISTBYPATIENT_PATIENTID_FIELD','Patient Id','Patient Id','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatappointlistbypatient/OpdTreatAppointListByPatientTF.xml#OpdTreatAppointListByPatientTF');
+exec Add_Resource_Key('OPDTREATAPPOINTLISTBYPATIENTTF_OPDTREATAPPOINTLISTBYPATIENT_PATIENTMRN_FIELD','Patient MRN','Patient MRN','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatappointlistbypatient/OpdTreatAppointListByPatientTF.xml#OpdTreatAppointListByPatientTF');
+exec Add_Resource_Key('OPDTREATAPPOINTLISTBYPATIENTTF_OPDTREATAPPOINTLISTBYPATIENT_PATIENTNAME_FIELD','Patient Name','Patient Name','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatappointlistbypatient/OpdTreatAppointListByPatientTF.xml#OpdTreatAppointListByPatientTF');
+exec Add_Resource_Key('OPDTREATAPPOINTLISTBYPATIENTTF_OPDTREATAPPOINTLISTBYPATIENT_FROMDATE_FIELD','From Date','From Date','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatappointlistbypatient/OpdTreatAppointListByPatientTF.xml#OpdTreatAppointListByPatientTF');
+exec Add_Resource_Key('OPDTREATAPPOINTLISTBYPATIENTTF_OPDTREATAPPOINTLISTBYPATIENT_TODATE_FIELD','To Date','To Date','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatappointlistbypatient/OpdTreatAppointListByPatientTF.xml#OpdTreatAppointListByPatientTF');
+exec Add_Resource_Key('OPDTREATAPPOINTLISTBYPATIENTTF_OPDTREATAPPOINTLISTBYPATIENT_VIEW_FIELD','View','View','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatappointlistbypatient/OpdTreatAppointListByPatientTF.xml#OpdTreatAppointListByPatientTF');
+exec Add_Resource_Key('OPDTREATAPPOINTLISTBYPATIENTTF_OPDTREATAPPOINTLISTBYPATIENT_DESCTYPE_FIELD','Destination Type','Destination Type','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatappointlistbypatient/OpdTreatAppointListByPatientTF.xml#OpdTreatAppointListByPatientTF');
+exec Add_Resource_Key('OPDTREATAPPOINTLISTBYPATIENTTF_OPDTREATAPPOINTLISTBYPATIENT_RUNREPORT_BTN','Run Report','Run Report','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatappointlistbypatient/OpdTreatAppointListByPatientTF.xml#OpdTreatAppointListByPatientTF');
+exec Add_Resource_Key('OPDTREATAPPOINTLISTBYPATIENTTF_OPDTREATAPPOINTLISTBYPATIENT_WORKENTITY_COLUMN','Work Entity','Work Entity','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatappointlistbypatient/OpdTreatAppointListByPatientTF.xml#OpdTreatAppointListByPatientTF');
+exec Add_Resource_Key('OPDTREATAPPOINTLISTBYPATIENTTF_OPDTREATAPPOINTLISTBYPATIENT_DESC_COLUMN','Description','Description','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatroomreports/opdtreatappointlistbypatient/OpdTreatAppointListByPatientTF.xml#OpdTreatAppointListByPatientTF');
+
+
+
+
+DECLARE
+v_error_no NUMBER;
+BEGIN
+oasis.set_hospital_id(1);
+v_error_no :=Add_Error_Msg('F','Are you sure you want to mark this appointment as No-Show ?','Are you sure you want to mark this appointment as No-Show ?');
+dbms_output.put_line('v_error_no='||v_error_no);
+END;
+
+
+
+v_error_no=14728

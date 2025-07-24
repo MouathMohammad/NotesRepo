@@ -674,6 +674,35 @@ PatientUtilsAMImpl.lookupForInstance((am) -> {
 
 //get patient details by patient id 
 
+OR //in imp by transient 
+
+
+    public String getPatientMrn() {
+        BigDecimal patientId = getPatientId();
+        if (patientId != null) {
+            Key key = new Key(new Object[] { CommonUserDataFactory.getCommonUserData().getHospitalId(), patientId });
+            PatientMasterImpl entity =
+                (PatientMasterImpl) PatientMasterImpl.getDefinitionObject().findByPrimaryKey(getDBTransaction(), key);
+            if (entity != null)
+                return entity.findActiveMrn();
+        }
+        return (String) getAttributeInternal(PATIENTMRN);
+    }
+	
+	
+	public String getPatientName() {
+        return Optional.ofNullable(getPatientId())
+                       .map(id -> OasisModelUtils.getInstance().displayPatientName(id, "LONG"))
+                       .orElse((String) getAttributeInternal(PATIENTNAME));
+    }
+	
+	public String getStaffName() {
+        return Optional.ofNullable(getStaffId())
+                       .map(id -> OasisModelUtils.getInstance().displayStaffName(id, "LONG"))
+                       .orElse((String) getAttributeInternal(PATIENTNAME));
+    }
+	
+//get nrm and patient name by patient id and staff name by staff id in transient att
 ________________________________________________________________________________________________________
 
 adf.userSession.userData.opdCSRestrictedUser // HOW AD NEW ATTRIBUTE TO SESSION_DETAIL
@@ -722,8 +751,31 @@ IN FiltersAMImpl add method :
 	
 	
 	adf.userSession.userData.opdCSRestrictedUser
+
+OR
+
+
+
+    @SuppressWarnings("unchecked")
+    public void prepareClinicSessions(){
+        getSession().getUserData().put("opdTreRoRestrictedUser", getRestrictClinicFlag());
+    }
+    
+    private String getRestrictClinicFlag() {
+        return Optional.ofNullable(CommonUserDataFactory.getCommonUserData().getUserId())
+                       .map(id -> Maps006Impl.createPrimaryKey(CommonUserDataFactory.getCommonUserData().getHospitalId(), id))
+                       .map(key -> Maps006Impl.getDefinitionObject().findByPrimaryKey(getDBTransaction(), key))
+                       .map(Maps006Impl.class::cast)
+                       .map(Maps006Impl::getRestrictClinicFlag)
+                       .orElse("N");
+    }
 	
-// add new attribute to session to use it in bind variable\
+	
+adf.userSession.userData.opdTreRoRestrictedUser
+
+
+
+// add new attribute to session to use it in bind variable
 
 
 ________________________________________________________________________________________________________
@@ -738,3 +790,98 @@ ________________________________________________________________________________
 this.orderedDate = new Date(new java.util.Date().getTime());
 
 //get date time
+
+
+
+
+###########################################Spring Boot#########################################################
+
+    private final RowMapper<PatientDevice> patientDeviceRowMapper = (rs, rowNum) -> {
+        PatientDevice device = new PatientDevice();
+        device.setPlatform(rs.getString("PLATFORM"));
+        device.setDeviceToken(rs.getString("DEVICE_TOKEN"));
+        return device;
+    };
+	
+	
+	public List<PatientDevice> findByPatientId(Long patientId) {
+        String sql = "SELECT * FROM APP_PATIENT_DEVICES WHERE PATIENT_ID = ?";
+        return jdbcTemplate.query(sql, patientDeviceRowMapper, patientId);
+    }
+
+// how using jdbcTemplate with RowMapper class
+________________________________________________________________________________________________________
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+			<version>2.2.6.RELEASE</version>
+		</dependency>
+    </dependencies>
+
+	<repositories>
+		<repository>
+			<id>oasis-repo</id>
+			<name>oasis-repo</name>
+			<url>https://mvn.oasisapp.services/releases</url>
+		</repository>
+	</repositories>
+	
+	<dependency>
+  <groupId>com.balsam.oasis.common</groupId>
+  <artifactId>oasis-common</artifactId>
+  <version>81</version>
+   </dependency>
+   
+// common repo
+________________________________________________________________________________________________________
+
+
+
+OasisCodesSingleton.getInstance().findCodeByUserCode(BigDecimal.valueOf(5L), userCode, hospitalId)
+
+//get code in bean by user code
+
+________________________________________________________________________________________________________
+
+
+ <af:setPropertyListener from="trMnPage" to="#{sharedLookupBean.rerenderIds}"
+   type="valueChange"/>
+   
+//refresh when valueChange on page source
+   
+________________________________________________________________________________________________________
+
+add lib to page :
+
+ xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+ 
+ ex: 
+ 
+    disabled="#{fn:containsIgnoreCase(row.PatName1,sharedLookupBean.ruleValue['UNKNOWNPATNAME1,NAN'])}
+ 
+ 
+// add function direct to page without transient attribute
+ 
+________________________________________________________________________________________________________
+
+
+        DraftsDiagnosisVOImpl vo = findDiagnosisAM().getDraftsDiagnosisVO();
+        RowSetIterator rsIter = vo.createRowSetIterator(null);
+        rsIter.reset();
+
+        while (rsIter.hasNext()) {
+            System.out.println(" in_looping ....");
+            DraftsDiagnosisVORowImpl row = (DraftsDiagnosisVORowImpl) rsIter.next();
+            String status = row.getStatus();
+            if (status != null || "Q".equals(status)) {
+                if (row.getActiveUntilDate() != null)
+                    row.setStatus("I");
+                else
+                    row.setStatus("A");
+            }
+        }
+		
+        rsIter.closeRowSetIterator();
+		
+// createRowSetIterator using RowSetIterator to loop to all records

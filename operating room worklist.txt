@@ -1,0 +1,34 @@
+#{pageFlowScope.entityType eq 'D' ? messages['OPERATINGROOMSTF_WORKLIST_LABEL_OPERATIONTIME']:                                                                                                         pageFlowScope.entityType eq 'Z' ? messages['DELIVERYROOMSTF_WORKLIST_LABEL_DELIVERYTIME']:                                                                                                         pageFlowScope.entityType eq 'J' ? messages['CATHLABROOMSTF_WORKLIST_LABEL_CATHLABTIME']:                                                                                                         pageFlowScope.entityType eq 'F'? messages['ENDOSCOPYROOMSTF_WORKLIST_LABEL_ENDOSCOPYTIME'] : ''}
+
+
+
+
+
+#{bindings.ChecklistDept.inputValue eq 'C' ? messages['SURGICALSAFETYCHECKLIST_SIGNOUT_SURGEON_CATHLABROOMSTF']: messages['SURGICALSAFETYCHECKLIST_SIGNOUT_SURGEON']}
+  
+  
+  SURGICALSAFETYCHECKLIST_SIGNIN_ANESSAFETY
+  
+  
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_STEP3_CATHLABROOMSTF','Step 3: Before Patient Leaves Cath Lab Room','Step 3: Before Patient Leaves Cath Lab Room','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_SIGNIN_PROCEDURE_CATHLABROOMSTF','Procedure','Procedure','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_SIGNIN_PROCEDURESTMRK_CATHLABROOMSTF','Procedure Site Marked ?','Procedure Site Marked ?','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_SIGNIN_ANESSAFETY_CATHLABROOMSTF','Anesthesia Safety Checklist Complete ?','Anesthesia Safety Checklist Complete ?','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_RECEIVINGNURSE_CATHLABROOMSTF','Receiving Nurse','Receiving Nurse','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_ANESTHESIA_CATHLABROOMSTF','Anesthetist','Anesthetist','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_PERFORMSURGEON_CATHLABROOMSTF','Perform Surgeon','Perform Surgeon','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_TIMEOUT_SURGEONVERB_CATHLABROOMSTF','Sergion, Anesthesiologist and Nurse Verbally Confirm','Sergion, Anesthesiologist and Nurse Verbally Confirm','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_TIMEOUT_PROCEDURE_CATHLABROOMSTF','Procedure','Procedure','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_TIMEOUT_SURGEONREVIEWS_CATHLABROOMSTF','SURGION REVIEWS: what are the critical or unexpected events, operative duration, anticipated blood loss ?','SURGION REVIEWS: what are the critical or unexpected events, operative duration, anticipated blood loss ?','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_TIMEOUT_ANESREVIEWS_CATHLABROOMSTF','ANESTHESIA TEAM REVIEWS: are they any patient specific concerns ?','ANESTHESIA TEAM REVIEWS: are they any patient specific concerns ?','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_TIMEOUT_NURSINGREVIEWS_CATHLABROOMSTF','NURSING TEAM REVIEWS: has sterility (including indicator results) been confirmed ?','NURSING TEAM REVIEWS: has sterility (including indicator results) been confirmed ?','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_CIRCULATINGNURSE_CATHLABROOMSTF','Circulating Nurse','Circulating Nurse','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_NURSEVERBALL_CATHLABROOMSTF','NURSE VERBALLY CONFIRMS WITH THE TEAM:','NURSE VERBALLY CONFIRMS WITH THE TEAM:','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_NAMEOFPROCEDURE_CATHLABROOMSTF','The Name of The Procedure Recorded ?','The Name of The Procedure Recorded ?','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_SIGNOUT_SURGEONANESTHS_CATHLABROOMSTF','Surgeon, Anesthesiologist and Nurse Reviewed the Key Concerns for Recovery Management and Transfer of this Patient ?','Surgeon, Anesthesiologist and Nurse Reviewed the Key Concerns for Recovery Management and Transfer of this Patient ?','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+exec Add_Resource_Key('SURGICALSAFETYCHECKLIST_SIGNOUT_SURGEON_CATHLABROOMSTF','Surgeon','Surgeon','/WEB-INF/com/balsam/oasis/operatingroomsprocessing/worklist/surgicalsafetychecklist/SurgicalSafetyChecklistTF.xml#SurgicalSafetyChecklistTF');
+
+commit;

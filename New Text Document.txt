@@ -53,7 +53,6 @@ code license : 5DNAO6H9WK
 code discount : EDUPACK50
 
 
-
 ___________________________________BALSAM_______________________________________________________
 
 ##DataBase :
@@ -105,7 +104,7 @@ ____________
 
 1 / google email : m.mohammad@oasissys.com
 2 / office 365 : mouathahmad@itc.hu.edu.jo
-3 / widows user
+3 / windows user
 4 / Chat GPT
 5 / GitBucket : https://jedbucket.oasisapp.services/login
 6 / Jira : https://jordan.oasisapp.services/dvlp/faces/Login.jsf
@@ -1694,7 +1693,7 @@ O 30(10 card + 2 card aunt +3 hair +15 o)
 
 ##3##
 /555 - 255 = 300
-100 ho*me = 200-o 30 = 170
+100 home = 200-o 30 = 170
 
 ##4##
 /555 - (255 + 15) = 285

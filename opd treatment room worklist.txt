@@ -1,0 +1,82 @@
+|OPD Treatment Room Worklist|
+ ---------------------------
+
+opdtreatmentworklist, worklist , PhysiotherapyWorkListTF, PhysiotherapyWorkList, FilterSection, TableSectionTF, TableSection
+
+TreatmentRoomWorkListAM
+
+WorkListSharedParamsPVO : TreatmentRoom BigDecimal
+                          Locations BigDecimal
+						  PatientSearch String
+						  PatientId  BigDecimal
+						  StaffId    String
+                          SelectedDate Date						  
+						  
+TreatmentRoomForUserLOV, LocationsLOV, StaffLOV
+
+Search by Staff ID , Staff Name
+
+Search by patient MRN,id,names, phones, here...
+
+Mark as No-Show
+
+getEnableStartTreatment
+
+getEnableNoShow
+
+getTimeComplete
+
+
+***setTechRequired
+**open recoed param :   facesSheetParams.put("orderPage", "OM");
+
+Mark as No-Show
+
+Patient Episodes
+
+
+
+
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_FILTERSECTION_FIELD_TREATMENTROOM','Treatment Room','Treatment Room','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_FILTERSECTION_FIELD_LOCATIONS','Locations','Locations','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_FILTERSECTION_FIELD_STAFF','Staff','Staff','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_FILTERSECTION_TABLELOV_STAFF_TITLE','Search and Select : Staff','Search and Select : Staff','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_FILTERSECTION_TABLELOV_STAFF_STAFFID','Staff Id','Staff Id','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_FILTERSECTION_TABLELOV_STAFF_FULLNAME','Full Name','Full Name','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_FILTERSECTION_REFRESH_BTN','Refresh','Refresh','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_FILTERSECTION_TODAY_BTN','Today','Today','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_TABLESECTION_COLUMN_TIME','Time','Time','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_TABLESECTION_COLUMN_MRNNO','MRN No.','MRN No.','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_TABLESECTION_PATIENTNAME','Patient Name','Patient Name','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_TABLESECTION_COLUMN_AGE','Age','Age','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_TABLESECTION_COLUMN_SEX','Sex','Sex','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_TABLESECTION_COLUMN_LOCATIONS','Location','Location','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_TABLESECTION_COLUMN_STAFFNAME','Staff Name','Staff Name','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_TABLESECTION_COLUMN_SERVICES','Services','Services','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_TABLESECTION_COLUMN_ARRIVED','Arrived','Arrived','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_TABLESECTION_COLUMN_SEEN','Seen','Seen','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_TABLESECTION_COLUMN_COMPLETED','Completed','Completed','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_TABLESECTION_COLUMN_STATUS','Status','Status','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_TABLESECTION_APPOINTMWNTDETAILS_BTN','Appointment Details','Appointment Details','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_LINK_TIMEARRIVED','Time Arrived','Time Arrived','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_LINK_TIMESTARTED','Start Treatment','Start Treatment','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_LINK_NOSHOW','Mark as No-Show','Mark as No-Show','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_LINK_PATIENTRECORD','Patient Record','Patient Record','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_LINK_CHECKLIST','Check List','Check List','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_LINK_CLINICALNOTES','Clinical Notes','Clinical Notes','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_LINK_MAR','MAR','MAR','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_LINK_MANAGETASKS','Manage Tasks','Manage Tasks','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_LINK_ORDERDELIVERY','Order and Delivery','Order and Delivery','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_LINK_TIMECOMPLETE','Time Complete','Time Complete','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_APPOINTMWNTDETAILS_TITLE','Appointment Details','Appointment Details','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_RECORDOUTCOME_TITLE','Record Outcome','Record Outcome','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_EPISODES_TITLE','Patient Episodes','Patient Episodes','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_RECORDOUTCOME_STAFFNAME','Staff Name','Staff Name','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_RECORDOUTCOME_VISITOUTCOME','Visit Outcome','Visit Outcome','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_EPISODES_COLUMN_EPISODESNO','Episode No','Episode No','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_EPISODES_COLUMN_STARTDATE','Start Date','Start Date','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_EPISODES_COLUMN_ENDDATE','End Date','End Date','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_EPISODES_COLUMN_ATTENDANCE','Attendance','Attendance','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_EPISODES_COLUMN_SERVICEDEPT','Service Department','Service Department','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
+exec Add_Resource_Key('OPDTREATMENTROOMWORKLISTTF_EPISODES_COLUMN_SELECT_BTN','Select','Select','/WEB-INF/com/balsam/oasis/opdtreatmentroomprocessing/opdtreatmentroomworklist/OpdTreatmentRoomWorkListTF.xml#OpdTreatmentRoomWorkListTF');
