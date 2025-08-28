@@ -98,13 +98,26 @@ feature/OPD-397     :  OPD Treatment Room WorkList      | OpdTreatmentRoom:OpdTr
 main : feature/MMP-1015
                                                         | EmrApplication:FacesSheet
 feature/KFGHP-825   :  Physician Worklist               | EmrApplication:PatientHeader                     // make button "Diet Assignment" also show when patient attendance Type emergency and rule ERALLOWDIET or entity type renal "Menu"
-                                                        | Physiotherapy:PhysiotherapyProcessing
+                                                        | Physiotherapy:PhysiotherapyProcessing                *** delete "or entity type renal" and in renal and physiotherapy make the dite assignment show in work list and hidin in facesheet
 
 feature/HADP-2823   :  Users and Sessions               | Security:UsersAndSessions                        // fixed issue when add new user and change facility             
 
 feature/AZMHP-447   :  Patient Search                   | PatientMasterIndex:PMI                           // Make the validation "Only English\Arabic Characters are allowed!" not work in unknown patient
 
 feature/MMP-3162    :  Cath Lab WorkList	            | OperatingRooms:OperatingRoomsProcessing          // show surgical safety checklist in Cath lab worklist
+
+feature/MMP-4120    :  Physician Worklist	            | EmrApplication:PatientHeader                     // make "Insurance Status" show always even if no episode "Menu"
+                                                           Billing:Billing
+
+feature/MMC-169     :  Outpatient Reports               | Reports:OPDReports                               // update query for LOV LcAppointmentLOV "Work Entity"
+
+feature/MMP-3302    :  Physician Worklist / PatientUtilsAMImpl  |  EmrApplication:PatientHeader            // When the user clicks on Order Management, I updated a new precondition validation : 5- Validate Vital Signs "Menu"
+
+feature/MMP-3507    :  Physician Worklist / PatientUtilsAMImpl  |  EmrApplication:PatientHeader            // When the user clicks on Order Management, I added a new precondition validation : 6- Validate Diet Assignment "Menu"
+main : feature/MMP-3302
+
+feature/MMP-2954    :   Physician Worklist               |  EmrApplication:ManageDiagnosis                 // The system should not allow more than one primary diagnosis per episode
+
 
 ___Bug___
 
@@ -138,16 +151,18 @@ Comments:
 Details : 
 
 
-- show surgical safety checklist in Cath lab worklist
+- fixed teh issue and make the validation work in dataset module 
 
-feature/MMP-3162
+feature/MMP-2954
 
 affected modules:
 
-OperatingRooms:OperatingRoomsProcessing
+EmrApplication:ManageDiagnosis
 
 commit Hash No:
-oasis-modules : 2f4d079fab2a293f723e036754019f7e0ca75f86
+oasis-modules : 33d7d230f52380875bdda26c5166de46b7971d9d
+
+oasis-common : 19ee65ac616c1ccd31d572dc1debff09e0073f31
 _______________________________________
 
 
@@ -164,5 +179,7 @@ exec Add_Resource_Key('PATIENTHEADERTF_BASICINFO_DOCUMENTS_LINK_IPS_VIEWER','IPS
 
 
 
+PCEHP-1205
 
 
+Work with Eng Salameh to get queries

@@ -885,3 +885,56 @@ ________________________________________________________________________________
         rsIter.closeRowSetIterator();
 		
 // createRowSetIterator using RowSetIterator to loop to all records
+
+________________________________________________________________________________________________________
+
+
+DECLARE
+  v_result NUMBER;
+BEGIN
+  v_result := Order_Utl.Validate_Diet_Assignment(123, 456, 'E', 789);
+  DBMS_OUTPUT.PUT_LINE('Result: ' || v_result);
+END;
+
+// call function in Toad
+
+________________________________________________________________________________________________________
+
+    private ManageDiagnosisAMImpl findDiagnosisAM() {
+        return (ManageDiagnosisAMImpl) CommonADFUtils.getApplicationModuleForDataControl(DIAGNOSIS_APPLICATION_MODULE);
+    }
+
+    private static final String DIAGNOSIS_APPLICATION_MODULE = "ManageDiagnosisAMDataControl";
+	
+//get AM impl by data control name
+
+________________________________________________________________________________________________________
+
+        Map params = new HashMap();
+        params.put("DescrptionVC", object);
+        executeOperation("ExecuteFoodSearch", params);
+		
+executeOperation using params
+
+________________________________________________________________________________________________________
+
+    public BigDecimal getDiagnosisDivisionVCA() {
+        final long codeType = 292;
+        AtomicReference<BigDecimal> diagnosisDivisionVCAAtomic = new AtomicReference<BigDecimal>();
+        final String sql =
+            "SELECT CODE \n" + "      FROM   CODES_DATA\n" + "      WHERE  CODE_TYPE = ? \n" +
+            "      AND    USER_CODE = 'DIAG'";
+
+        OasisModelUtils.getInstance().streamQuery(sql, new Object[] { codeType }, row -> {
+            if (row.get("CODE").get() != null) {
+                diagnosisDivisionVCAAtomic.set(new BigDecimal(row.get("CODE")
+                                                                 .get()
+                                                                 .toString()));
+            }
+        });
+        diagnosisDivisionVCA = diagnosisDivisionVCAAtomic.get();
+        System.out.println(" [ diagnosisDivisionVCA :: " + diagnosisDivisionVCA + " ] ");
+        return diagnosisDivisionVCA;
+    }
+	
+get diagnosisDivision in bean

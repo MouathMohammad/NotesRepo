@@ -85,8 +85,11 @@ kubernetes
 
 https://192.168.55.212:32724/
 
+Token
 
 eyJhbGciOiJSUzI1NiIsImtpZCI6InpNZVFONzdFbWJySGdIck53cWpXLXRnZ2kxT2czYnUyUHk2WEw3eFRaQTgifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoyMDMxODA5NDgxLCJpYXQiOjE3MTY0NDk0ODEsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJyZWFkLXVzZXIiLCJ1aWQiOiJhZDNlNjE0YS1iMjJiLTQwZmQtOTAyYS0xM2Y0MTBjYmMzOTYifX0sIm5iZiI6MTcxNjQ0OTQ4MSwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmVybmV0ZXMtZGFzaGJvYXJkOnJlYWQtdXNlciJ9.FuOaZeDz-QDGtvpjvayt4iUxrFI_ellY8YAjAtLulmEwc-u9RdwT-LkCi9wj6VOXO9z402KYhhre8KB9Bp_mVLjm8sWlDYwdsIiU3VtQSVXuLKPOw78TqdV0r6zhJebDyu9vXUUfcngg6-hKa6MdR4-qr_gH4reWWVFZv1nEjBWx1NVv7qt52Gq6E5ygumiYQKqoL-Lieo-CUipgxgNQHDbt78o3oydeEYydqdTOY7qC6JBep2kb0VjYGI9Rpi4zKtBPz55nH_yCvY3mmHNcPiGzI8tEDy2tcva8W3KXrIDdCZE4xc-AJPFjagxNGZLfSiuLZvf1J2Mm-09KsDfZwA
+
+
 
 
 ##Tooles :
@@ -110,8 +113,9 @@ ____________
 6 / Jira : https://jordan.oasisapp.services/dvlp/faces/Login.jsf
 7 / Github
 8 / Menaitch : https://mena.almurjanholding.com/MenaITech/application/hrms/mename/
-9 / VM
+9 / VM (150, 151, 152 , 153)
 10/ VPN : Work PC
+11 / VM (98)
 ____________          ____________          ____________
 1 / mouaths123
 2 / Mouath_1434323
@@ -123,7 +127,7 @@ ____________          ____________          ____________
 8 / user name : 900285 |  pass : MErw5Xqu4Y | MURJAN
 9 / user name : .\BHC7 |  pass : M@!123456
 10 / USER: mmouath | Pass: M24mouath@343
-
+11 / USER: bhc\3madmin | Pass: P@$$w0rd@123
 
 OTSearchFilterPVO
 
