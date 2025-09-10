@@ -118,6 +118,13 @@ main : feature/MMP-3302
 
 feature/MMP-2954    :   Physician Worklist               |  EmrApplication:ManageDiagnosis                 // The system should not allow more than one primary diagnosis per episode
 
+feature/SDS-1231    :   Users and Sessions               | Security:UsersAndSessions                       // The system should not allow more than one primary diagnosis per episode
+                        Home Page : Forgot password      | Oasis:main
+
+feature/KAAHP-704   :   Outpatient Scheduling	         | OPD:OpdScheduling                               // Add new validation for create eligibility
+
+feature/MMP-4217    :   Outpatient Scheduling            | OPD:OpdScheduling                               // make validation validateMandatoryData work in view mode also
+main : feature/KAAHP-704
 
 ___Bug___
 
@@ -151,16 +158,16 @@ Comments:
 Details : 
 
 
-- fixed teh issue and make the validation work in dataset module 
+- make validation validateMandatoryData work in view mode also
 
-feature/MMP-2954
+feature/KAAHP-704
 
 affected modules:
 
-EmrApplication:ManageDiagnosis
+Outpatient Scheduling
 
 commit Hash No:
-oasis-modules : 33d7d230f52380875bdda26c5166de46b7971d9d
+oasis-modules : 9218b236a98baf706f294a2fcb2d103f1ce032c7
 
 oasis-common : 19ee65ac616c1ccd31d572dc1debff09e0073f31
 _______________________________________

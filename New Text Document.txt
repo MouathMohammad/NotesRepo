@@ -80,7 +80,6 @@ Web Logic IP : 192.168.55.145
 port : 7001
 http://192.168.55.145:7101/console
 
-
 kubernetes
 
 https://192.168.55.212:32724/
