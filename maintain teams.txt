@@ -248,3 +248,58 @@ exec Add_Resource_Key('DETAILSTAFFTEAMTF_TEAMALLOCATION_ATTBED','Att Bed','Att B
 TF :
 
 exec Add_New_Task_Flow('STAFFTEAMSTF','Staff Teams','/WEB-INF/com/balsam/oasis/maintain-team/MaintainTeamsTF.xml#MaintainTeamsTF','Y');
+
+
+________________________________________________________________________________________________________________________
+
+
+set JAVA_HOME=C:\Users\mouath\.jdks\openjdk-25.0.1
+set PATH=%JAVA_HOME%\bin;%PATH%
+
+# Check current Java
+java -version
+
+generate-project.cmd
+
+pom.xml : https://mvn.oasisapp.services/releases
+
+https://192.168.55.212:31407/releases
+
+create DTO automaticly by scripted extensions
+
+com.balsam.oasis.maintainteam.queries
+
+model
+    dto
+	valueobject
+	           TeamsDataRecord
+			   
+@Data
+		   
+@AllArgsConstructor
+@NoArgsConstructor
+
+@Transform(expression = "trtAppointmentId") // this oasis annotation
+@JsonProperty("LABEL")
+@JsonFormat(pattern = "HH:mm")
+@JsonFormat(pattern = "yyyy-MM-dd")
+
+**ApiError
+
+___
+com.balsam.oasis.maintainteam.repository
+
+MainTeamMasterRepository
+MainTeamDetailsRepository
+
+**osGenericRepository
+**OsQueryControlle
+r
+**OsQueryView
+
+/dev/opd-maintain-teams-service/api/v1/maintainTeam/getTeamsData
+
+
+http://localhost:8080/dev/maintain-team-service/api/v1/maintainTeam/getTeamsData
+
+

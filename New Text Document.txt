@@ -44,13 +44,22 @@ office 365:
 Arme123$
 Hu@25550
 
-intilij:
+intellij:
 mohammad.alfayez
 M0785525277
+
+intilij:
+3231801378@std.wise.edu.jo
+Kh_1434323
 
 code license : 5DNAO6H9WK
 
 code discount : EDUPACK50
+
+
+http://192.168.55.142:6693/GetPatInfo?providerType=NHIC&nid=1234567678&dob=05/05/2025
+
+
 
 
 ___________________________________BALSAM_______________________________________________________
@@ -60,11 +69,14 @@ ____________
 
 Env           Host        Port   Service Name | UserName
 _______|________________|______|______________|____________
-Dev    | 192.168.55.223  | 1521  | dvlpnrl    |  OASIS  
+Dev    | 192.168.55.223  | 1521  | dvlpnrl    |  OASIS          OasisConn
 
        | 192.168.55.10   | 1521  | jtest      |  sdsoasis
 	   
        | 192.168.55.10   | 1521  | rwdhp      |  oasis
+	   
+	   | 192.168.55.10   | 1521  | dvlpt      |  oasis
+
 
 jdbc/OasisConnDS
 
@@ -86,10 +98,14 @@ https://192.168.55.212:32724/
 
 Token
 
-eyJhbGciOiJSUzI1NiIsImtpZCI6InpNZVFONzdFbWJySGdIck53cWpXLXRnZ2kxT2czYnUyUHk2WEw3eFRaQTgifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoyMDMxODA5NDgxLCJpYXQiOjE3MTY0NDk0ODEsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJyZWFkLXVzZXIiLCJ1aWQiOiJhZDNlNjE0YS1iMjJiLTQwZmQtOTAyYS0xM2Y0MTBjYmMzOTYifX0sIm5iZiI6MTcxNjQ0OTQ4MSwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmVybmV0ZXMtZGFzaGJvYXJkOnJlYWQtdXNlciJ9.FuOaZeDz-QDGtvpjvayt4iUxrFI_ellY8YAjAtLulmEwc-u9RdwT-LkCi9wj6VOXO9z402KYhhre8KB9Bp_mVLjm8sWlDYwdsIiU3VtQSVXuLKPOw78TqdV0r6zhJebDyu9vXUUfcngg6-hKa6MdR4-qr_gH4reWWVFZv1nEjBWx1NVv7qt52Gq6E5ygumiYQKqoL-Lieo-CUipgxgNQHDbt78o3oydeEYydqdTOY7qC6JBep2kb0VjYGI9Rpi4zKtBPz55nH_yCvY3mmHNcPiGzI8tEDy2tcva8W3KXrIDdCZE4xc-AJPFjagxNGZLfSiuLZvf1J2Mm-09KsDfZwA
+eyJhbGciOiJSUzI1NiIsImtpZCI6InpNZVFONzdFbWJySGdIck53cWpXLXRnZ2kxT2czYnUyUHk2WEw3eFRaQTgifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzg5MzY5NDg1LCJpYXQiOjE3NTc4MzM0ODUsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiNWUyNWEyZDctYzJkMS00ZjcxLWE0ZmEtYmQwZDljMGU4ZDUwIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJyZWFkLXVzZXIiLCJ1aWQiOiI3ODkxMTcwYi02MTI3LTRlMzMtYmQyMS05ZTc4YTdiOWY4YzIifX0sIm5iZiI6MTc1NzgzMzQ4NSwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmVybmV0ZXMtZGFzaGJvYXJkOnJlYWQtdXNlciJ9.GVZMQE3mUjdmaJmWNaHZUTFekAqWkW4ALWna8d5hMHe6M4EpSLEw3ypAQgl1GGDCUYP7aw__p93VGtz4K2dTV5kZ5ZQclgcC2aale5hC-iqPLvboI72ExUC7Nseb-f3u3jp5Ba4RKxab5N0dVIhufKhX8PsL6Iado9N4BhFIzfRj2ZsR4TsGG1MZcImRaD0JOk-sBwo727uc870-i0arCXBKUEYpbWATb3K_J0Jf-AvnOgePlUZOhagKlTZIhmIZbhMeQgDaFPuJSiI9GC5XL_xnlidLH2CqtalDUZdrtWy-pfZ78qmoYK-pjSGXeXeR5OSzfQTXbn7nspH-CHAFUA
+
+                System.out.println("@# suffixedPassword : "+suffixedPassword);
 
 
+Token Beta
 
+eyJhbGciOiJSUzI1NiIsImtpZCI6IkFMVHVYelFFbXA1N0ExazM4cnFoSm1McW9NX2hiQmR3LTZlNjh0Rk9nTlkifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJyZWFkLXVzZXItdG9rZW4tNnY0bnEiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoicmVhZC11c2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiN2VlNTA0NjItNGQwZC00NWI5LThhYWEtMWUyODM4YmNmNjY3Iiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmVybmV0ZXMtZGFzaGJvYXJkOnJlYWQtdXNlciJ9.ayWMuN4VRO9fXLqX6NI8P2FZu7Pn9pt2aNfjZ0TNPARRfN9B8EvkZ2nZOvFkWqQwKDgjcTFzHXDzFPyBKOKm6ip3qPWO1EnBdvHN5KcDM29eV5yNi7VJLfOClwemFpNnswu2iTZf3nKzDtg4f-p_RbRXBJxgtdqHr28rxZi_yY_hlvYa1VP5GkCXYAZz0YTB70em6jGyzY2ceS3MPF3GKDvmkInwMqO-2xcajHzaNkNQx4fIAaa5qVYm2bdKU3fW1Fx9T7goy8AABt63M9k9Yb6aR3bCGtkbpaar1k7_EjtcC5aY8MHXKx5drHuN8MD-x4flbEmnS9__73p0YeizGA
 
 ##Tooles :
 ___________
@@ -114,7 +130,8 @@ ____________
 8 / Menaitch : https://mena.almurjanholding.com/MenaITech/application/hrms/mename/
 9 / VM (150, 151, 152 , 153)
 10/ VPN : Work PC
-11 / VM (98)
+11/ VM (98)
+12/ Rawam
 ____________          ____________          ____________
 1 / mouaths123
 2 / Mouath_1434323
@@ -127,6 +144,7 @@ ____________          ____________          ____________
 9 / user name : .\BHC7 |  pass : M@!123456
 10 / USER: mmouath | Pass: M24mouath@343
 11 / USER: bhc\3madmin | Pass: P@$$w0rd@123
+12 / USER: m.mohammad  | Pass: Moaad_1434323
 
 OTSearchFilterPVO
 
@@ -174,9 +192,10 @@ Mrn
 00435133
 Patient Id	
 5000467
+5295045
+5013894
 
-
-
+staff id : 01755
 
 ##GROOVY :
 __________
@@ -3154,3 +3173,8 @@ Practical Typescript
 
 
 C:\Users\mouath\Desktop\nodejc
+
+
+
+
+DSpellCheck

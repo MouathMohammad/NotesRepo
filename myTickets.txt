@@ -118,15 +118,78 @@ main : feature/MMP-3302
 
 feature/MMP-2954    :   Physician Worklist               |  EmrApplication:ManageDiagnosis                 // The system should not allow more than one primary diagnosis per episode
 
-feature/SDS-1231    :   Users and Sessions               | Security:UsersAndSessions                       // The system should not allow more than one primary diagnosis per episode
-                        Home Page : Forgot password      | Oasis:main
+feature/OS-431            :   Users and Sessions               | Security:UsersAndSessions                 // - make password disabled if the username is empty in the add screen and reset it when username changes (all scenarios)
+=> old SDS-1231 Home Page : Forgot password                    | Oasis:main
+                                                                 Security:GeneralSetup                        - stop validation of the password in the add and edit screens                 (rule N scenario)
+                                                                 HIM:HIMRequestFileAccess                     - Remove the upper case password statement in add and edit screens            (rule Y scenario)
+                                                                 Security:UserProfile                                             - add icon Password Policy in add and edit screens                            (rule Y scenario)
+                                                                                                              - call function for complixe password in add and edit screens                 (rule Y scenario)
+                                                                                                              - update the way to renew the expired password Date                           (all senario)
+
+
 
 feature/KAAHP-704   :   Outpatient Scheduling	         | OPD:OpdScheduling                               // Add new validation for create eligibility
 
 feature/MMP-4217    :   Outpatient Scheduling            | OPD:OpdScheduling                               // make validation validateMandatoryData work in view mode also
 main : feature/KAAHP-704
 
-___Bug___
+feature/MMP-4053    :  Physician Worklist               |  EmrApplication:FacesSheet                       // make patient Allergies are not restricted by the time filter
+
+feature/KFHBP-434   :  Patient Search                   |  PatientMasterIndex:MultipleNotesProcessing      // convert component for remove note from OASIS: ConfirmedAction to Button
+
+feature/ANHAP-57    :  PMI Reports	                    |  Reports:PMIReportsApp                           // edit format for dates
+
+feature/AMALP-386   :  Patient Search                   |  PatientMasterIndex:PMI                          // make basic section read the patien name data from PatientMaster instance of PatientMasterLang 
+
+feature/EMR-2725    :  Patient Search                   |  PatientMasterIndex:MultipleNotesProcessing      // Fixed the issue in the remove button
+
+feature/MMP-4187    :  Physician Worklist               |  PatientMasterIndex:PMI                          // - when open record patient from physition worklist check classify episode for the patient
+                                                           EmrApplication:CardiologyExams                     - we add new link in patient menu Classify Episode "Menu"
+                                                           EmrApplication:ClinicalNotes                       - update the queries for facesheet sections to hide patient data
+														   EmrApplication:Dataset				        	  - add new entity PatRestrictedEpisodeAccess
+                                                           EmrApplication:FacesSheet                          - add new common variables (CAN_RESTRICT_EPISOD, VIEW_RESTRICTED_EPISODES, VIEW_MULTINOTE_RESTRICTED_EP)
+                                                           EmrApplication:MedicalReport                       - put new common variables after login success in Home page
+                                                           EmrApplication:Oprations
+                                                           EmrApplication:OutpatientProcedures
+                                                           EmrApplication:PatientClinicalNotes
+                                                           EmrApplication:PatientHeader
+                                                           EmrApplication:PatientsList
+                                                           EmrApplication:RadiologyExams
+                                                           EmrApplication:ReleasedResults
+
+feature/KFHBP-485   :  Patient Merge                    |  PatientMasterIndex:PMI                          // add new validation check Merge Appointment for old patient
+
+feature/PMI-426     :  Patient Search                   |  PatientMasterIndex:PMI                          // Skip Security from Navigation Button "Back" in Patient Registration
+
+feature/RWDP-40     :  Patient Search                   |  PatientMasterIndex:PMI                         //  add new rule NHIC_UPDATE_EMPTY to update empty values or not 
+
+feature/PMI-427     :  Patient Search                   |  PatientMasterIndex:PMI                         //  add new filed DefaultSequence in section Insurance in Patient Registration 
+
+feature/MMP-3794    :  Physician Worklist               |  PatientUtilsAMImpl                            // move the validation close visit in link close validation from  PatientUtilsAMImpl to FacesSheet "Mune"
+                                                           EmrApplication:FacesSheet                     // show question pop-up when the visit has pending order
+         
+feature/MGHP-201	:  Physician Worklist               |  EmrApplication:FacesSheet                     // add the generic name with order desc to the medications, significant medications sections in the faces sheet, and the summary tab screen
+                                                           EmrApplication:PatientSignificantMedication
+
+feature/OS-432      :  General Setup                    |  Security:GeneralSetup                         // add authentication by both options, SMS and Email
+
+feature/SGHDP-792   :  Physician Worklist               |  EmrApplication:ManageDiagnosis                 // make primary diagnosis in manage diagnosis screen based on the UNACCEPTPDX 
+
+feature/PMI-428     :  Patient Search                   |  PatientMasterIndex:PMI                         // disable all fields in patient details page when Patient is dead and staff don't have edit mortuary privilege's
+
+feature/MMP-3842    :  Physician Worklist               |  EmrApplication:FacesSheet                      // add filter by the generic name lov to the medications, significant medications sections in the faces sheet, and the summary tab screen
+                                                           EmrApplication:PatientSignificantMedication
+
+feature/KAHTP-1486	:  Outpatient Scheduling	        |  OPD:OpdScheduling /oasis-common                 // fixed issue in security mode in "multi notes" button
+
+feature/HC-699      :  Physician Worklist               |  EmrApplication:ReleasedResults                 // add Integration with external system in lab result section
+	
+feature/AYRHP-533   :  Transfer Appointments	        |  OPD:OpdSwapping                                // add the missing operation to the Page Definition "getServiceDeptDescription"
+
+feature/MMP-4968    :  Physician Worklist               |  EmrApplication:FacesSheet                     // add new column CreatedByUser name to the medications, significant medications sections in the faces sheet, and the summary tab screen
+                                                           EmrApplication:PatientSignificantMedication
+
+MMP-4187___Bug___
 
 bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
 
@@ -139,7 +202,11 @@ bugfix/OS-424      :   Maintain Teams	                | Security:MaintainTeams  
 
 bugfix/OS-426      :   System Codes	                    | Security:SystemCodes        //  make filterable table fileds reset when change master record 
 
-bugfix/KFGHP-839   :  Patient Search                   | PatientMasterIndex:PMI      //   fixed issue no parameters save wrong data
+bugfix/KFGHP-839   :  Patient Search                    | PatientMasterIndex:PMI      //   fixed issue no parameters save wrong data
+
+bugfix/EMR-2735    :  Physician Worklist                | EmrApplication:PatientsList    // Fixed the issue, made the open record button for the restrected patient show success data
+
+bugfix/OS-434      :  Forgot password                   | Oasis:main                   //Fixed the issue with the confirm password 
 
 Own Ticket:
 __________ 
@@ -158,19 +225,59 @@ Comments:
 Details : 
 
 
-- make validation validateMandatoryData work in view mode also
+- add new column CreatedByUser name to the medications, significant medications sections in the faces sheet, and the summary tab screen
 
-feature/KAAHP-704
+feature/MMP-4968
 
 affected modules:
 
-Outpatient Scheduling
+EmrApplication:FacesSheet
+EmrApplication:PatientSignificantMedication
 
 commit Hash No:
-oasis-modules : 9218b236a98baf706f294a2fcb2d103f1ce032c7
 
-oasis-common : 19ee65ac616c1ccd31d572dc1debff09e0073f31
+oasis-modules : b0ce261454cccbac94d3f3712fae56bae0e8e79a
+
+
 _______________________________________
+
+
+
+Details : 
+
+
+- when open record patient from physition worklist check classify episode for the patient
+- we add new link in patient menu Classify Episode "Menu"
+- update the queries for facesheet sections to hide patient data
+- add new entity PatRestrictedEpisodeAccess
+- add new common variables (CAN_RESTRICT_EPISOD, VIEW_RESTRICTED_EPISODES, VIEW_MULTINOTE_RESTRICTED_EP)
+- put new common variables after login success in Home page
+
+feature/MMP-4187
+
+affected modules:
+
+PatientMasterIndex:PMI
+EmrApplication:CardiologyExams
+EmrApplication:ClinicalNotes
+EmrApplication:Dataset
+EmrApplication:FacesSheet
+EmrApplication:MedicalReport
+EmrApplication:Oprations
+EmrApplication:OutpatientProcedures
+EmrApplication:PatientClinicalNotes
+EmrApplication:PatientHeader
+EmrApplication:PatientsList
+EmrApplication:RadiologyExams
+EmrApplication:ReleasedResults
+commit Hash No:
+oasis-modules : 79b627203450664237890ea7494072e4da2617ad
+oasis-common : ded5ff18874cf48ea20b3b15caffdfc784669390
+oasis-main : 23bfaa3260ecd209c25ee991da34eefdf118a28a
+
+
+
+
 
 
 

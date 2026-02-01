@@ -29,7 +29,7 @@ ________________________________________________________________________________
 getRuleValue("ADT_PATFILE_REQ", "N"); //by bean code
 new BigDecimal(adf.userSession.userData.rules.getRuleValue('OR_ANESTHIA_TEAM','0'))// by VO grovy exprition
 sharedLookupBean.ruleValue['HHCSERVCDEPT,-1'] eq row.ToServiceDept in page source
-
+OasisModelUtils.getInstance().getRuleValue("USECOMPLEXPASSWORD", "N") // by common utils
 // return rules value by name and if null return second parameter // extends OasisModelUtils
 ________________________________________________________________________________________________________
 
@@ -938,3 +938,140 @@ ________________________________________________________________________________
     }
 	
 get diagnosisDivision in bean
+
+________________________________________________________________________________________________________
+
+        Optional<Object> optionalWorkEntity =
+            OasisModelUtils.getInstance()
+            .getQueryResult("SELECT wed.work_entity \n" + " FROM user_login_work_entities ulwe \n" +
+                            "            ,work_entities_data wed \n" + " WHERE wed.work_entity = ulwe.work_entity \n" +
+                            " AND   ulwe.default_flag = 'Y' \n" + " AND   ulwe.user_id = " + userInfo.getUserId() +
+                            " \n" + " AND   WED.FACILITY_ID = (select min(wed.FACILITY_ID) \n" +
+                            " FROM user_login_work_entities ulwe \n" + "            ,work_entities_data wed \n" +
+                            " WHERE wed.work_entity = ulwe.work_entity \n" + " AND   ulwe.default_flag = 'Y' \n" +
+                            " AND   ulwe.user_id = " + userInfo.getUserId() + ") AND rownum = 1", new Object[] { });
+
+        if (optionalWorkEntity.isPresent())
+            BigDecimal workEntity = (BigDecimal) optionalWorkEntity.get();
+
+OR
+
+
+                    upperUserName =
+                        OasisModelUtils.getInstance()
+                                                   .getQueryResult("SELECT USER_NAME FROM MAPS006 WHERE EXTERNAL_USER_NAME=?", upperUserName)
+                                       .map(Object::toString)
+                                       .get();
+                    if (upperUserName == null)
+                        throw new JboException("LDAP_USER_NOT_FOUND_IN_MAPS006");
+						
+// get query direct for get some filed
+
+________________________________________________________________________________________________________
+
+text-security:disc; -webkit-text-security:disc;
+
+// make the filed security without password chrom security 
+
+_______________________________________________________________________________________________________
+
+1- add it in CommonVariablesNames in common
+
+    public static final String CAN_RESTRICT_EPISOD = "com.balsam.common.CAN_RESTRICT_EPISOD";
+
+2- add it after user login to save it
+
+                    CommonJSFUtils.putInSessionScope(CommonVariablesNames.CAN_RESTRICT_EPISOD,
+                                                     loginAppModule.getViewRestrictedEpisodes(userInfo.getStaffId()));
+													 
+3- add it in UserBean to 
+
+    public String getCanRestrictEpisod() {
+        return (String) CommonJSFUtils.getFromSession(CommonVariablesNames.CAN_RESTRICT_EPISOD);
+    }
+	
+4- add it for test in bean locally in InternalDevelopmentSessionListener OR in am and lmpl in DefaultCommonUserData AND HttpCommonUserData
+
+                    req.getSession()
+                        .setAttribute(CommonVariablesNames.CAN_RESTRICT_EPISOD,
+                                      prop.getProperty(CommonVariablesNames.CAN_RESTRICT_EPISOD));
+                    
+					OR
+					
+					@Override
+                        public String getStaffId() {
+                        return Optional.ofNullable(getFromDefaults(CommonVariablesNames.USER_STAFF_ID))
+                       .map(Object::toString)
+                       .orElseThrow(getException("Staff Id"));
+    }
+
+//add new common varable in session after login
+
+_______________________________________________________________________________________________________
+
+        Optional.ofNullable(findPatientById(patientId)).ifPresent((row) -> {
+            paramsToOpenRecord.put("encounterId", row.getEncounterId());
+            paramsToOpenRecord.put("encounterType", row.getEncounterType());
+            paramsToOpenRecord.put("episodeNo", row.getEpisodeNo());
+            paramsToOpenRecord.put("patientWorkEntity", row.getWorkEntity());
+        });
+		
+        Optional.ofNullable(findComponent("osc2reson"))
+            .map(CommonJSFUtils::searchForSelectOneChoice)
+            .ifPresent((comp) -> {
+            comp.setValue(null);
+            CommonJSFUtils.addPartialTarget(comp);
+            });
+            
+        Optional.ofNullable(findComponent(POPUP_PATICLASS_EPIS))
+            .map(RichPopup.class::cast)
+            .ifPresent((popup) -> popup.hide());
+		
+//lambda exprition 
+
+_______________________________________________________________________________________________________
+
+do not used immediate 
+
+
+<af:target execute="@this" render="osc2reson"/>
+
+_______________________________________________________________________________________________________
+
+//            Optional.ofNullable(findComponent("osc2reson"))
+//                    .map(CommonJSFUtils::searchForSelectOneChoice)
+//                    .ifPresent((comp) -> {
+//                        comp.setValue(null);
+//                        CommonJSFUtils.addPartialTarget(comp);
+//                    });
+            
+            Optional.ofNullable(findComponent(POPUP_PATICLASS_EPIS))
+                    .map(RichPopup.class::cast)
+                    .ifPresent((popup) -> popup.hide());
+					
+					
+					
+					
+_______________________________________________________________________________________________________
+
+
+    private PatientEpisodesImpl getPatientPatientEpisodes(BigDecimal patientId, BigDecimal episodeNo) {
+        BigDecimal hospitalId = CommonUserDataFactory.getCommonUserData().getHospitalId();
+        Key key = new Key(new Object[] { hospitalId, patientId, episodeNo});
+        PatientEpisodesImpl patientEpisodesEntityObj =
+            (PatientEpisodesImpl) PatientMasterDataImpl.getDefinitionObject()
+            .findByPrimaryKey(getDBTransaction(), key);
+        patientEpisodesEntityObj.refresh(PatientMasterDataImpl.REFRESH_WITH_DB_FORGET_CHANGES);
+        return patientEpisodesEntityObj;
+    }
+	
+	
+//get eo impl by key in am
+
+
+_______________________________________________________________________________________________________
+
+        BigDecimal tfId = OasisTaskFlowsSingleton.getInstance().findTaskFlowId("PATIENTREGISTRATION");
+
+
+//get TF id by excutable name 
