@@ -189,6 +189,8 @@ feature/AYRHP-533   :  Transfer Appointments	        |  OPD:OpdSwapping         
 feature/MMP-4968    :  Physician Worklist               |  EmrApplication:FacesSheet                     // add new column CreatedByUser name to the medications, significant medications sections in the faces sheet, and the summary tab screen
                                                            EmrApplication:PatientSignificantMedication
 
+feature/EMR-2739    :  Physician Worklist               |  EmrApplication:PendingActions                 // Fixed issue refresh page after close visit
+
 MMP-4187___Bug___
 
 bugfix/OS-420      :   Refactor Maintain Teams          | Security:MaintainTeams      //  fixed style issues in maintain team page
@@ -225,18 +227,17 @@ Comments:
 Details : 
 
 
-- add new column CreatedByUser name to the medications, significant medications sections in the faces sheet, and the summary tab screen
+- Fixed issue refresh page after close visit
 
-feature/MMP-4968
+feature/EMR-2739
 
 affected modules:
 
-EmrApplication:FacesSheet
-EmrApplication:PatientSignificantMedication
+EmrApplication:PendingActions
 
 commit Hash No:
 
-oasis-modules : b0ce261454cccbac94d3f3712fae56bae0e8e79a
+oasis-modules : a1112ba014f9bfba4fa735636a7e6a33889d8c60
 
 
 _______________________________________

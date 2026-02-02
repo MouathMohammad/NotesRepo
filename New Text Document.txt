@@ -76,7 +76,8 @@ Dev    | 192.168.55.223  | 1521  | dvlpnrl    |  OASIS          OasisConn
        | 192.168.55.10   | 1521  | rwdhp      |  oasis
 	   
 	   | 192.168.55.10   | 1521  | dvlpt      |  oasis
-
+	   
+         128.55.0.12     | 1521  | dhbhp      |  oasis
 
 jdbc/OasisConnDS
 
